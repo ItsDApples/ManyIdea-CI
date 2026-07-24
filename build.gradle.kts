@@ -24,12 +24,6 @@ java {
     toolchain.languageVersion = JavaLanguageVersion.of(25)
 }
 
-// 开发时自动复制 CE addon 配置到 run 目录，确保 CE 能读取
-val copyCEAddon = tasks.register<Copy>("copyCEAddon") {
-    from("src/main/resources/addon")
-    into(layout.projectDirectory.dir("run/plugins/CraftEngine/resources"))
-}
-
 tasks {
     runServer {
         minecraftVersion(libs.versions.minecraft.get())
@@ -38,7 +32,6 @@ tasks {
             modrinth("craftengine", "26.7.4")
             modrinth("ultimateadvancementapi", "2.8.0")
         }
-        dependsOn(copyCEAddon)
     }
 
     processResources {
