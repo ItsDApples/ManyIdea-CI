@@ -215,11 +215,6 @@ public final class ManyIdea extends JavaPlugin {
             List.of(new PotionEffectData(PotionEffectType.REGENERATION.getKey().value(), 5, 0))));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "mixed_salad"), 60,
             List.of(new PotionEffectData(PotionEffectType.REGENERATION.getKey().value(), 5, 0))));
-        FoodRegistry.register(new CustomFood(Key.of("manyidea", "magic_apple"), 0,
-            List.of(
-                new PotionEffectData(PotionEffectType.REGENERATION.getKey().value(), 10, 1),
-                new PotionEffectData(PotionEffectType.ABSORPTION.getKey().value(), 120, 1),
-                new PotionEffectData(PotionEffectType.SPEED.getKey().value(), 30, 0))));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "tomato"), 0, List.of()));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "tomato_sauce"), 0, List.of()));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "minced_beef"), 0, List.of()));
