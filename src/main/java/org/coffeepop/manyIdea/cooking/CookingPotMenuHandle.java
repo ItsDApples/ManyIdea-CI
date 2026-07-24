@@ -64,7 +64,7 @@ public final class CookingPotMenuHandle {
         // 自定义 AbstractContainerMenu 子类，使用 MenuType.FURNACE 触发客户端渲染
         int syncId = nmsPlayer.nextContainerCounter();
         FurnaceLikeMenu menu = new FurnaceLikeMenu(syncId, nmsPlayer.getInventory(),
-            container, progressData);
+            container, progressData, nmsPlayer);
 
         // 添加自定义槽位
         menu.publicAddSlot(new InputSlot(container, SLOT_INPUT, 56, 17, recipeCheck));
@@ -130,12 +130,13 @@ public final class CookingPotMenuHandle {
 
     static class FurnaceLikeMenu extends AbstractContainerMenu {
         private final SimpleContainer container;
-        private final ContainerData data;
+        private final ServerPlayer player;
 
-        FurnaceLikeMenu(int syncId, Inventory playerInv, SimpleContainer container, ContainerData data) {
+        FurnaceLikeMenu(int syncId, Inventory playerInv, SimpleContainer container,
+                        ContainerData data, ServerPlayer player) {
             super(MenuType.FURNACE, syncId);
             this.container = container;
-            this.data = data;
+            this.player = player;
             addDataSlots(data);
 
             // 玩家背包槽位（炉子布局）
@@ -177,7 +178,7 @@ public final class CookingPotMenuHandle {
         @Override
         public InventoryView getBukkitView() {
             return new CraftInventoryView(
-                null, // Paper doesn't always need a real HumanEntity
+                player.getBukkitEntity(),
                 new CraftInventory(container),
                 this
             );
