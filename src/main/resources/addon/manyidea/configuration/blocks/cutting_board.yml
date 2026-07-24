@@ -1,6 +1,7 @@
 blocks:
   manyidea:cutting_board:
     state:
+      auto_state: lower_tripwire
       model:
         path: "minecraft:block/custom/cutting_board"
     settings:
