@@ -215,11 +215,9 @@ public final class CookingPotListener implements Listener {
                 Location loc = menuEntry.getKey();
                 if (pots.containsKey(loc)) continue;
                 CookingPotMenuHandle handle = menuEntry.getValue();
-                net.minecraft.world.item.ItemStack nmsInput = handle.getInputSlow();
-                if (nmsInput != null && !nmsInput.isEmpty()) {
-                    org.bukkit.inventory.ItemStack bukkitInput =
-                        org.bukkit.craftbukkit.inventory.CraftItemStack.asBukkitCopy(nmsInput);
-                    handleInputPlaced(loc, bukkitInput);
+                org.bukkit.inventory.ItemStack input = handle.getInput();
+                if (input != null && !input.getType().isAir()) {
+                    handleInputPlaced(loc, input.clone());
                 }
             }
 

@@ -1,32 +1,36 @@
 package org.coffeepop.manyIdea.cooking;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundContainerSetDataPacket;
+import net.minecraft.network.protocol.game.ClientboundOpenScreenPacket;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
+import org.bukkit.craftbukkit.entity.CraftHumanEntity;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
 import org.bukkit.craftbukkit.inventory.CraftInventory;
 import org.bukkit.craftbukkit.inventory.CraftInventoryView;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.InventoryView;
 
 /**
- * 基于 NMS AbstractFurnaceMenu 的烹饪锅 GUI。
+ * 基于 NMS AbstractContainerMenu + MenuType.FURNACE 的烹饪锅 GUI。
  * <p>
  * 对标 FD CookingPotScreen：
- * - 炉子原生进度箭头动画（DataSlot index 2/3）
- * - 火焰图标始终满（外部热源，DataSlot index 0/1 恒为 1）
- * - 输入槽只接受配方物品、输出槽只允许取出
+ * - 客户端渲染原生炉子进度箭头（用 MenuType.FURNACE 触发）
+ * - DataSlot 0/1 恒为满值（燃烧图标始终亮）
+ * - DataSlot 2/3 控制箭头进度
+ * - 不依赖 FurnaceMenu（避免 getBukkitView ClassCastException）
  */
 public final class CookingPotMenuHandle {
 
-    static final int SLOT_INPUT  = 0; // 炉子输入槽
-    static final int SLOT_FUEL   = 1; // 炉子燃料槽（锁定）
-    static final int SLOT_OUTPUT = 2; // 炉子输出槽
+    static final int SLOT_INPUT  = 0;
+    static final int SLOT_FUEL   = 1;
+    static final int SLOT_OUTPUT = 2;
     static final int CONTAINER_SIZE = 3;
 
     public final SimpleContainer container;
@@ -42,17 +46,6 @@ public final class CookingPotMenuHandle {
         this.menu = menu;
     }
 
-    /**
-     * 打开烹饪锅 GUI。
-     *
-     * @param player      玩家
-     * @param recipeCheck 物品是否为有效配方输入
-     * @param isDone      烹饪是否已完成
-     * @param onClosed    容器关闭回调
-     * @param onOutputTaken 取出成品回调
-     * @param cookTime    烹饪总 tick
-     * @param currentProgress 当前已烹饪 tick
-     */
     public static CookingPotMenuHandle open(Player player,
                                              java.util.function.Predicate<org.bukkit.inventory.ItemStack> recipeCheck,
                                              java.util.function.BooleanSupplier isDone,
@@ -61,7 +54,6 @@ public final class CookingPotMenuHandle {
         ServerPlayer nmsPlayer = ((CraftPlayer) player).getHandle();
         SimpleContainer container = new SimpleContainer(CONTAINER_SIZE);
 
-        // 4 个 DataSlot：0=burnTime, 1=burnTotal, 2=progress, 3=cookTotal
         ContainerData progressData = new ContainerData() {
             private final int[] values = {1, 1, currentProgress, cookTime};
             @Override public int get(int i) { return values[i]; }
@@ -69,84 +61,128 @@ public final class CookingPotMenuHandle {
             @Override public int getCount() { return 4; }
         };
 
-        nmsPlayer.openMenu(new MenuProvider() {
-            @Override
-            public AbstractContainerMenu createMenu(int syncId, Inventory inv,
-                                                     net.minecraft.world.entity.player.Player p) {
-                // 先创建标准炉子菜单
-                FurnaceMenu fm = new FurnaceMenu(syncId, inv, container, progressData);
-                // 替换默认槽位为自定义槽位
-                replaceSlots(fm, container, recipeCheck, isDone, onClosed, onOutputTaken);
-                return fm;
-            }
-            @Override
-            public Component getDisplayName() {
-                return Component.literal("烹饪锅");
-            }
-        });
+        // 自定义 AbstractContainerMenu 子类，使用 MenuType.FURNACE 触发客户端渲染
+        int syncId = nmsPlayer.nextContainerCounter();
+        FurnaceLikeMenu menu = new FurnaceLikeMenu(syncId, nmsPlayer.getInventory(),
+            container, progressData);
 
-        return new CookingPotMenuHandle(nmsPlayer, container, progressData, nmsPlayer.containerMenu);
-    }
+        // 添加自定义槽位
+        menu.publicAddSlot(new InputSlot(container, SLOT_INPUT, 56, 17, recipeCheck));
+        menu.publicAddSlot(new FuelLockedSlot(container, SLOT_FUEL, 56, 53));
+        menu.publicAddSlot(new OutputSlot(container, SLOT_OUTPUT, 116, 35, isDone, onOutputTaken));
 
-    /** 替换 FurnaceMenu 的默认槽位为自定义限制槽位，注入回调和 BukkitView */
-    private static void replaceSlots(FurnaceMenu menu, SimpleContainer container,
-                                      java.util.function.Predicate<org.bukkit.inventory.ItemStack> recipeCheck,
-                                      java.util.function.BooleanSupplier isDone,
-                                      Runnable onClosed, Runnable onOutputTaken) {
-        // 清除非玩家槽位（前 3 个）
-        menu.slots.subList(0, 3).clear();
-        // 重新添加自定义槽位（顺序必须和原来一致）
-        menu.slots.add(0, new InputSlot(container, SLOT_INPUT, 56, 17, recipeCheck));
-        menu.slots.add(1, new FuelLockedSlot(container, SLOT_FUEL, 56, 53));
-        menu.slots.add(2, new OutputSlot(container, SLOT_OUTPUT, 116, 35, isDone, onOutputTaken));
+        // 打开GUI — 用 Furnace type 让客户端渲染进度箭头
+        nmsPlayer.containerMenu = menu;
+        nmsPlayer.connection.send(new ClientboundOpenScreenPacket(
+            syncId, MenuType.FURNACE, Component.literal("烹饪锅")));
+        nmsPlayer.initMenu(menu);
 
-        // 注入关闭和输出回调到 menu 实例（用匿名子类委托）
-        // 通过改写 removed 行为：监听 containerMenu 的关闭
-        // 这里用 Bukkit 调度器检测容器关闭
+        // 监听关闭
         new org.bukkit.scheduler.BukkitRunnable() {
-            private boolean closed = false;
             @Override
             public void run() {
-                if (closed) { cancel(); return; }
-                for (var viewer : menu.getBukkitView().getTopInventory().getViewers()) {
-                    if (((org.bukkit.entity.HumanEntity) viewer).getOpenInventory().getTopInventory()
-                            != menu.getBukkitView().getTopInventory()) {
-                        closed = true;
-                        if (onClosed != null) onClosed.run();
-                        cancel();
-                        break;
-                    }
+                if (nmsPlayer.containerMenu != menu) {
+                    if (onClosed != null) onClosed.run();
+                    cancel();
                 }
             }
         }.runTaskTimer(org.bukkit.Bukkit.getPluginManager().getPlugin("ManyIdea"), 10L, 10L);
+
+        return new CookingPotMenuHandle(nmsPlayer, container, progressData, menu);
     }
 
     public void close() {
         serverPlayer.closeContainer();
     }
 
-    /** 更新进度（DataSlot index 2/3），客户端自动渲染箭头 */
     public void updateProgress(int cookTime, int progress) {
         data.set(2, progress);
         data.set(3, cookTime);
-        serverPlayer.containerMenu.broadcastChanges();
+        // 直接发数据包更新客户端箭头
+        serverPlayer.connection.send(new ClientboundContainerSetDataPacket(
+            menu.containerId, 2, progress));
+        serverPlayer.connection.send(new ClientboundContainerSetDataPacket(
+            menu.containerId, 3, cookTime));
     }
 
-    /** 获取输入槽（NMS） */
-    public ItemStack getInputSlow() {
-        return container.getItem(SLOT_INPUT);
+    public org.bukkit.inventory.ItemStack getInput() {
+        ItemStack nms = container.getItem(SLOT_INPUT);
+        if (nms.isEmpty()) return null;
+        return org.bukkit.craftbukkit.inventory.CraftItemStack.asBukkitCopy(nms);
     }
 
     public void setInput(org.bukkit.inventory.ItemStack bukkitStack) {
-        container.setItem(SLOT_INPUT, org.bukkit.craftbukkit.inventory.CraftItemStack.asNMSCopy(bukkitStack));
+        container.setItem(SLOT_INPUT,
+            org.bukkit.craftbukkit.inventory.CraftItemStack.asNMSCopy(bukkitStack));
     }
 
     public void setOutput(org.bukkit.inventory.ItemStack bukkitStack) {
-        container.setItem(SLOT_OUTPUT, org.bukkit.craftbukkit.inventory.CraftItemStack.asNMSCopy(bukkitStack));
+        container.setItem(SLOT_OUTPUT,
+            org.bukkit.craftbukkit.inventory.CraftItemStack.asNMSCopy(bukkitStack));
     }
 
     public void clearInput() { container.setItem(SLOT_INPUT, ItemStack.EMPTY); }
     public void clearOutput() { container.setItem(SLOT_OUTPUT, ItemStack.EMPTY); }
+
+    // ================================================================
+    // 自定义 AbstractContainerMenu 子类
+    // ================================================================
+
+    static class FurnaceLikeMenu extends AbstractContainerMenu {
+        private final SimpleContainer container;
+        private final ContainerData data;
+
+        FurnaceLikeMenu(int syncId, Inventory playerInv, SimpleContainer container, ContainerData data) {
+            super(MenuType.FURNACE, syncId);
+            this.container = container;
+            this.data = data;
+            addDataSlots(data);
+
+            // 玩家背包槽位（炉子布局）
+            for (int row = 0; row < 3; row++)
+                for (int col = 0; col < 9; col++)
+                    this.addSlot(new Slot(playerInv, col + row * 9 + 9, 8 + col * 18, 84 + row * 18));
+            for (int col = 0; col < 9; col++)
+                this.addSlot(new Slot(playerInv, col, 8 + col * 18, 142));
+        }
+
+        void publicAddSlot(Slot slot) {
+            this.addSlot(slot); // 子类内可访问 protected addSlot
+        }
+
+        @Override
+        public ItemStack quickMoveStack(net.minecraft.world.entity.player.Player p, int index) {
+            // 简易 shift+click：输出槽 → 玩家背包
+            Slot slot = this.slots.get(index);
+            if (slot == null || !slot.hasItem()) return ItemStack.EMPTY;
+            ItemStack source = slot.getItem().copy();
+
+            if (index == SLOT_OUTPUT) {
+                if (!this.moveItemStackTo(source, 3, 39, true)) return ItemStack.EMPTY;
+            } else if (index >= 3) {
+                if (!this.moveItemStackTo(source, SLOT_INPUT, SLOT_INPUT + 1, false))
+                    return ItemStack.EMPTY;
+            } else {
+                return ItemStack.EMPTY;
+            }
+
+            if (source.isEmpty()) slot.setByPlayer(ItemStack.EMPTY);
+            else slot.setChanged();
+            return source;
+        }
+
+        @Override
+        public boolean stillValid(net.minecraft.world.entity.player.Player p) { return true; }
+
+        @Override
+        public InventoryView getBukkitView() {
+            return new CraftInventoryView(
+                null, // Paper doesn't always need a real HumanEntity
+                new CraftInventory(container),
+                this
+            );
+        }
+    }
 
     // ================================================================
     // 自定义槽位
@@ -165,11 +201,9 @@ public final class CookingPotMenuHandle {
         }
     }
 
-    /** 燃料槽：锁定，始终显示火焰（用烈焰棒代替） */
     static class FuelLockedSlot extends Slot {
         FuelLockedSlot(net.minecraft.world.Container c, int idx, int x, int y) {
             super(c, idx, x, y);
-            // 放入火焰指示物品
             c.setItem(idx, new ItemStack(Items.BLAZE_POWDER));
         }
         @Override public boolean mayPlace(ItemStack s) { return false; }
