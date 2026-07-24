@@ -149,14 +149,12 @@ public final class ManyIdea extends JavaPlugin {
                 int fixed = extractAddonFromJar(targetDir, true);
                 if (fixed > 0) {
                     getLogger().info("CE addon: repaired " + fixed + " missing/corrupted file(s).");
-                    Bukkit.getScheduler().runTask(this, this::reloadCEPack);
                 }
             } else {
                 // 版本更新或首次安装：全量覆盖
                 extractAddonFromJar(targetDir, false);
                 Files.writeString(versionFile.toPath(), currentVersion);
                 getLogger().info("CE addon resources extracted to " + targetDir.getAbsolutePath());
-                Bukkit.getScheduler().runTask(this, this::reloadCEPack);
             }
         } catch (IOException e) {
             getLogger().severe("Failed to extract CE addon resources: " + e.getMessage());
@@ -205,26 +203,6 @@ public final class ManyIdea extends JavaPlugin {
             }
         }
         return repaired;
-    }
-
-    /**
-     * 触发 CE 重新加载资源包：扫描配置 → 生成 → 上传分发。
-     */
-    private void reloadCEPack() {
-        try {
-            CraftEngine ce = CraftEngine.instance();
-            if (ce == null) {
-                getLogger().warning("CraftEngine instance not available, skip pack reload.");
-                return;
-            }
-            ce.packManager().reload();
-            ce.packManager().generateResourcePack();
-            ce.packManager().uploadResourcePack();
-            getLogger().info("CE resource pack reloaded and uploaded.");
-        } catch (Exception e) {
-            getLogger().severe("Failed to reload CE resource pack: " + e.getMessage());
-            e.printStackTrace();
-        }
     }
 
     private void registerFoods() {
