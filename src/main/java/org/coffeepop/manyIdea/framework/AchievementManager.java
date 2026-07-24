@@ -116,7 +116,7 @@ public final class AchievementManager {
         AdvancementDisplay rootDisplay = new AdvancementDisplay(
             Material.APPLE, "ManyIdea",
             AdvancementFrameType.TASK, false, false,
-            0, 0,
+            2, 0,
             "Farmer's Delight 风格的食品扩展");
         root = new RootAdvancement(tab, "root", rootDisplay,
             "textures/block/custom/roast_chicken.png");
@@ -128,42 +128,42 @@ public final class AchievementManager {
         placeCookingPot = new ManyIdeaAdv("place_cooking_pot",
             new AdvancementDisplay(Material.CAULDRON, "初级厨师",
                 AdvancementFrameType.GOAL, true, false,
-                0, 1,
+                2, 1,
                 "放置一个烹饪锅"),
             root);
 
         eatNourishingFood = new ManyIdeaAdv("eat_nourishing_food",
             new AdvancementDisplay(Material.GOLDEN_APPLE, "滋养美食",
                 AdvancementFrameType.TASK, true, false,
-                0, 2,
+                2, 2,
                 "享用滋补食物"),
             placeCookingPot);
 
         placeFeast = new ManyIdeaAdv("place_feast",
             new AdvancementDisplay(Material.COOKED_CHICKEN, "丰盛宴席",
                 AdvancementFrameType.TASK, true, false,
-                0, 3,
+                2, 3,
                 "放置一个宴席方块并取食"),
             eatNourishingFood);
 
         grill = new ManyIdeaAdv("grill",
             new AdvancementDisplay(Material.CAMPFIRE, "烧烤大师",
                 AdvancementFrameType.TASK, true, false,
-                -1, 2,
+                1, 2,
                 "用烧烤架烤制食物"),
             placeCookingPot);
 
         fry = new ManyIdeaAdv("fry",
             new AdvancementDisplay(Material.COOKED_BEEF, "油炸专家",
                 AdvancementFrameType.TASK, true, false,
-                1, 2,
+                3, 2,
                 "用炸锅油炸食物"),
             placeCookingPot);
 
         cheese = new ManyIdeaAdv("cheese",
             new AdvancementDisplay(Material.HONEYCOMB, "芝士发酵",
                 AdvancementFrameType.GOAL, true, false,
-                -1, 3,
+                1, 3,
                 "让生芝士轮熟成为芝士轮"),
             placeCookingPot);
 
@@ -174,35 +174,35 @@ public final class AchievementManager {
         craftKnife = new ManyIdeaAdv("craft_knife",
             new AdvancementDisplay(Material.IRON_SWORD, "锋利厨具",
                 AdvancementFrameType.TASK, true, false,
-                2, 1,
+                4, 1,
                 "制作一把刀"),
             root);
 
         getHam = new ManyIdeaAdv("get_ham",
             new AdvancementDisplay(Material.COOKED_PORKCHOP, "火腿",
                 AdvancementFrameType.TASK, true, false,
-                1, 2,
+                3, 2,
                 "获得一份火腿"),
             craftKnife);
 
         useCuttingBoard = new ManyIdeaAdv("use_cutting_board",
             new AdvancementDisplay(Material.CRAFTING_TABLE, "砧板大师",
                 AdvancementFrameType.TASK, true, false,
-                2, 2,
+                4, 2,
                 "使用砧板加工食材"),
             craftKnife);
 
         obtainNetheriteKnife = new ManyIdeaAdv("obtain_netherite_knife",
             new AdvancementDisplay(Material.NETHERITE_SWORD, "终极厨刀",
                 AdvancementFrameType.CHALLENGE, true, false,
-                2, 3,
+                4, 3,
                 "获得一把下界合金刀"),
             useCuttingBoard);
 
         knifeVsKnife = new ManyIdeaAdv("knife_vs_knife",
             new AdvancementDisplay(Material.IRON_SWORD, "刀刀对决!",
                 AdvancementFrameType.CHALLENGE, true, false,
-                3, 2,
+                5, 2,
                 "在砧板上用刀切刀"),
             craftKnife);
 
@@ -213,7 +213,7 @@ public final class AchievementManager {
         durian = new ManyIdeaAdv("durian",
             new AdvancementDisplay(Material.LEATHER_HELMET, "榴莲武装",
                 AdvancementFrameType.GOAL, true, false,
-                -2, 1,
+                0, 1,
                 "戴上榴莲壳头盔"),
             root);
 
