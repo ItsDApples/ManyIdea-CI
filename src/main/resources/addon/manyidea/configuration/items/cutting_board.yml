@@ -6,6 +6,9 @@ items:
       item_name: <!i><gray>砧板</gray>
       lore:
         - <!i><gray>右键打开砧板</gray>
+    behavior:
+      type: block_item
+      block: manyidea:cutting_board
 
 recipes:
   manyidea:cutting_board:
