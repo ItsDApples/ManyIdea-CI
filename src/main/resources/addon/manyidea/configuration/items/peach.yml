@@ -1,0 +1,10 @@
+items:
+  manyidea:peach:
+    material: apple
+    texture: minecraft:item/custom/peach
+    data:
+      item_name: <!i><light_purple>水蜜桃</light_purple>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

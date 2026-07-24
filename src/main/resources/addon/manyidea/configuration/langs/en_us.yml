@@ -1,0 +1,447 @@
+lang#items:
+  en_us:
+    category.manyidea.ingredients: "ManyIdea Ingredients"
+    category.manyidea.dishes: "ManyIdea Dishes"
+    category.manyidea.drinks: "ManyIdea Drinks"
+    category.manyidea.desserts: "ManyIdea Desserts"
+    category.manyidea.preserves: "ManyIdea Preserves"
+    category.manyidea.tools: "ManyIdea Tools"
+    category.manyidea.jelly_blocks: "ManyIdea Jelly & Jello"
+    item.manyidea.hamburger: Hamburger
+    item.manyidea.barbecue_stick: Barbecue Stick
+    item.manyidea.dumplings: Dumplings
+    item.manyidea.fried_egg: Fried Egg
+    item.manyidea.chicken_soup: Chicken Soup
+    item.manyidea.fruit_salad: Fruit Salad
+    item.manyidea.mixed_salad: Mixed Salad
+    item.manyidea.magic_apple: Magic Apple
+    item.manyidea.tomato: Tomato
+    item.manyidea.cabbage: Cabbage
+    item.manyidea.onion: Onion
+    item.manyidea.minced_beef: Minced Beef
+    item.manyidea.chicken_cuts: Raw Chicken Cuts
+    item.manyidea.cooked_chicken_cuts: Cooked Chicken Cuts
+    item.manyidea.bacon: Bacon
+    item.manyidea.cooked_bacon: Cooked Bacon
+    item.manyidea.mutton_chops: Raw Mutton Chops
+    item.manyidea.cooked_mutton_chops: Cooked Mutton Chops
+    item.manyidea.pumpkin_slice: Pumpkin Slice
+    item.manyidea.cake_slice: Cake Slice
+    item.manyidea.cabbage_leaf: Cabbage Leaf
+    item.manyidea.salmon_slice: Raw Salmon Slice
+    item.manyidea.cod_slice: Raw Cod Slice
+    item.manyidea.cooked_salmon_slice: Cooked Salmon Slice
+    item.manyidea.cooked_cod_slice: Cooked Cod Slice
+    item.manyidea.wheat_dough: Wheat Dough
+    item.manyidea.tree_bark: Tree Bark
+    item.manyidea.tomato_sauce: Tomato Sauce
+    item.manyidea.tomato_seeds: Tomato Seeds
+    item.manyidea.cabbage_seeds: Cabbage Seeds
+    item.manyidea.onion_seeds: Onion Seeds
+    item.manyidea.hawberry: Hawberry
+    item.manyidea.lychee: Lychee
+    item.manyidea.mango: Mango
+    item.manyidea.pear: Pear
+    item.manyidea.persimmon: Persimmon
+    item.manyidea.blueberry: Blueberry
+    item.manyidea.peach: Peach
+    item.manyidea.orange: Orange
+    item.manyidea.lemon: Lemon
+    item.manyidea.cranberry: Cranberry
+    item.manyidea.mangosteen: Mangosteen
+    item.manyidea.fig: Fig
+    item.manyidea.kiwi: Kiwi
+    item.manyidea.bayberry: Bayberry
+    item.manyidea.pineapple: Pineapple
+    item.manyidea.hamimelon_slice: Hami Melon Slice
+    item.manyidea.pineapple_slice: Pineapple Slice
+    item.manyidea.lemon_slice: Lemon Slice
+    item.manyidea.orange_slice: Orange Slice
+    item.manyidea.durian_flesh: Durian Flesh
+    item.manyidea.durian_shell: Durian Shell
+    item.manyidea.durian_seed: Durian Seed
+    item.manyidea.hamimelon_seeds: Hami Melon Seeds
+    item.manyidea.lemon_seeds: Lemon Seeds
+    item.manyidea.pineapple_sapling: Pineapple Sapling
+    item.manyidea.baked_pear: Baked Pear
+    item.manyidea.baked_durian: Baked Durian
+    item.manyidea.durian_pie: Durian Pie
+    item.manyidea.blueberry_custard: Blueberry Custard
+    item.manyidea.blueberry_muffin: Blueberry Muffin
+    item.manyidea.bowl_of_pineapple_fried_rice: Bowl of Pineapple Fried Rice
+    item.manyidea.hawberry_roll: Hawberry Roll
+    item.manyidea.hawberry_sheet: Hawberry Sheet
+    item.manyidea.hawberry_stick: Hawberry Stick
+    item.manyidea.orange_chicken: Orange Chicken
+    item.manyidea.orange_marinated_pork: Orange Marinated Pork
+    item.manyidea.pineapple_marinated_pork: Pineapple Marinated Pork
+    item.manyidea.pineapple_pie: Pineapple Pie
+    item.manyidea.dried_persimmon: Dried Persimmon
+    item.manyidea.hamimelon_popsicle: Hami Melon Popsicle
+    item.manyidea.hamimelon_shaved_ice: Hami Melon Shaved Ice
+    item.manyidea.lychee_chicken: Lychee Chicken
+    item.manyidea.mango_milkshake: Mango Milkshake
+    item.manyidea.mango_salad: Mango Salad
+    item.manyidea.pear_with_rock_sugar: Pear with Rock Sugar
+    item.manyidea.persimmon_cookie: Persimmon Cookie
+    item.manyidea.lemon_cookie: Lemon Cookie
+    item.manyidea.lemon_tart: Lemon Tart
+    item.manyidea.cranberry_cookie: Cranberry Cookie
+    item.manyidea.cranberry_muffin: Cranberry Muffin
+    item.manyidea.bayberry_cookie: Bayberry Cookie
+    item.manyidea.fig_chicken_stew: Fig Chicken Stew
+    item.manyidea.fig_tart: Fig Tart
+    item.manyidea.fig_pudding_slice: Fig Pudding Slice
+    item.manyidea.kiwi_popsicle: Kiwi Popsicle
+    item.manyidea.jelly_bread: Jelly Bread
+    item.manyidea.durian_helmet: Durian Helmet
+    item.manyidea.pear_juice: Pear Juice
+    item.manyidea.hamimelon_juice: Hami Melon Juice
+    item.manyidea.hawberry_tea: Hawberry Tea
+    item.manyidea.orange_juice: Orange Juice
+    item.manyidea.bellini_cocktail: Bellini Cocktail
+    item.manyidea.mango_tea: Mango Tea
+    item.manyidea.peach_tea: Peach Tea
+    item.manyidea.lemon_juice: Lemonade
+    item.manyidea.mangosteen_tea: Mangosteen Tea
+    item.manyidea.bayberry_soup: Bayberry Juice
+    item.manyidea.lychee_cherry_tea: Lychee Cherry Tea
+    item.manyidea.kiwi_juice: Kiwi Juice
+    item.manyidea.hawberry_jam: Hawberry Jam
+    item.manyidea.lychee_jam: Lychee Jam
+    item.manyidea.mango_jam: Mango Jam
+    item.manyidea.pear_jam: Pear Jam
+    item.manyidea.persimmon_jam: Persimmon Jam
+    item.manyidea.peach_jam: Peach Jam
+    item.manyidea.orange_jam: Orange Jam
+    item.manyidea.apple_jam: Apple Jam
+    item.manyidea.blueberry_jam: Blueberry Jam
+    item.manyidea.glowberry_jam: Glowberry Jam
+    item.manyidea.hamimelon_jam: Hami Melon Jam
+    item.manyidea.sweetberry_jam: Sweetberry Jam
+    item.manyidea.pineapple_jam: Pineapple Jam
+    item.manyidea.lemon_jam: Lemon Jam
+    item.manyidea.melon_jam: Melon Jam
+    item.manyidea.mangosteen_jam: Mangosteen Jam
+    item.manyidea.cranberry_jam: Cranberry Jam
+    item.manyidea.chorus_jam: Chorus Jam
+    item.manyidea.fig_jam: Fig Jam
+    item.manyidea.kiwi_jam: Kiwi Jam
+    item.manyidea.bayberry_jam: Bayberry Jam
+    item.manyidea.durian_jam: Durian Jam
+    item.manyidea.hawberry_jello: Hawberry Jello
+    item.manyidea.lychee_jello: Lychee Jello
+    item.manyidea.mango_jello: Mango Jello
+    item.manyidea.pear_jello: Pear Jello
+    item.manyidea.persimmon_jello: Persimmon Jello
+    item.manyidea.peach_jello: Peach Jello
+    item.manyidea.orange_jello: Orange Jello
+    item.manyidea.apple_jello: Apple Jello
+    item.manyidea.blueberry_jello: Blueberry Jello
+    item.manyidea.glowberry_jello: Glowberry Jello
+    item.manyidea.hamimelon_jello: Hami Melon Jello
+    item.manyidea.sweetberry_jello: Sweetberry Jello
+    item.manyidea.pineapple_jello: Pineapple Jello
+    item.manyidea.lemon_jello: Lemon Jello
+    item.manyidea.melon_jello: Melon Jello
+    item.manyidea.mangosteen_jello: Mangosteen Jello
+    item.manyidea.cranberry_jello: Cranberry Jello
+    item.manyidea.chorus_jello: Chorus Jello
+    item.manyidea.fig_jello: Fig Jello
+    item.manyidea.kiwi_jello: Kiwi Jello
+    item.manyidea.bayberry_jello: Bayberry Jello
+    item.manyidea.durian_jello: Durian Jello
+    item.manyidea.cutting_board: Cutting Board
+    item.manyidea.iron_knife: Iron Knife
+    item.manyidea.flint_knife: Flint Knife
+    item.manyidea.golden_knife: Golden Knife
+    item.manyidea.diamond_knife: Diamond Knife
+    item.manyidea.netherite_knife: Netherite Knife
+    item.manyidea.bacon_sandwich: Bacon Sandwich
+    item.manyidea.chicken_sandwich: Chicken Sandwich
+    item.manyidea.egg_sandwich: Egg Sandwich
+    item.manyidea.bacon_and_eggs: Bacon and Eggs
+    item.manyidea.cabbage_rolls: Cabbage Rolls
+    item.manyidea.mutton_wrap: Mutton Wrap
+    item.manyidea.roast_chicken_block: Roast Chicken Feast
+    item.manyidea.honey_glazed_ham_block: Honey Glazed Ham Feast
+    item.manyidea.stuffed_pumpkin_block: Stuffed Pumpkin Feast
+    item.manyidea.raw_beef_skewer: Raw Beef Skewer
+    item.manyidea.raw_chicken_skewer: Raw Chicken Skewer
+    item.manyidea.raw_cod_skewer: Raw Cod Skewer
+    item.manyidea.raw_salmon_skewer: Raw Salmon Skewer
+    item.manyidea.raw_lamb_skewer: Raw Lamb Skewer
+    item.manyidea.raw_rabbit_skewer: Raw Rabbit Skewer
+    item.manyidea.raw_pork_sausage_skewer: Raw Pork Sausage Skewer
+    item.manyidea.raw_mushroom_skewer: Raw Mushroom Skewer
+    item.manyidea.raw_potato_skewer: Raw Potato Skewer
+    item.manyidea.raw_vegetable_skewer: Raw Vegetable Skewer
+    item.manyidea.grilled_beef_skewer: Grilled Beef Skewer
+    item.manyidea.grilled_chicken_skewer: Grilled Chicken Skewer
+    item.manyidea.grilled_cod_skewer: Grilled Cod Skewer
+    item.manyidea.grilled_salmon_skewer: Grilled Salmon Skewer
+    item.manyidea.grilled_lamb_skewer: Grilled Lamb Skewer
+    item.manyidea.grilled_rabbit_skewer: Grilled Rabbit Skewer
+    item.manyidea.grilled_pork_sausage_skewer: Grilled Pork Sausage
+    item.manyidea.grilled_mushroom_skewer: Grilled Mushroom Skewer
+    item.manyidea.grilled_potato_skewer: Grilled Potato Skewer
+    item.manyidea.grilled_vegetable_skewer: Grilled Vegetable Skewer
+    item.manyidea.burnt_skewer: Burnt Skewer
+    item.manyidea.kebab_wrap: Kebab Wrap
+    item.manyidea.kebab_sandwich: Kebab Sandwich
+    item.manyidea.bibimbap: Bibimbap
+    item.manyidea.chili_powder: Chili Powder
+    item.manyidea.pepper_powder: Pepper Powder
+    item.manyidea.cumin_powder: Cumin Powder
+    item.manyidea.honey_mustard_sauce: Honey Mustard Sauce
+    item.manyidea.buffalo_sauce: Buffalo Sauce
+    item.manyidea.barbeque_sauce: Barbeque Sauce
+    item.manyidea.fish_and_chips: Fish and Chips
+    item.manyidea.stargazy_pie_slice: Stargazy Pie Slice
+    item.manyidea.quiche_lorraine_slice: Quiche Lorraine Slice
+    item.manyidea.yorkshire_pudding: Yorkshire Pudding
+    item.manyidea.beef_noodles: Beef Noodles
+    item.manyidea.cheese_wheel_slice: Cheese Wheel Slice
+    item.manyidea.phantom_dumplings: Phantom Dumplings
+    item.manyidea.phantom_puff: Phantom Puff
+    item.manyidea.green_tongue: Green Tongue
+    item.manyidea.spicy_strips: Spicy Strips
+    item.manyidea.raw_gluten: Raw Gluten
+    item.manyidea.gluten: Gluten
+    item.manyidea.gluten_skewer: Gluten Skewer
+    item.manyidea.roast_gluten: Roast Gluten
+    item.manyidea.raw_donkey_meat: Raw Donkey Meat
+    item.manyidea.cooked_donkey_meat: Cooked Donkey Meat
+    item.manyidea.donkey_burger: Donkey Burger
+    item.manyidea.bowl_of_paper_wrapped_fish: Bowl of Paper Wrapped Fish
+    item.manyidea.raw_chicken_bobo_chicken: Raw Chicken Bobo Chicken
+    item.manyidea.raw_cabbage_bobo_chicken: Raw Cabbage Bobo Chicken
+    item.manyidea.raw_potato_bobo_chicken: Raw Potato Bobo Chicken
+    item.manyidea.chicken_bobo_chicken: Chicken Bobo Chicken
+    item.manyidea.cabbage_bobo_chicken: Cabbage Bobo Chicken
+    item.manyidea.potato_bobo_chicken: Potato Bobo Chicken
+    item.manyidea.bowl_of_sweet_rice: Bowl of Sweet Rice
+    item.manyidea.bowl_of_fried_dumpling: Bowl of Fried Dumplings
+    item.manyidea.raw_fried_dumpling: Raw Fried Dumpling
+    item.manyidea.fried_dumpling: Fried Dumpling
+    item.manyidea.raw_spring_roll: Raw Spring Roll
+    item.manyidea.spring_roll: Spring Roll
+    item.manyidea.potato_slice: Potato Slice
+    item.manyidea.potato_chip: Potato Chip
+    item.manyidea.tonkatsu: Tonkatsu
+    item.manyidea.fried_chicken_chip: Fried Chicken Chips
+    item.manyidea.fried_fish: Fried Fish
+    item.manyidea.apple_pie: Apple Pie
+    item.manyidea.apple_pie_slice: Apple Pie Slice
+    item.manyidea.chocolate_pie: Chocolate Pie
+    item.manyidea.chocolate_pie_slice: Chocolate Pie Slice
+    item.manyidea.sweet_berry_cheesecake: Sweet Berry Cheesecake
+    item.manyidea.sweet_berry_cheesecake_slice: Cheesecake Slice
+    item.manyidea.pumpkin_pie_slice: Pumpkin Pie Slice
+    item.manyidea.honey_cookie: Honey Cookie
+    item.manyidea.sweet_berry_cookie: Sweet Berry Cookie
+    item.manyidea.glow_berry_custard: Glow Berry Custard
+    item.manyidea.pie_crust: Pie Crust
+    item.manyidea.melon_popsicle: Melon Popsicle
+    item.manyidea.pumpkin_soup: Pumpkin Soup
+    item.manyidea.beef_stew: Beef Stew
+    item.manyidea.fish_stew: Fish Stew
+    item.manyidea.baked_cod_stew: Baked Cod Stew
+    item.manyidea.vegetable_soup: Vegetable Soup
+    item.manyidea.onion_soup: Onion Soup
+    item.manyidea.bone_broth: Bone Broth
+    item.manyidea.noodle_soup: Noodle Soup
+    item.manyidea.melon_juice: Melon Juice
+    item.manyidea.apple_cider: Apple Cider
+    item.manyidea.hot_cocoa: Hot Cocoa
+    item.manyidea.milk_bottle: Milk Bottle
+    item.manyidea.raw_pasta: Raw Pasta
+    item.manyidea.pasta_with_meatballs: Pasta with Meatballs
+    item.manyidea.pasta_with_mutton_chop: Pasta with Mutton Chop
+    item.manyidea.squid_ink_pasta: Squid Ink Pasta
+    item.manyidea.vegetable_noodles: Vegetable Noodles
+    item.manyidea.rice: Rice
+    item.manyidea.rice_panicle: Rice Panicle
+    item.manyidea.cooked_rice: Cooked Rice
+    item.manyidea.fried_rice: Fried Rice
+    item.manyidea.mushroom_rice: Mushroom Rice
+    item.manyidea.ham: Ham
+    item.manyidea.smoked_ham: Smoked Ham
+    item.manyidea.roast_chicken: Roast Chicken
+    item.manyidea.roasted_mutton_chops: Roasted Mutton Chops
+    item.manyidea.grilled_salmon: Grilled Salmon
+    item.manyidea.steak_and_potatoes: Steak and Potatoes
+    item.manyidea.stuffed_potato: Stuffed Potato
+    item.manyidea.ratatouille: Ratatouille
+    item.manyidea.cod_roll: Cod Roll
+    item.manyidea.salmon_roll: Salmon Roll
+    item.manyidea.kelp_roll: Kelp Roll
+    item.manyidea.kelp_roll_slice: Kelp Roll Slice
+    item.manyidea.gleaming_salad: Gleaming Salad
+    item.manyidea.shepherds_pie: Shepherd's Pie
+    item.manyidea.shepherds_pie_block: Shepherd's Pie Feast
+    item.manyidea.gleaming_salad_block: Gleaming Salad Feast
+    item.manyidea.rice_roll_medley_block: Rice Roll Medley Feast
+    item.manyidea.durian_block: Durian Fruit
+    item.manyidea.mangosteen_cake_block: Mangosteen Cake
+    item.manyidea.fig_pudding_block: Fig Pudding
+    item.manyidea.straw: Straw
+    item.manyidea.rope: Rope
+    item.manyidea.cooking_pot: Cooking Pot
+    item.manyidea.grll: Grill
+    item.manyidea.basin: Basin
+    item.manyidea.tray: Tray
+    item.manyidea.deep_frying_pan: Deep Frying Pan
+    item.manyidea.stove: Stove
+    item.manyidea.stargazy_pie_block: Stargazy Pie Feast
+    item.manyidea.quiche_lorraine_block: Quiche Lorraine Feast
+    item.manyidea.raw_cheese_wheel_block: Raw Cheese Wheel
+    item.manyidea.cheese_wheel_block: Cheese Wheel
+    item.manyidea.paper_wrapped_fish_block: Paper Wrapped Fish Feast
+    item.manyidea.bobo_chicken_block: Bobo Chicken Feast
+    item.manyidea.spring_roll_medley_block: Spring Roll Medley
+    item.manyidea.plate_of_fried_dumpling_block: Plate of Fried Dumplings
+    item.manyidea.sweet_rice_block: Sweet Rice Feast
+    item.manyidea.blueberry_bush: Blueberry Bush
+    item.manyidea.cranberry_bush: Cranberry Bush
+    item.manyidea.pineapple_crop: Pineapple Crop
+    item.manyidea.pear_sapling: Pear Sapling
+    item.manyidea.pear_leaves: Pear Leaves
+    item.manyidea.hawberry_sapling: Hawberry Sapling
+    item.manyidea.hawberry_leaves: Hawberry Leaves
+    item.manyidea.lychee_sapling: Lychee Sapling
+    item.manyidea.lychee_leaves: Lychee Leaves
+    item.manyidea.mango_sapling: Mango Sapling
+    item.manyidea.mango_leaves: Mango Leaves
+    item.manyidea.persimmon_sapling: Persimmon Sapling
+    item.manyidea.persimmon_leaves: Persimmon Leaves
+    item.manyidea.peach_sapling: Peach Sapling
+    item.manyidea.peach_leaves: Peach Leaves
+    item.manyidea.orange_sapling: Orange Sapling
+    item.manyidea.orange_leaves: Orange Leaves
+    item.manyidea.apple_sapling: Apple Sapling
+    item.manyidea.apple_leaves: Apple Leaves
+    item.manyidea.mangosteen_sapling: Mangosteen Sapling
+    item.manyidea.mangosteen_leaves: Mangosteen Leaves
+    item.manyidea.bayberry_sapling: Bayberry Sapling
+    item.manyidea.bayberry_leaves: Bayberry Leaves
+    item.manyidea.kiwi_sapling: Kiwi Sapling
+    item.manyidea.kiwi_leaves: Kiwi Leaves
+    item.manyidea.fig_sapling: Fig Sapling
+    item.manyidea.fig_leaves: Fig Leaves
+    item.manyidea.durian_sapling: Durian Sapling
+    item.manyidea.durian_leaves: Durian Leaves
+    item.manyidea.beef_patty: Beef Patty
+    item.manyidea.nether_salad: Nether Salad
+    item.manyidea.dog_food: Dog Food
+    item.manyidea.horse_feed: Horse Feed
+    item.manyidea.rotten_tomato: Rotten Tomato
+    item.manyidea.carrot_crate: Carrot Crate
+    item.manyidea.potato_crate: Potato Crate
+    item.manyidea.beetroot_crate: Beetroot Crate
+    item.manyidea.cabbage_crate: Cabbage Crate
+    item.manyidea.tomato_crate: Tomato Crate
+    item.manyidea.onion_crate: Onion Crate
+    item.manyidea.bamboo_basket: Bamboo Basket
+    item.manyidea.wooden_basket: Wooden Basket
+
+lang#blocks:
+  en_us:
+    block_name:manyidea:cutting_board: Cutting Board
+    block_name:manyidea:stuffed_pumpkin_block: Stuffed Pumpkin Feast
+    block_name:manyidea:roast_chicken_block: Roast Chicken Feast
+    block_name:manyidea:honey_glazed_ham_block: Honey Glazed Ham Feast
+    block_name:manyidea:cooking_pot: Cooking Pot
+    block_name:manyidea:grill: Grill
+    block_name:manyidea:deep_frying_pan: Deep Frying Pan
+    block_name:manyidea:stove: Stove
+    block_name:manyidea:stargazy_pie_block: Stargazy Pie Feast
+    block_name:manyidea:quiche_lorraine_block: Quiche Lorraine Feast
+    block_name:manyidea:raw_cheese_wheel_block: Raw Cheese Wheel
+    block_name:manyidea:cheese_wheel_block: Cheese Wheel
+    block_name:manyidea:paper_wrapped_fish_block: Paper Wrapped Fish Feast
+    block_name:manyidea:bobo_chicken_block: Bobo Chicken Feast
+    block_name:manyidea:spring_roll_medley_block: Spring Roll Medley
+    block_name:manyidea:plate_of_fried_dumpling_block: Plate of Fried Dumplings
+    block_name:manyidea:sweet_rice_block: Sweet Rice Feast
+    block_name:manyidea:shepherds_pie_block: Shepherd's Pie Feast
+    block_name:manyidea:gleaming_salad_block: Gleaming Salad Feast
+    block_name:manyidea:rice_roll_medley_block: Rice Roll Medley Feast
+    block_name:manyidea:durian_block: Durian Fruit
+    block_name:manyidea:mangosteen_cake_block: Mangosteen Cake
+    block_name:manyidea:fig_pudding_block: Fig Pudding
+    block_name:manyidea:blueberry_bush: Blueberry Bush
+    block_name:manyidea:cranberry_bush: Cranberry Bush
+    block_name:manyidea:pineapple_crop: Pineapple Crop
+    block_name:manyidea:apple_jelly_block: Apple Jelly Block
+    block_name:manyidea:hawberry_jelly_block: Hawberry Jelly Block
+    block_name:manyidea:lychee_jelly_block: Lychee Jelly Block
+    block_name:manyidea:mango_jelly_block: Mango Jelly Block
+    block_name:manyidea:pear_jelly_block: Pear Jelly Block
+    block_name:manyidea:persimmon_jelly_block: Persimmon Jelly Block
+    block_name:manyidea:peach_jelly_block: Peach Jelly Block
+    block_name:manyidea:orange_jelly_block: Orange Jelly Block
+    block_name:manyidea:blueberry_jelly_block: Blueberry Jelly Block
+    block_name:manyidea:glowberry_jelly_block: Glowberry Jelly Block
+    block_name:manyidea:hamimelon: Hami Melon
+    block_name:manyidea:hamimelon_jelly_block: Hami Melon Jelly Block
+    block_name:manyidea:sweetberry_jelly_block: Sweetberry Jelly Block
+    block_name:manyidea:pineapple_jelly_block: Pineapple Jelly Block
+    block_name:manyidea:lemon_jelly_block: Lemon Jelly Block
+    block_name:manyidea:melon_jelly_block: Melon Jelly Block
+    block_name:manyidea:mangosteen_jelly_block: Mangosteen Jelly Block
+    block_name:manyidea:cranberry_jelly_block: Cranberry Jelly Block
+    block_name:manyidea:chorus_jelly_block: Chorus Jelly Block
+    block_name:manyidea:fig_jelly_block: Fig Jelly Block
+    block_name:manyidea:kiwi_jelly_block: Kiwi Jelly Block
+    block_name:manyidea:bayberry_jelly_block: Bayberry Jelly Block
+    block_name:manyidea:durian_jelly_block: Durian Jelly Block
+    block_name:manyidea:apple_jello_block: Apple Jello Block
+    block_name:manyidea:hawberry_jello_block: Hawberry Jello Block
+    block_name:manyidea:lychee_jello_block: Lychee Jello Block
+    block_name:manyidea:mango_jello_block: Mango Jello Block
+    block_name:manyidea:pear_jello_block: Pear Jello Block
+    block_name:manyidea:persimmon_jello_block: Persimmon Jello Block
+    block_name:manyidea:peach_jello_block: Peach Jello Block
+    block_name:manyidea:orange_jello_block: Orange Jello Block
+    block_name:manyidea:blueberry_jello_block: Blueberry Jello Block
+    block_name:manyidea:glowberry_jello_block: Glowberry Jello Block
+    block_name:manyidea:hamimelon_jello_block: Hami Melon Jello Block
+    block_name:manyidea:sweetberry_jello_block: Sweetberry Jello Block
+    block_name:manyidea:pineapple_jello_block: Pineapple Jello Block
+    block_name:manyidea:lemon_jello_block: Lemon Jello Block
+    block_name:manyidea:melon_jello_block: Melon Jello Block
+    block_name:manyidea:mangosteen_jello_block: Mangosteen Jello Block
+    block_name:manyidea:cranberry_jello_block: Cranberry Jello Block
+    block_name:manyidea:chorus_jello_block: Chorus Jello Block
+    block_name:manyidea:fig_jello_block: Fig Jello Block
+    block_name:manyidea:kiwi_jello_block: Kiwi Jello Block
+    block_name:manyidea:bayberry_jello_block: Bayberry Jello Block
+    block_name:manyidea:durian_jello_block: Durian Jello Block
+    block_name:manyidea:pear_sapling: Pear Sapling
+    block_name:manyidea:pear_leaves: Pear Leaves
+    block_name:manyidea:hawberry_sapling: Hawberry Sapling
+    block_name:manyidea:hawberry_leaves: Hawberry Leaves
+    block_name:manyidea:lychee_sapling: Lychee Sapling
+    block_name:manyidea:lychee_leaves: Lychee Leaves
+    block_name:manyidea:mango_sapling: Mango Sapling
+    block_name:manyidea:mango_leaves: Mango Leaves
+    block_name:manyidea:persimmon_sapling: Persimmon Sapling
+    block_name:manyidea:persimmon_leaves: Persimmon Leaves
+    block_name:manyidea:peach_sapling: Peach Sapling
+    block_name:manyidea:peach_leaves: Peach Leaves
+    block_name:manyidea:orange_sapling: Orange Sapling
+    block_name:manyidea:orange_leaves: Orange Leaves
+    block_name:manyidea:apple_sapling: Apple Sapling
+    block_name:manyidea:apple_leaves: Apple Leaves
+    block_name:manyidea:mangosteen_sapling: Mangosteen Sapling
+    block_name:manyidea:mangosteen_leaves: Mangosteen Leaves
+    block_name:manyidea:bayberry_sapling: Bayberry Sapling
+    block_name:manyidea:bayberry_leaves: Bayberry Leaves
+    block_name:manyidea:kiwi_sapling: Kiwi Sapling
+    block_name:manyidea:kiwi_leaves: Kiwi Leaves
+    block_name:manyidea:fig_sapling: Fig Sapling
+    block_name:manyidea:fig_leaves: Fig Leaves
+    block_name:manyidea:durian_sapling: Durian Sapling
+    block_name:manyidea:durian_leaves: Durian Leaves
+    container.manyidea:cooking_pot: "<!i><dark_gray><image:manyidea:cooking_pot_gui><shift:-160> Cooking Pot</dark_gray>"

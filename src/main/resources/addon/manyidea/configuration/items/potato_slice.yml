@@ -1,0 +1,6 @@
+items:
+  manyidea:potato_slice:
+    material: potato
+    texture: minecraft:item/custom/potato_slice
+    data:
+      item_name: <!i><white>生土豆片</white>

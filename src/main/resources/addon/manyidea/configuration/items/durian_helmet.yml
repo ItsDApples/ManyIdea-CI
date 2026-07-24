@@ -1,0 +1,16 @@
+items:
+  manyidea:durian_helmet:
+    material: leather_helmet
+    client_bound_material: paper
+    model: minecraft:item/custom/durian_helmet
+    data:
+      item_name: <!i><yellow>榴莲壳头盔</yellow>
+      max_damage: 220
+      equippable:
+        slot: head
+
+equipments:
+  manyidea:durian_helmet:
+    type: trim
+    humanoid: minecraft:entity/equipment/humanoid/durian_helmet
+    humanoid_leggings: minecraft:entity/equipment/humanoid_leggings/durian_helmet

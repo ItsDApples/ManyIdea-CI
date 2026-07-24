@@ -1,0 +1,21 @@
+items:
+  manyidea:durian_jam:
+    material: honey_bottle
+    texture: minecraft:item/custom/durian_jam
+    data:
+      item_name: <!i><gold>榴莲果酱</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+recipes:
+  manyidea:durian_jam:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:durian_flesh
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:durian_jam
+      count: 1

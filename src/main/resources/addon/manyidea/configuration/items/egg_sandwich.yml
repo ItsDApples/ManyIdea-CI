@@ -1,0 +1,21 @@
+items:
+  manyidea:egg_sandwich:
+    material: cooked_beef
+    texture: minecraft:item/custom/egg_sandwich
+    data:
+      item_name: <!i><gold>鸡蛋三明治</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 4.8
+
+recipes:
+  manyidea:egg_sandwich:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:bread
+      - manyidea:fried_egg
+    result:
+      id: manyidea:egg_sandwich
+      count: 1

@@ -1,0 +1,21 @@
+items:
+  manyidea:steak_and_potatoes:
+    material: cooked_beef
+    texture: minecraft:item/custom/steak_and_potatoes
+    data:
+      item_name: <!i><gold>牛排配土豆</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 12
+          saturation: 7.2
+
+recipes:
+  manyidea:steak_and_potatoes:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:cooked_beef
+      - minecraft:baked_potato
+    result:
+      id: manyidea:steak_and_potatoes
+      count: 1

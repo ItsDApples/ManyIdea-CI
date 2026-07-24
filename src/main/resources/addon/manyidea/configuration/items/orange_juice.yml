@@ -1,0 +1,22 @@
+items:
+  manyidea:orange_juice:
+    material: potion
+    texture: minecraft:item/custom/orange_juice
+    data:
+      item_name: <!i><#FFA500>橘子汁</#FFA500>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:orange_juice:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:orange
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:orange_juice
+      count: 1

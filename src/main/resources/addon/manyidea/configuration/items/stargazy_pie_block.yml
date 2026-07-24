@@ -1,0 +1,12 @@
+items:
+  manyidea:stargazy_pie_block:
+    material: bread
+    texture: minecraft:item/custom/stargazy_pie
+    data:
+      item_name: <!i><gold>仰望星空派宴席</gold>
+      lore:
+        - <!i><gray>右键取走一份</gray>
+        - <!i><gray>共 4 份</gray>
+    behavior:
+      type: block_item
+      block: manyidea:stargazy_pie_block

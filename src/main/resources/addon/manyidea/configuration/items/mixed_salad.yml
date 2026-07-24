@@ -1,0 +1,31 @@
+# 混合沙拉 - 碗装食物
+items:
+  manyidea:mixed_salad:
+    material: beetroot_soup
+    texture: minecraft:item/custom/mixed_salad
+    data:
+      item_name: <!i><green>混合沙拉</green>
+      lore:
+        - <!i><gray>食用后获得 3 分钟舒适效果</gray>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+    $$<=1.20.4:
+      settings:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:mixed_salad:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:beetroot
+      - minecraft:carrot
+      - minecraft:brown_mushroom
+      - minecraft:bowl
+    result:
+      id: manyidea:mixed_salad
+      count: 1

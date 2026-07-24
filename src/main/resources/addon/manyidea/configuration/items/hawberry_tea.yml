@@ -1,0 +1,22 @@
+items:
+  manyidea:hawberry_tea:
+    material: potion
+    texture: minecraft:item/custom/hawberry_tea
+    data:
+      item_name: <!i><red>山楂茶</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:hawberry_tea:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:hawberry
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:hawberry_tea
+      count: 1

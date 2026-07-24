@@ -1,0 +1,22 @@
+items:
+  manyidea:mangosteen_tea:
+    material: potion
+    texture: minecraft:item/custom/mangosteen_tea
+    data:
+      item_name: <!i><dark_purple>山竹清茶</dark_purple>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:mangosteen_tea:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:mangosteen
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:mangosteen_tea
+      count: 1

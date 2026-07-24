@@ -1,0 +1,21 @@
+blocks:
+  manyidea:stove:
+    state:
+      auto_state: note_block
+      model:
+        path: "minecraft:block/custom/stove"
+    settings:
+      hardness: 3.5
+      resistance: 6
+      luminance: 13
+      instrument: bass
+      map_color: 8
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.stone.break
+        fall: minecraft:block.stone.fall
+        hit: minecraft:block.stone.hit
+        place: minecraft:block.stone.place
+        step: minecraft:block.stone.step
+      tags:
+        - minecraft:mineable/pickaxe

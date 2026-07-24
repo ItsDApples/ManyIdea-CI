@@ -1,0 +1,6 @@
+items:
+  manyidea:raw_fried_dumpling:
+    material: beef
+    texture: minecraft:item/custom/raw_fried_dumpling
+    data:
+      item_name: <!i><white>生大炸饺</white>

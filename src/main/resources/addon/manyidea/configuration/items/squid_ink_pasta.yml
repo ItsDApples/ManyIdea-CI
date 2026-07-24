@@ -1,0 +1,21 @@
+items:
+  manyidea:squid_ink_pasta:
+    material: cooked_beef
+    texture: minecraft:item/custom/squid_ink_pasta
+    data:
+      item_name: <!i><dark_purple>墨鱼汁意面</dark_purple>
+      $$>=1.20.5:
+        food:
+          nutrition: 7
+          saturation: 4.2
+
+recipes:
+  manyidea:squid_ink_pasta:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_pasta
+      - minecraft:ink_sac
+    result:
+      id: manyidea:squid_ink_pasta
+      count: 1

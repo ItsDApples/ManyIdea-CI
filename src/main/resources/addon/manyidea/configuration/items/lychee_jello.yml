@@ -1,0 +1,20 @@
+items:
+  manyidea:lychee_jello:
+    material: honey_bottle
+    texture: minecraft:item/custom/lychee_jello
+    data:
+      item_name: <!i><gold>荔枝果冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+recipes:
+  manyidea:lychee_jello:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:lychee_jam
+      - minecraft:sugar
+    result:
+      id: manyidea:lychee_jello
+      count: 1

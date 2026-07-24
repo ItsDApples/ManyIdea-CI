@@ -1,0 +1,12 @@
+items:
+  manyidea:quiche_lorraine_block:
+    material: bread
+    texture: minecraft:item/custom/quiche_lorraine
+    data:
+      item_name: <!i><gold>洛林乳蛋饼宴席</gold>
+      lore:
+        - <!i><gray>右键取走一份</gray>
+        - <!i><gray>共 4 份</gray>
+    behavior:
+      type: block_item
+      block: manyidea:quiche_lorraine_block

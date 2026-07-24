@@ -1,0 +1,13 @@
+[versions]
+minecraft = "26.1.2"
+craft-engine = "26.7.4"
+
+run-task = "3.0.2"
+
+[libraries]
+craft-engine-core = { module = "net.momirealms:craft-engine-core", version.ref = "craft-engine" }
+craft-engine-bukkit = { module = "net.momirealms:craft-engine-bukkit", version.ref = "craft-engine" }
+craft-engine-adventure = {module = "net.momirealms:craft-engine-adventure", version.ref = "craft-engine"}
+
+[plugins]
+run-paper = { id = "xyz.jpenilla.run-paper", version.ref = "run-task" }

@@ -1,0 +1,22 @@
+items:
+  manyidea:onion_soup:
+    material: rabbit_stew
+    texture: minecraft:item/custom/onion_soup
+    data:
+      item_name: <!i><gold>洋葱汤</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:onion_soup:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:onion
+      - manyidea:onion
+      - minecraft:bowl
+    result:
+      id: manyidea:onion_soup
+      count: 1

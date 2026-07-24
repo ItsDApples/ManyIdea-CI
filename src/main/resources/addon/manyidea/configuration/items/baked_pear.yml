@@ -1,0 +1,21 @@
+items:
+  manyidea:baked_pear:
+    material: cooked_beef
+    texture: minecraft:item/custom/baked_pear
+    data:
+      item_name: <!i><gold>烤梨</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:baked_pear:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:pear
+      - minecraft:sugar
+    result:
+      id: manyidea:baked_pear
+      count: 1

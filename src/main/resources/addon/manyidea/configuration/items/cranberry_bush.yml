@@ -1,0 +1,8 @@
+items:
+  manyidea:cranberry_bush:
+    material: wheat_seeds
+    data:
+      item_name: <!i><green>蔓越莓丛</green>
+    behavior:
+      type: block_item
+      block: manyidea:cranberry_bush

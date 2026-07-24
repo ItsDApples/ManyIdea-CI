@@ -1,0 +1,8 @@
+items:
+  manyidea:cabbage_crop:
+    material: wheat_seeds
+    data:
+      item_name: <!i><green>卷心菜作物</green>
+    behavior:
+      type: block_item
+      block: manyidea:cabbage_crop

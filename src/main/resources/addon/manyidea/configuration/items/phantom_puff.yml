@@ -1,0 +1,10 @@
+items:
+  manyidea:phantom_puff:
+    material: cookie
+    texture: minecraft:item/custom/phantom_puff
+    data:
+      item_name: <!i><gold>幻翼泡芙</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 0.8

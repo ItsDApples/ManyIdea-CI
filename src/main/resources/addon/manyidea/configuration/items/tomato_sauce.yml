@@ -1,0 +1,13 @@
+# 番茄酱 - 由砧板加工番茄得到
+items:
+  manyidea:tomato_sauce:
+    material: cooked_beef
+    texture: minecraft:item/custom/tomato_sauce
+    data:
+      item_name: <!i><dark_red>番茄酱</dark_red>
+      lore:
+        - <!i><gray>用砧板和刀加工番茄获得</gray>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 1.6

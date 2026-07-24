@@ -1,0 +1,21 @@
+items:
+  manyidea:pasta_with_meatballs:
+    material: cooked_beef
+    texture: minecraft:item/custom/pasta_with_meatballs
+    data:
+      item_name: <!i><gold>肉丸意面</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 10
+          saturation: 6.0
+
+recipes:
+  manyidea:pasta_with_meatballs:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_pasta
+      - manyidea:minced_beef
+    result:
+      id: manyidea:pasta_with_meatballs
+      count: 1

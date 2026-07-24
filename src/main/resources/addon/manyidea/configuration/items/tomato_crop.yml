@@ -1,0 +1,8 @@
+items:
+  manyidea:tomato_crop:
+    material: wheat_seeds
+    data:
+      item_name: <!i><green>番茄作物</green>
+    behavior:
+      type: block_item
+      block: manyidea:tomato_crop

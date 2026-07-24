@@ -1,0 +1,39 @@
+blocks:
+  manyidea:hamimelon_stem:
+    state:
+      auto_state: lower_tripwire
+      model:
+        path: "minecraft:block/custom/hamimelon_stem"
+        generation:
+          parent: "minecraft:block/stem_fruit"
+          textures:
+            stem: "minecraft:block/custom/hamimelon_stem"
+            upperstem: "minecraft:block/custom/attached_hamimelon_stem"
+    settings:
+      hardness: 0
+      resistance: 0
+      push_reaction: DESTROY
+      tags:
+        - minecraft:mineable/axe
+
+  manyidea:attached_hamimelon_stem:
+    state:
+      auto_state: lower_tripwire
+      model:
+        path: "minecraft:block/custom/attached_hamimelon_stem"
+        generation:
+          parent: "minecraft:block/stem_fruit"
+          textures:
+            stem: "minecraft:block/custom/hamimelon_stem"
+            upperstem: "minecraft:block/custom/attached_hamimelon_stem"
+    settings:
+      hardness: 0
+      resistance: 0
+      push_reaction: DESTROY
+      tags:
+        - minecraft:mineable/axe
+    behavior:
+      type: sturdy_base_block
+      direction: down
+      support_types:
+        - full

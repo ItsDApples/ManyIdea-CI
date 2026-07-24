@@ -1,0 +1,20 @@
+items:
+  manyidea:mangosteen_jello:
+    material: honey_bottle
+    texture: minecraft:item/custom/mangosteen_jello
+    data:
+      item_name: <!i><gold>山竹果冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+recipes:
+  manyidea:mangosteen_jello:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:mangosteen_jam
+      - minecraft:sugar
+    result:
+      id: manyidea:mangosteen_jello
+      count: 1

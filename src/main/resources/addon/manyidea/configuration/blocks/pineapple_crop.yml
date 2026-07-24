@@ -1,0 +1,74 @@
+blocks:
+  manyidea:pineapple_crop:
+    states:
+      properties:
+        age:
+          type: int
+          range: 0~5
+          default: 0
+      appearances:
+        stage0:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/pineapple_stage_0"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/pineapple_stage_0"
+        stage1:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/pineapple_stage_1"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/pineapple_stage_1"
+        stage2:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/pineapple_stage_2"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/pineapple_stage_2"
+        stage3:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/pineapple_stage_3"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/pineapple_stage_3"
+        stage4:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/pineapple_stage_4"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/pineapple_stage_4"
+      variants:
+        "age=0":
+          appearance: stage0
+        "age=1":
+          appearance: stage0
+        "age=2":
+          appearance: stage1
+        "age=3":
+          appearance: stage2
+        "age=4":
+          appearance: stage3
+        "age=5":
+          appearance: stage4
+    settings:
+      hardness: 0
+      resistance: 0
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.crop.break
+      tags:
+        - minecraft:mineable/axe
+    behavior:
+      type: crop_block
+      age: 5
+      grow_speed: 0.2

@@ -1,0 +1,22 @@
+items:
+  manyidea:fried_rice:
+    material: cooked_beef
+    texture: minecraft:item/custom/fried_rice
+    data:
+      item_name: <!i><gold>炒饭</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 9
+          saturation: 5.4
+
+recipes:
+  manyidea:fried_rice:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:cooked_rice
+      - manyidea:fried_egg
+      - manyidea:bacon
+    result:
+      id: manyidea:fried_rice
+      count: 1

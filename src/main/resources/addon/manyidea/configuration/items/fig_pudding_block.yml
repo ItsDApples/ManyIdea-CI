@@ -1,0 +1,9 @@
+items:
+  manyidea:fig_pudding_block:
+    material: cake
+    model: minecraft:block/custom/fig_pudding_block
+    data:
+      item_name: "<!i><gold>无花果布丁</gold>"
+    behavior:
+      type: block_item
+      block: manyidea:fig_pudding_block

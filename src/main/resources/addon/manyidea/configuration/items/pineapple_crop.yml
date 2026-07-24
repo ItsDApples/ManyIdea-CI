@@ -1,0 +1,8 @@
+items:
+  manyidea:pineapple_crop:
+    material: wheat_seeds
+    data:
+      item_name: <!i><green>菠萝作物</green>
+    behavior:
+      type: block_item
+      block: manyidea:pineapple_crop

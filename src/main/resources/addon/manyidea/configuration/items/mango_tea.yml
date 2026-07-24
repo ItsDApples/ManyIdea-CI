@@ -1,0 +1,22 @@
+items:
+  manyidea:mango_tea:
+    material: potion
+    texture: minecraft:item/custom/mango_tea
+    data:
+      item_name: <!i><yellow>芒果茶</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:mango_tea:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:mango
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:mango_tea
+      count: 1

@@ -1,0 +1,20 @@
+items:
+  manyidea:netherite_knife:
+    material: netherite_sword
+    texture: minecraft:item/custom/netherite_knife
+    data:
+      item_name: <!i><dark_purple>下界合金刀</dark_purple>
+      lore:
+        - <!i><gray>用于在砧板上加工食材</gray>
+      max_damage: 1024
+
+recipes:
+  manyidea:netherite_knife:
+    type: shapeless
+    category: EQUIPMENT
+    ingredients:
+      - manyidea:diamond_knife
+      - minecraft:netherite_ingot
+    result:
+      id: manyidea:netherite_knife
+      count: 1

@@ -1,0 +1,21 @@
+items:
+  manyidea:grilled_potato_skewer:
+    material: cooked_beef
+    texture: minecraft:item/custom/grilled_potato_skewer
+    data:
+      item_name: <!i><gold>烤土豆串</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:grilled_potato_skewer:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_potato_skewer
+      - minecraft:coal
+    result:
+      id: manyidea:grilled_potato_skewer
+      count: 1

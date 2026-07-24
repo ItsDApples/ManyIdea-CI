@@ -1,0 +1,23 @@
+items:
+  manyidea:hot_cocoa:
+    material: potion
+    texture: minecraft:item/custom/hot_cocoa
+    data:
+      item_name: <!i><gold>热可可</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:hot_cocoa:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:cocoa_beans
+      - minecraft:milk_bucket
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:hot_cocoa
+      count: 1

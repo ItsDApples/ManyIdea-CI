@@ -1,0 +1,9 @@
+items:
+  manyidea:durian_block:
+    material: cake
+    model: minecraft:block/custom/durian_block
+    data:
+      item_name: "<!i><gold>榴莲果实</gold>"
+    behavior:
+      type: block_item
+      block: manyidea:durian_block

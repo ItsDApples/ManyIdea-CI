@@ -1,0 +1,267 @@
+placed_features:
+  # ============ FD Wild Crops ============
+  manyidea:wild_cabbages:
+    biome:
+      - minecraft:plains
+      - minecraft:sunflower_plains
+      - minecraft:forest
+      - minecraft:flower_forest
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:cabbage_crop'
+            Properties:
+              age: '4'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 30
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_onions:
+    biome:
+      - minecraft:plains
+      - minecraft:sunflower_plains
+      - minecraft:savanna
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:onion_crop'
+            Properties:
+              age: '4'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 30
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_tomatoes:
+    biome:
+      - minecraft:plains
+      - minecraft:savanna
+      - minecraft:savanna_plateau
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:tomato_crop'
+            Properties:
+              age: '4'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 25
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_carrots:
+    biome:
+      - minecraft:plains
+      - minecraft:sunflower_plains
+      - minecraft:forest
+    feature:
+      type: 'minecraft:simple_block'
+      config:
+        to_place:
+          type: 'minecraft:simple_state_provider'
+          state:
+            Name: 'minecraft:carrots'
+            Properties:
+              age: '7'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 30
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_potatoes:
+    biome:
+      - minecraft:plains
+      - minecraft:taiga
+      - minecraft:snowy_plains
+    feature:
+      type: 'minecraft:simple_block'
+      config:
+        to_place:
+          type: 'minecraft:simple_state_provider'
+          state:
+            Name: 'minecraft:potatoes'
+            Properties:
+              age: '7'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 30
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_beetroots:
+    biome:
+      - minecraft:plains
+      - minecraft:forest
+      - minecraft:flower_forest
+    feature:
+      type: 'minecraft:simple_block'
+      config:
+        to_place:
+          type: 'minecraft:simple_state_provider'
+          state:
+            Name: 'minecraft:beetroots'
+            Properties:
+              age: '3'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 30
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_rice:
+    biome:
+      - minecraft:swamp
+      - minecraft:mangrove_swamp
+      - minecraft:river
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:rice_crop'
+            Properties:
+              age: '4'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 20
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:sandy_shrub:
+    biome:
+      - minecraft:desert
+      - minecraft:badlands
+      - minecraft:beach
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:blueberry_bush'
+            Properties:
+              age: '0'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 40
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  # ============ Fruit Bushes ============
+  manyidea:wild_blueberry:
+    biome:
+      - minecraft:taiga
+      - minecraft:old_growth_pine_taiga
+      - minecraft:old_growth_spruce_taiga
+      - minecraft:forest
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:blueberry_bush'
+            Properties:
+              age: '2'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 35
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_cranberry:
+    biome:
+      - minecraft:swamp
+      - minecraft:mangrove_swamp
+      - minecraft:taiga
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:cranberry_bush'
+            Properties:
+              age: '4'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 30
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_pineapple:
+    biome:
+      - minecraft:jungle
+      - minecraft:sparse_jungle
+      - minecraft:bamboo_jungle
+      - minecraft:beach
+    feature:
+      type: 'craftengine:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:pineapple_crop'
+            Properties:
+              age: '5'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 20
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'
+
+  manyidea:wild_hamimelon:
+    biome:
+      - minecraft:jungle
+      - minecraft:sparse_jungle
+      - minecraft:savanna
+    feature:
+      type: 'minecraft:simple_block'
+      config:
+        to_place:
+          type: 'craftengine:simple_state_provider'
+          state:
+            Name: 'manyidea:hamimelon'
+    placement:
+      - type: 'minecraft:rarity_filter'
+        chance: 40
+      - type: 'minecraft:in_square'
+      - type: 'minecraft:heightmap'
+        heightmap: WORLD_SURFACE
+      - type: 'minecraft:biome'

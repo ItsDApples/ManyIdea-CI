@@ -1,0 +1,10 @@
+items:
+  manyidea:blueberry:
+    material: apple
+    texture: minecraft:item/custom/blueberry
+    data:
+      item_name: <!i><blue>蓝莓</blue>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

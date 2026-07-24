@@ -1,0 +1,10 @@
+items:
+  manyidea:apple_pie_slice:
+    material: cookie
+    texture: minecraft:item/custom/apple_pie_slice
+    data:
+      item_name: <!i><gold>苹果派切片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8

@@ -1,0 +1,12 @@
+items:
+  manyidea:sweet_rice_block:
+    material: bread
+    texture: minecraft:item/custom/sweet_rice
+    data:
+      item_name: <!i><gold>八宝饭</gold>
+      lore:
+        - <!i><gray>右键取走一份</gray>
+        - <!i><gray>共 4 份</gray>
+    behavior:
+      type: block_item
+      block: manyidea:sweet_rice_block

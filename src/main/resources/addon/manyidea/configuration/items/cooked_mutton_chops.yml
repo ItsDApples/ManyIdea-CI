@@ -1,0 +1,10 @@
+items:
+  manyidea:cooked_mutton_chops:
+    material: cooked_mutton
+    texture: minecraft:item/custom/cooked_mutton_chops
+    data:
+      item_name: <!i><gold>熟羊肉片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 5.4

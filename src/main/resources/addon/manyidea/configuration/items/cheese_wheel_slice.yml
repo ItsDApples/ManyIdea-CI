@@ -1,0 +1,10 @@
+items:
+  manyidea:cheese_wheel_slice:
+    material: cookie
+    texture: minecraft:item/custom/cheese_wheel_slice
+    data:
+      item_name: <!i><gold>芝士片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 0.5

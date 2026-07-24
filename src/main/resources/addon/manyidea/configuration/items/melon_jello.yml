@@ -1,0 +1,20 @@
+items:
+  manyidea:melon_jello:
+    material: honey_bottle
+    texture: minecraft:item/custom/melon_jello
+    data:
+      item_name: <!i><gold>西瓜果冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+recipes:
+  manyidea:melon_jello:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:melon_jam
+      - minecraft:sugar
+    result:
+      id: manyidea:melon_jello
+      count: 1

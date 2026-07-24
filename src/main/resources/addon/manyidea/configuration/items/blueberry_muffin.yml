@@ -1,0 +1,22 @@
+items:
+  manyidea:blueberry_muffin:
+    material: cooked_beef
+    texture: minecraft:item/custom/blueberry_muffin
+    data:
+      item_name: <!i><gold>蓝莓玛芬</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:blueberry_muffin:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:blueberry
+      - minecraft:wheat
+      - minecraft:sugar
+    result:
+      id: manyidea:blueberry_muffin
+      count: 1

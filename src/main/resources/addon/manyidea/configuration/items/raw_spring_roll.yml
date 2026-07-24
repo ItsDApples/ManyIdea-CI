@@ -1,0 +1,6 @@
+items:
+  manyidea:raw_spring_roll:
+    material: paper
+    texture: minecraft:item/custom/raw_spring_roll
+    data:
+      item_name: <!i><white>生春卷</white>

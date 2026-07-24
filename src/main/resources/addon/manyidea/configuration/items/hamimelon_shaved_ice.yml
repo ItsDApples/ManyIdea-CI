@@ -1,0 +1,22 @@
+items:
+  manyidea:hamimelon_shaved_ice:
+    material: honey_bottle
+    texture: minecraft:item/custom/hamimelon_shaved_ice
+    data:
+      item_name: <!i><yellow>蜜瓜冰沙</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:hamimelon_shaved_ice:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:hamimelon_slice
+      - minecraft:ice
+      - minecraft:sugar
+    result:
+      id: manyidea:hamimelon_shaved_ice
+      count: 1

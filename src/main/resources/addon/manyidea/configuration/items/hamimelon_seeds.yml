@@ -1,0 +1,9 @@
+items:
+  manyidea:hamimelon_seeds:
+    material: melon_seeds
+    texture: minecraft:item/custom/hamimelon_seeds
+    data:
+      item_name: <!i><green>哈密瓜籽</green>
+    behavior:
+      type: block_item
+      block: manyidea:hamimelon_stem

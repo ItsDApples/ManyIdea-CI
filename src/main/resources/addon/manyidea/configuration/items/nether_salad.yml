@@ -1,0 +1,6 @@
+items:
+  manyidea:nether_salad:
+    material: bowl
+    texture: minecraft:item/custom/nether_salad
+    data:
+      item_name: "<!i><dark_red>下界沙拉</dark_red>"

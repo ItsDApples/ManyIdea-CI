@@ -1,0 +1,6 @@
+items:
+  manyidea:gluten:
+    material: paper
+    texture: minecraft:item/custom/gluten
+    data:
+      item_name: <!i><white>面筋</white>

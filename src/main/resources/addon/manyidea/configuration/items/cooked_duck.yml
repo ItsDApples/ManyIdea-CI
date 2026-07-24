@@ -1,0 +1,11 @@
+# 熟鸭肉 - 对标 UntitledDuckMod cooked_duck
+items:
+  manyidea:cooked_duck:
+    material: COOKED_CHICKEN
+    texture: manyidea:item/food/cooked_duck
+    data:
+      item_name: <!i><#C49C48>熟鸭肉</#C49C48>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 8.0

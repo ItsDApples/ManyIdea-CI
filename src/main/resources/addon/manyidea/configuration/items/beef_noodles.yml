@@ -1,0 +1,10 @@
+items:
+  manyidea:beef_noodles:
+    material: rabbit_stew
+    texture: minecraft:item/custom/beef_noodles
+    data:
+      item_name: <!i><gold>牛肉板面</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 10
+          saturation: 0.6

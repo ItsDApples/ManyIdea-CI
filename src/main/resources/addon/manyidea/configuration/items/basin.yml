@@ -1,0 +1,9 @@
+items:
+  manyidea:basin:
+    material: cauldron
+    model: minecraft:block/custom/basin
+    data:
+      item_name: <!i><gold>配料盆</gold>
+    behavior:
+      type: block_item
+      block: manyidea:basin

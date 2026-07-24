@@ -1,0 +1,22 @@
+items:
+  manyidea:lemon_juice:
+    material: potion
+    texture: minecraft:item/custom/lemon_juice
+    data:
+      item_name: <!i><yellow>柠檬水</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+
+recipes:
+  manyidea:lemon_juice:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:lemon
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:lemon_juice
+      count: 1

@@ -1,0 +1,10 @@
+items:
+  manyidea:orange:
+    material: apple
+    texture: minecraft:item/custom/orange
+    data:
+      item_name: <!i><#FFA500>橘子</#FFA500>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

@@ -1,0 +1,20 @@
+items:
+  manyidea:pineapple_jello:
+    material: honey_bottle
+    texture: minecraft:item/custom/pineapple_jello
+    data:
+      item_name: <!i><gold>菠萝果冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+recipes:
+  manyidea:pineapple_jello:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:pineapple_jam
+      - minecraft:sugar
+    result:
+      id: manyidea:pineapple_jello
+      count: 1

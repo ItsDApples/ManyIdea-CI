@@ -1,0 +1,21 @@
+blocks:
+  manyidea:gleaming_salad_block:
+    state:
+      auto_state: lower_tripwire
+      model:
+        path: "minecraft:block/custom/gleaming_salad_block"
+    settings:
+      hardness: 2
+      resistance: 2
+      instrument: bass
+      map_color: 7
+      light_emission: 12
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.wood.break
+        fall: minecraft:block.wood.fall
+        hit: minecraft:block.wood.hit
+        place: minecraft:block.wood.place
+        step: minecraft:block.wood.step
+      tags:
+        - minecraft:mineable/axe

@@ -1,0 +1,10 @@
+items:
+  manyidea:hawberry:
+    material: apple
+    texture: minecraft:item/custom/hawberry
+    data:
+      item_name: <!i><red>山楂</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

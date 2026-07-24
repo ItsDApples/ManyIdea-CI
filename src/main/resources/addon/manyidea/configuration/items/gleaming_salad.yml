@@ -1,0 +1,21 @@
+items:
+  manyidea:gleaming_salad:
+    material: cooked_beef
+    texture: minecraft:item/custom/gleaming_salad
+    data:
+      item_name: <!i><gold>闪光沙拉</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 4.8
+
+recipes:
+  manyidea:gleaming_salad:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:fruit_salad
+      - minecraft:glow_berries
+    result:
+      id: manyidea:gleaming_salad
+      count: 1

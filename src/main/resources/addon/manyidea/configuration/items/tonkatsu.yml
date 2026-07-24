@@ -1,0 +1,21 @@
+items:
+  manyidea:tonkatsu:
+    material: cooked_porkchop
+    texture: minecraft:item/custom/tonkatsu
+    data:
+      item_name: <!i><gold>炸猪排</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 0.85
+
+recipes:
+  manyidea:tonkatsu:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:porkchop
+      - minecraft:coal
+    result:
+      id: manyidea:tonkatsu
+      count: 1

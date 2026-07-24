@@ -1,0 +1,6 @@
+items:
+  manyidea:raw_pork_sausage_skewer:
+    material: porkchop
+    texture: minecraft:item/custom/raw_pork_sausage_skewer
+    data:
+      item_name: <!i><white>猪肉香肠串</white>

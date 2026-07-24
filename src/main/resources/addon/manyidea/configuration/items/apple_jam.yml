@@ -1,0 +1,22 @@
+items:
+  manyidea:apple_jam:
+    material: honey_bottle
+    texture: minecraft:item/custom/apple_jam
+    data:
+      item_name: <!i><gold>苹果果酱</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:apple_jam:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:apple
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:apple_jam
+      count: 1

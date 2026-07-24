@@ -1,0 +1,10 @@
+items:
+  manyidea:stargazy_pie_slice:
+    material: cookie
+    texture: minecraft:item/custom/stargazy_pie_slice
+    data:
+      item_name: <!i><gold>仰望星空派切片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 0.5

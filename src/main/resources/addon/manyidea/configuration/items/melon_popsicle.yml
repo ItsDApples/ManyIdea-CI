@@ -1,0 +1,22 @@
+items:
+  manyidea:melon_popsicle:
+    material: honey_bottle
+    texture: minecraft:item/custom/melon_popsicle
+    data:
+      item_name: <!i><gold>西瓜冰棍</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:melon_popsicle:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:melon_juice
+      - minecraft:stick
+      - minecraft:ice
+    result:
+      id: manyidea:melon_popsicle
+      count: 1

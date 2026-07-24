@@ -1,0 +1,9 @@
+items:
+  manyidea:bamboo_basket:
+    material: bamboo_planks
+    model: minecraft:block/custom/bamboo_basket
+    data:
+      item_name: "<!i><gold>竹篮</gold>"
+    behavior:
+      type: block_item
+      block: manyidea:bamboo_basket

@@ -1,0 +1,38 @@
+# 蜜汁火腿宴席 - Farmer's Delight honey_glazed_ham_block
+items:
+  manyidea:honey_glazed_ham_block:
+    data:
+      item_name: <!i><gold>蜜汁火腿宴席</gold>
+      lore:
+        - <!i><gray>右键取走一份火腿</gray>
+        - <!i><gray>共 4 份</gray>
+    model: minecraft:block/custom/honey_glazed_ham_block
+    behavior:
+      type: block_item
+      block:
+        loot:
+          pools:
+            - rolls: 1
+              entries:
+                - type: item
+                  item: manyidea:honey_glazed_ham_block
+        settings:
+          hardness: 2
+          resistance: 2
+          instrument: bass
+          map_color: 12
+          push_reaction: destroy
+          is_suffocating: false
+          is_redstone_conductor: false
+          tags:
+            - minecraft:mineable/axe
+          sounds:
+            break: minecraft:block.wood.break
+            fall: minecraft:block.wood.fall
+            hit: minecraft:block.wood.hit
+            place: minecraft:block.wood.place
+            step: minecraft:block.wood.step
+        state:
+          auto_state: lower_tripwire
+          model:
+            path: minecraft:block/custom/honey_glazed_ham_block

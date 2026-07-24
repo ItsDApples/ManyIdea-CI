@@ -1,0 +1,23 @@
+items:
+  manyidea:fish_stew:
+    material: rabbit_stew
+    texture: minecraft:item/custom/fish_stew
+    data:
+      item_name: <!i><gold>炖鱼</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 4.8
+
+recipes:
+  manyidea:fish_stew:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:cod_slice
+      - manyidea:tomato
+      - manyidea:onion
+      - minecraft:bowl
+    result:
+      id: manyidea:fish_stew
+      count: 1

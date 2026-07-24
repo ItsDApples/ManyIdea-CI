@@ -1,0 +1,23 @@
+items:
+  manyidea:apple_pie:
+    material: pumpkin_pie
+    texture: minecraft:item/custom/apple_pie
+    data:
+      item_name: <!i><gold>苹果派</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 4.8
+
+recipes:
+  manyidea:apple_pie:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:pie_crust
+      - minecraft:apple
+      - minecraft:sugar
+      - minecraft:egg
+    result:
+      id: manyidea:apple_pie
+      count: 1

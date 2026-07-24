@@ -1,0 +1,10 @@
+items:
+  manyidea:mango:
+    material: apple
+    texture: minecraft:item/custom/mango
+    data:
+      item_name: <!i><yellow>芒果</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

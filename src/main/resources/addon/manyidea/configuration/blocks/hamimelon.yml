@@ -1,0 +1,23 @@
+blocks:
+  manyidea:hamimelon:
+    state:
+      auto_state: note_block
+      model:
+        texture: "minecraft:block/custom/hamimelon_side"
+        generation:
+          parent: "minecraft:block/cube_column"
+          textures:
+            end: "minecraft:block/custom/hamimelon_top"
+            side: "minecraft:block/custom/hamimelon_side"
+    settings:
+      hardness: 1
+      resistance: 1
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.wood.break
+        fall: minecraft:block.wood.fall
+        hit: minecraft:block.wood.hit
+        place: minecraft:block.wood.place
+        step: minecraft:block.wood.step
+      tags:
+        - minecraft:mineable/axe

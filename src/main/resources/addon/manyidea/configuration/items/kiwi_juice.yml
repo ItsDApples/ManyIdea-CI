@@ -1,0 +1,22 @@
+items:
+  manyidea:kiwi_juice:
+    material: potion
+    texture: minecraft:item/custom/kiwi_juice
+    data:
+      item_name: <!i><green>猕猴桃饮</green>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:kiwi_juice:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:kiwi
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:kiwi_juice
+      count: 1

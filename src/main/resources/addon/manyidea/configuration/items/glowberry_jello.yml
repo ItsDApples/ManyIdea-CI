@@ -1,0 +1,20 @@
+items:
+  manyidea:glowberry_jello:
+    material: honey_bottle
+    texture: minecraft:item/custom/glowberry_jello
+    data:
+      item_name: <!i><gold>发光莓果冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+recipes:
+  manyidea:glowberry_jello:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:glowberry_jam
+      - minecraft:sugar
+    result:
+      id: manyidea:glowberry_jello
+      count: 1

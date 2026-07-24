@@ -1,0 +1,21 @@
+items:
+  manyidea:jelly_bread:
+    material: cooked_beef
+    texture: minecraft:item/custom/jelly_bread
+    data:
+      item_name: <!i><gold>果酱面包</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:jelly_bread:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:bread
+      - minecraft:sugar
+    result:
+      id: manyidea:jelly_bread
+      count: 1

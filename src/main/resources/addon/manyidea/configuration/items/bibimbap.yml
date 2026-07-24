@@ -1,0 +1,10 @@
+items:
+  manyidea:bibimbap:
+    material: rabbit_stew
+    texture: minecraft:item/custom/bibimbap
+    data:
+      item_name: <!i><gold>烤肉盖饭</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 16
+          saturation: 11.2

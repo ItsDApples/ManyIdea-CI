@@ -1,0 +1,6 @@
+items:
+  manyidea:tomato_seeds:
+    material: wheat_seeds
+    texture: minecraft:item/custom/tomato_seeds
+    data:
+      item_name: <!i><green>番茄种子</green>

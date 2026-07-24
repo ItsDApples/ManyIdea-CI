@@ -1,0 +1,10 @@
+items:
+  manyidea:lemon_slice:
+    material: cookie
+    texture: minecraft:item/custom/lemon_slice
+    data:
+      item_name: <!i><yellow>黄柠檬片</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 1
+          saturation: 0.6

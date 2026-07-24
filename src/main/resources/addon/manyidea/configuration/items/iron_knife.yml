@@ -1,0 +1,32 @@
+# 铁刀 - 砧板加工工具
+items:
+  manyidea:iron_knife:
+    material: iron_sword
+    texture: minecraft:item/custom/iron_knife
+    data:
+      item_name: <!i><white>铁刀</white>
+      lore:
+        - <!i><gray>用于在砧板上加工食材</gray>
+      max_damage: 128
+
+recipes:
+  manyidea:iron_knife:
+    type: shaped
+    category: EQUIPMENT
+    pattern:
+      - '  A'
+      - ' B '
+    ingredients:
+      A: minecraft:iron_ingot
+      B: minecraft:stick
+    result:
+      id: manyidea:iron_knife
+      count: 1
+
+events:
+  - on: craft
+    functions:
+      - type: toast
+        toast: "厨具入门"
+        icon: manyidea:iron_knife
+        advancement_type: task

@@ -1,0 +1,22 @@
+blocks:
+  manyidea:tray:
+    state:
+      auto_state: lower_tripwire
+      model:
+        path: "minecraft:block/custom/tray"
+        generation:
+          parent: "minecraft:block/carpet"
+          textures:
+            wool: "minecraft:block/custom/crate_bottom"
+    settings:
+      hardness: 1.5
+      resistance: 1.5
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.wood.break
+        fall: minecraft:block.wood.fall
+        hit: minecraft:block.wood.hit
+        place: minecraft:block.wood.place
+        step: minecraft:block.wood.step
+      tags:
+        - minecraft:mineable/axe

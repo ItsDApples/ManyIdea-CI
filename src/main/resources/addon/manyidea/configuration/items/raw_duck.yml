@@ -1,0 +1,11 @@
+# 生鸭肉 - 对标 UntitledDuckMod raw_duck
+items:
+  manyidea:raw_duck:
+    material: COOKED_CHICKEN
+    texture: manyidea:item/food/raw_duck
+    data:
+      item_name: <!i><#D4A574>生鸭肉</#D4A574>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 3.6

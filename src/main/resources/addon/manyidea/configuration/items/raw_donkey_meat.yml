@@ -1,0 +1,10 @@
+items:
+  manyidea:raw_donkey_meat:
+    material: beef
+    texture: minecraft:item/custom/raw_donkey_meat
+    data:
+      item_name: <!i><gold>生驴肉</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 0.3

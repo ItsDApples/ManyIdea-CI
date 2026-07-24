@@ -1,0 +1,22 @@
+items:
+  manyidea:lemon_tart:
+    material: cooked_beef
+    texture: minecraft:item/custom/lemon_tart
+    data:
+      item_name: <!i><gold>柠檬蛋挞</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:lemon_tart:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:lemon
+      - minecraft:egg
+      - minecraft:sugar
+    result:
+      id: manyidea:lemon_tart
+      count: 1

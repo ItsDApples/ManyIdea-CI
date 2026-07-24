@@ -1,0 +1,11 @@
+# 番茄 - 基础食材
+items:
+  manyidea:tomato:
+    material: apple
+    texture: minecraft:item/custom/tomato
+    data:
+      item_name: <!i><red>番茄</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 1
+          saturation: 0.6

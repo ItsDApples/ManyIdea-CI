@@ -1,0 +1,6 @@
+items:
+  manyidea:durian_seed:
+    material: wheat_seeds
+    texture: minecraft:item/custom/durian_seed
+    data:
+      item_name: <!i><yellow>榴莲种子</yellow>

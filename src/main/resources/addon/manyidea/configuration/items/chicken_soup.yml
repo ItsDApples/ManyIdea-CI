@@ -1,0 +1,41 @@
+# 鸡汤 - 碗装食物（参考 Farmer's Delight）
+# nutrition=12, saturation=0.8, comfort 3 分钟
+items:
+  manyidea:chicken_soup:
+    material: rabbit_stew
+    texture: minecraft:item/custom/chicken_soup
+    data:
+      item_name: <!i><gold>鸡肉汤</gold>
+      lore:
+        - <!i><gray>一碗暖心的鸡汤</gray>
+        - <!i><gray>食用后获得 3 分钟舒适效果</gray>
+      $$>=1.20.5:
+        food:
+          nutrition: 12
+          saturation: 9.6
+    $$<=1.20.4:
+      settings:
+        food:
+          nutrition: 12
+          saturation: 9.6
+
+recipes:
+  manyidea:chicken_soup:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:cooked_chicken
+      - minecraft:carrot
+      - minecraft:wheat
+      - minecraft:bowl
+    result:
+      id: manyidea:chicken_soup
+      count: 1
+
+events:
+  - on: consume
+    functions:
+      - type: toast
+        toast: "暖心鸡汤！"
+        icon: manyidea:chicken_soup
+        advancement_type: goal

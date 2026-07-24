@@ -1,0 +1,23 @@
+items:
+  manyidea:grill:
+    material: iron_block
+    model: minecraft:block/custom/grill
+    data:
+      item_name: <!i><gray>烧烤架</gray>
+    behavior:
+      type: block_item
+      block: manyidea:grill
+
+recipes:
+  manyidea:grill:
+    type: shaped
+    category: MISC
+    pattern:
+      - 'AAA'
+      - 'B B'
+    ingredients:
+      A: minecraft:iron_ingot
+      B: minecraft:iron_bars
+    result:
+      id: manyidea:grill
+      count: 1

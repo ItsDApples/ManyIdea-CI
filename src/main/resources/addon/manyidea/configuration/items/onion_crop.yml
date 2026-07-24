@@ -1,0 +1,8 @@
+items:
+  manyidea:onion_crop:
+    material: wheat_seeds
+    data:
+      item_name: <!i><green>洋葱作物</green>
+    behavior:
+      type: block_item
+      block: manyidea:onion_crop

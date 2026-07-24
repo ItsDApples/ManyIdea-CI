@@ -1,0 +1,6 @@
+items:
+  manyidea:rotten_tomato:
+    material: apple
+    texture: minecraft:item/custom/rotten_tomato
+    data:
+      item_name: "<!i><#556B2F>腐烂的番茄</#556B2F>"

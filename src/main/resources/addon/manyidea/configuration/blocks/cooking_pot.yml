@@ -1,0 +1,24 @@
+blocks:
+  manyidea:cooking_pot:
+    state:
+      auto_state: cactus
+      model:
+        path: "minecraft:block/custom/cooking_pot"
+    settings:
+      hardness: 3.5
+      resistance: 6
+      instrument: bell
+      map_color: 8
+      push_reaction: DESTROY
+      is_suffocating: false
+      is_redstone_conductor: false
+      waterloggable: false
+      sounds:
+        break: minecraft:block.metal.break
+        fall: minecraft:block.metal.fall
+        hit: minecraft:block.metal.hit
+        place: minecraft:block.metal.place
+        step: minecraft:block.metal.step
+      tags:
+        - minecraft:mineable/pickaxe
+        - minecraft:needs_stone_tool

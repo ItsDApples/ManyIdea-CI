@@ -1,0 +1,23 @@
+items:
+  manyidea:apple_cider:
+    material: potion
+    texture: minecraft:item/custom/apple_cider
+    data:
+      item_name: <!i><gold>苹果酒</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:apple_cider:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:apple
+      - minecraft:apple
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:apple_cider
+      count: 1

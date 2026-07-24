@@ -1,0 +1,17 @@
+blocks:
+  manyidea:grill:
+    state:
+      auto_state: cactus
+      model:
+        path: "minecraft:block/custom/grill"
+    settings:
+      hardness: 0.5
+      resistance: 6
+      sounds:
+        break: minecraft:block.metal.break
+        fall: minecraft:block.metal.fall
+        hit: minecraft:block.metal.hit
+        place: minecraft:block.metal.place
+        step: minecraft:block.metal.step
+      tags:
+        - minecraft:mineable/pickaxe

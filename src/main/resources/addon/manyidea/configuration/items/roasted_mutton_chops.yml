@@ -1,0 +1,21 @@
+items:
+  manyidea:roasted_mutton_chops:
+    material: cooked_mutton
+    texture: minecraft:item/custom/roasted_mutton_chops
+    data:
+      item_name: <!i><gold>烤羊排</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 10
+          saturation: 6.0
+
+recipes:
+  manyidea:roasted_mutton_chops:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:cooked_mutton_chops
+      - minecraft:beetroot
+    result:
+      id: manyidea:roasted_mutton_chops
+      count: 1

@@ -1,0 +1,7 @@
+# 鸭羽毛 - 对标 UntitledDuckMod duck_feather
+items:
+  manyidea:duck_feather:
+    material: FEATHER
+    texture: manyidea:item/material/duck_feather
+    data:
+      item_name: <!i><#B8B8B8>鸭羽毛</#B8B8B8>

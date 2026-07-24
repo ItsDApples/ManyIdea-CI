@@ -1,0 +1,21 @@
+items:
+  manyidea:noodle_soup:
+    material: rabbit_stew
+    texture: minecraft:item/custom/noodle_soup
+    data:
+      item_name: <!i><gold>面条汤</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 7
+          saturation: 4.2
+
+recipes:
+  manyidea:noodle_soup:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_pasta
+      - manyidea:bone_broth
+    result:
+      id: manyidea:noodle_soup
+      count: 1

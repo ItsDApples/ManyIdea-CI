@@ -1,0 +1,10 @@
+items:
+  manyidea:cooked_bacon:
+    material: cooked_porkchop
+    texture: minecraft:item/custom/cooked_bacon
+    data:
+      item_name: <!i><gold>熟培根</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 5.4

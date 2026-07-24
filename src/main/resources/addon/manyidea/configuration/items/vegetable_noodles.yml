@@ -1,0 +1,23 @@
+items:
+  manyidea:vegetable_noodles:
+    material: cooked_beef
+    texture: minecraft:item/custom/vegetable_noodles
+    data:
+      item_name: <!i><gold>蔬菜面</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 9
+          saturation: 5.4
+
+recipes:
+  manyidea:vegetable_noodles:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_pasta
+      - manyidea:cabbage_leaf
+      - manyidea:tomato
+      - manyidea:onion
+    result:
+      id: manyidea:vegetable_noodles
+      count: 1

@@ -1,0 +1,21 @@
+items:
+  manyidea:cod_roll:
+    material: cooked_beef
+    texture: minecraft:item/custom/cod_roll
+    data:
+      item_name: <!i><gold>鳕鱼卷</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:cod_roll:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:cod_slice
+      - manyidea:cooked_rice
+    result:
+      id: manyidea:cod_roll
+      count: 1

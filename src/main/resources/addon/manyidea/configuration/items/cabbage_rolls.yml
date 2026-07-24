@@ -1,0 +1,21 @@
+items:
+  manyidea:cabbage_rolls:
+    material: cooked_beef
+    texture: minecraft:item/custom/cabbage_rolls
+    data:
+      item_name: <!i><gold>卷心菜卷</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 4.0
+
+recipes:
+  manyidea:cabbage_rolls:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:cabbage_leaf
+      - manyidea:minced_beef
+    result:
+      id: manyidea:cabbage_rolls
+      count: 1

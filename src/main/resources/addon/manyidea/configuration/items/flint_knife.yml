@@ -1,0 +1,23 @@
+items:
+  manyidea:flint_knife:
+    material: stone_sword
+    texture: minecraft:item/custom/flint_knife
+    data:
+      item_name: <!i><gray>燧石刀</gray>
+      lore:
+        - <!i><gray>用于在砧板上加工食材</gray>
+      max_damage: 64
+
+recipes:
+  manyidea:flint_knife:
+    type: shaped
+    category: EQUIPMENT
+    pattern:
+      - '  A'
+      - ' B '
+    ingredients:
+      A: minecraft:flint
+      B: minecraft:stick
+    result:
+      id: manyidea:flint_knife
+      count: 1

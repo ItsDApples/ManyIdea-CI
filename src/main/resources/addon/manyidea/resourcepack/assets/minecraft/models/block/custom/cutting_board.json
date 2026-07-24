@@ -1,0 +1,35 @@
+{
+  "parent": "block/thin_block",
+  "textures": {
+    "particle": "minecraft:block/custom/cutting_board",
+    "main": "minecraft:block/custom/cutting_board"
+  },
+  "elements": [
+    {
+      "name": "board",
+      "from": [1, 0, 1],
+      "to": [12, 1, 15],
+      "faces": {
+        "north": {"uv": [1, 15, 12, 16], "texture": "#main"},
+        "east": {"uv": [1, 15, 15, 16], "texture": "#main"},
+        "south": {"uv": [1, 15, 12, 16], "texture": "#main"},
+        "west": {"uv": [1, 15, 15, 16], "texture": "#main"},
+        "up": {"uv": [1, 1, 12, 15], "texture": "#main"},
+        "down": {"uv": [1, 1, 12, 15], "texture": "#main", "cullface": "down"}
+      }
+    },
+    {
+      "name": "handle",
+      "from": [13, 0, 1],
+      "to": [15, 1, 15],
+      "faces": {
+        "north": {"uv": [1, 15, 3, 16], "texture": "#main"},
+        "east": {"uv": [1, 15, 15, 16], "texture": "#main"},
+        "south": {"uv": [13, 15, 15, 16], "texture": "#main"},
+        "west": {"uv": [1, 15, 15, 16], "texture": "#main"},
+        "up": {"uv": [13, 1, 15, 15], "texture": "#main"},
+        "down": {"uv": [13, 1, 15, 15], "texture": "#main", "cullface": "down"}
+      }
+    }
+  ]
+}

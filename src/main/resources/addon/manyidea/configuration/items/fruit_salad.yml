@@ -1,0 +1,31 @@
+# 水果沙拉 - 碗装食物
+items:
+  manyidea:fruit_salad:
+    material: mushroom_stew
+    texture: minecraft:item/custom/fruit_salad
+    data:
+      item_name: <!i><light_purple>水果沙拉</light_purple>
+      lore:
+        - <!i><gray>食用后获得 3 分钟舒适效果</gray>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+    $$<=1.20.4:
+      settings:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:fruit_salad:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:apple
+      - minecraft:melon_slice
+      - minecraft:sweet_berries
+      - minecraft:bowl
+    result:
+      id: manyidea:fruit_salad
+      count: 1

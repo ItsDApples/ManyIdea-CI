@@ -1,0 +1,22 @@
+items:
+  manyidea:kiwi_popsicle:
+    material: honey_bottle
+    texture: minecraft:item/custom/kiwi_popsicle
+    data:
+      item_name: <!i><green>猕猴桃棒冰</green>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:kiwi_popsicle:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:kiwi
+      - minecraft:ice
+      - minecraft:stick
+    result:
+      id: manyidea:kiwi_popsicle
+      count: 1

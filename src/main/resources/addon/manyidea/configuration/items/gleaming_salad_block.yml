@@ -1,0 +1,12 @@
+items:
+  manyidea:gleaming_salad_block:
+    material: cake
+    model: minecraft:block/custom/gleaming_salad_block
+    data:
+      item_name: "<!i><gold>闪光沙拉宴席</gold>"
+      lore:
+        - "<!i><gray>右键取走一份</gray>"
+        - "<!i><gray>共 4 份</gray>"
+    behavior:
+      type: block_item
+      block: manyidea:gleaming_salad_block

@@ -1,0 +1,11 @@
+# 卷心菜 - 基础食材（可直接食用）
+items:
+  manyidea:cabbage:
+    material: apple
+    texture: minecraft:item/custom/cabbage
+    data:
+      item_name: <!i><green>卷心菜</green>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 0.8

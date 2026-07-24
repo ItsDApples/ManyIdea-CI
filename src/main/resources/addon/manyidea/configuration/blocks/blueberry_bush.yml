@@ -1,0 +1,50 @@
+blocks:
+  manyidea:blueberry_bush:
+    states:
+      properties:
+        age:
+          type: int
+          range: 0~2
+          default: 0
+      appearances:
+        stage0:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/blueberry_bush_0"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/blueberry_bush_cross"
+        stage1:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/blueberry_bush_1"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/blueberry_bush_fruits_cross"
+      variants:
+        "age=0":
+          appearance: stage0
+        "age=1":
+          appearance: stage0
+        "age=2":
+          appearance: stage1
+    settings:
+      hardness: 0
+      resistance: 0
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.crop.break
+        place: minecraft:item.crop.plant
+      tags:
+        - minecraft:mineable/axe
+    behaviors:
+      - type: bush_block
+        blacklist: false
+        bottom_block_tags:
+          - minecraft:dirt
+          - minecraft:farmland
+      - type: crop_block
+        age: 2
+        grow_speed: 0.2

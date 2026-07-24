@@ -1,0 +1,21 @@
+items:
+  manyidea:cranberry_cookie:
+    material: cookie
+    texture: minecraft:item/custom/cranberry_cookie
+    data:
+      item_name: <!i><red>蔓越莓饼干</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2
+
+recipes:
+  manyidea:cranberry_cookie:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:cranberry
+      - manyidea:wheat_dough
+    result:
+      id: manyidea:cranberry_cookie
+      count: 2

@@ -1,0 +1,22 @@
+# 煎蛋 - 简单手持食物
+items:
+  manyidea:fried_egg:
+    material: cooked_beef
+    texture: minecraft:item/custom/fried_egg
+    data:
+      item_name: <!i><yellow>煎蛋</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 1.6
+
+recipes:
+  manyidea:fried_egg:
+    type: smelting
+    category: MISC
+    ingredient: minecraft:egg
+    result:
+      id: manyidea:fried_egg
+      count: 1
+    experience: 0.35
+    cookingtime: 200

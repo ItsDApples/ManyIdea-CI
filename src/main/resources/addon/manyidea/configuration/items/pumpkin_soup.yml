@@ -1,0 +1,22 @@
+items:
+  manyidea:pumpkin_soup:
+    material: rabbit_stew
+    texture: minecraft:item/custom/pumpkin_soup
+    data:
+      item_name: <!i><gold>南瓜汤</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 4.8
+
+recipes:
+  manyidea:pumpkin_soup:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:pumpkin_slice
+      - minecraft:bowl
+      - manyidea:cabbage_leaf
+    result:
+      id: manyidea:pumpkin_soup
+      count: 1

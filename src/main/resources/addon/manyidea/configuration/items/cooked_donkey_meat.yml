@@ -1,0 +1,21 @@
+items:
+  manyidea:cooked_donkey_meat:
+    material: cooked_beef
+    texture: minecraft:item/custom/cooked_donkey_meat
+    data:
+      item_name: <!i><gold>烤驴肉</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 0.8
+
+recipes:
+  manyidea:cooked_donkey_meat:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_donkey_meat
+      - minecraft:coal
+    result:
+      id: manyidea:cooked_donkey_meat
+      count: 1

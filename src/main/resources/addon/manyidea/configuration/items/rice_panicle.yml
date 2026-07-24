@@ -1,0 +1,6 @@
+items:
+  manyidea:rice_panicle:
+    material: wheat
+    texture: minecraft:item/custom/rice_panicle
+    data:
+      item_name: <!i><gold>稻穗</gold>

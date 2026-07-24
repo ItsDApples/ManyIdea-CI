@@ -1,0 +1,10 @@
+items:
+  manyidea:cod_slice:
+    material: cod
+    texture: minecraft:item/custom/cod_slice
+    data:
+      item_name: <!i><gold>生鳕鱼片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 0.4

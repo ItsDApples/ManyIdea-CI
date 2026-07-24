@@ -1,0 +1,6 @@
+images:
+  manyidea:cooking_pot_gui:
+    height: 166
+    ascent: 9
+    font: manyidea:gui
+    file: manyidea:gui/cooking_pot

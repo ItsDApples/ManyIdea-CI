@@ -1,0 +1,31 @@
+# 饺子 - 手持食物
+items:
+  manyidea:dumplings:
+    material: cooked_porkchop
+    texture: minecraft:item/custom/dumplings
+    data:
+      item_name: <!i><white>饺子</white>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 6.4
+
+recipes:
+  manyidea:dumplings:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:wheat
+      - minecraft:cooked_porkchop
+      - manyidea:cabbage
+    result:
+      id: manyidea:dumplings
+      count: 2
+
+events:
+  - on: consume
+    functions:
+      - type: toast
+        toast: "手工饺子！"
+        icon: manyidea:dumplings
+        advancement_type: task

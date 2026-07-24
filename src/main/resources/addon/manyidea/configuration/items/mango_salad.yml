@@ -1,0 +1,22 @@
+items:
+  manyidea:mango_salad:
+    material: apple
+    texture: minecraft:item/custom/mango_salad
+    data:
+      item_name: <!i><yellow>生拌芒果</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:mango_salad:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:mango
+      - manyidea:tomato
+      - minecraft:bowl
+    result:
+      id: manyidea:mango_salad
+      count: 1

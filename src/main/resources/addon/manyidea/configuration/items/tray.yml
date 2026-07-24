@@ -1,0 +1,9 @@
+items:
+  manyidea:tray:
+    material: oak_slab
+    model: minecraft:block/custom/tray
+    data:
+      item_name: <!i><gold>托盘</gold>
+    behavior:
+      type: block_item
+      block: manyidea:tray

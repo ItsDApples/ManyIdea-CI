@@ -1,0 +1,38 @@
+# 烤鸡宴席 - Farmer's Delight roast_chicken_block
+items:
+  manyidea:roast_chicken_block:
+    data:
+      item_name: <!i><gold>烤鸡宴席</gold>
+      lore:
+        - <!i><gray>右键取走一份烤鸡肉</gray>
+        - <!i><gray>共 4 份</gray>
+    model: minecraft:block/custom/roast_chicken_block
+    behavior:
+      type: block_item
+      block:
+        loot:
+          pools:
+            - rolls: 1
+              entries:
+                - type: item
+                  item: manyidea:roast_chicken_block
+        settings:
+          hardness: 2
+          resistance: 2
+          instrument: bass
+          map_color: 11
+          push_reaction: destroy
+          is_suffocating: false
+          is_redstone_conductor: false
+          tags:
+            - minecraft:mineable/axe
+          sounds:
+            break: minecraft:block.wood.break
+            fall: minecraft:block.wood.fall
+            hit: minecraft:block.wood.hit
+            place: minecraft:block.wood.place
+            step: minecraft:block.wood.step
+        state:
+          auto_state: lower_tripwire
+          model:
+            path: minecraft:block/custom/roast_chicken_block

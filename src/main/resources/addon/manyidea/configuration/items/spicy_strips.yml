@@ -1,0 +1,10 @@
+items:
+  manyidea:spicy_strips:
+    material: paper
+    texture: minecraft:item/custom/spicy_strips
+    data:
+      item_name: <!i><gold>大辣片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 0.5

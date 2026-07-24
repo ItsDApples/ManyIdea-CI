@@ -1,0 +1,6 @@
+items:
+  manyidea:raw_cabbage_bobo_chicken:
+    material: apple
+    texture: minecraft:item/custom/raw_cabbage_bobo_chicken
+    data:
+      item_name: <!i><white>生钵钵卷心菜</white>

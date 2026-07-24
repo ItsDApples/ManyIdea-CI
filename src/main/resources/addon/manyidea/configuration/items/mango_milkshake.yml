@@ -1,0 +1,22 @@
+items:
+  manyidea:mango_milkshake:
+    material: potion
+    texture: minecraft:item/custom/mango_milkshake
+    data:
+      item_name: <!i><yellow>芒果鲜奶</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:mango_milkshake:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:mango
+      - minecraft:milk_bucket
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:mango_milkshake
+      count: 1

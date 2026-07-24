@@ -1,0 +1,23 @@
+items:
+  manyidea:glow_berry_custard:
+    material: honey_bottle
+    texture: minecraft:item/custom/glow_berry_custard
+    data:
+      item_name: <!i><gold>发光浆果奶冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:glow_berry_custard:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:glow_berries
+      - minecraft:milk_bucket
+      - minecraft:sugar
+      - minecraft:egg
+    result:
+      id: manyidea:glow_berry_custard
+      count: 1

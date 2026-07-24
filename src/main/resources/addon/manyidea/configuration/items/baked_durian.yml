@@ -1,0 +1,21 @@
+items:
+  manyidea:baked_durian:
+    material: cooked_beef
+    texture: minecraft:item/custom/baked_durian
+    data:
+      item_name: <!i><gold>烤榴莲</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 4.8
+
+recipes:
+  manyidea:baked_durian:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:durian_flesh
+      - minecraft:coal
+    result:
+      id: manyidea:baked_durian
+      count: 1

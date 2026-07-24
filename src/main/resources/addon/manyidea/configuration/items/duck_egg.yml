@@ -1,0 +1,11 @@
+# 鸭蛋 - 对标 UntitledDuckMod duck_egg
+items:
+  manyidea:duck_egg:
+    material: EGG
+    texture: manyidea:item/food/duck_egg
+    data:
+      item_name: <!i><#D4E8D4>鸭蛋</#D4E8D4>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 2.4

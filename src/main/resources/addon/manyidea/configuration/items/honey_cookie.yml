@@ -1,0 +1,21 @@
+items:
+  manyidea:honey_cookie:
+    material: cookie
+    texture: minecraft:item/custom/honey_cookie
+    data:
+      item_name: <!i><gold>蜂蜜曲奇</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2
+
+recipes:
+  manyidea:honey_cookie:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:honey_bottle
+      - manyidea:wheat_dough
+    result:
+      id: manyidea:honey_cookie
+      count: 1

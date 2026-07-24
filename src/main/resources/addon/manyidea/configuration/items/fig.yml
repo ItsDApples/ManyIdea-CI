@@ -1,0 +1,10 @@
+items:
+  manyidea:fig:
+    material: apple
+    texture: minecraft:item/custom/fig
+    data:
+      item_name: <!i><#8B4513>无花果</#8B4513>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8

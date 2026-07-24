@@ -1,0 +1,21 @@
+items:
+  manyidea:grilled_beef_skewer:
+    material: cooked_beef
+    texture: minecraft:item/custom/grilled_beef_skewer
+    data:
+      item_name: <!i><gold>烤牛肉串</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 5.6
+
+recipes:
+  manyidea:grilled_beef_skewer:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_beef_skewer
+      - minecraft:coal
+    result:
+      id: manyidea:grilled_beef_skewer
+      count: 1

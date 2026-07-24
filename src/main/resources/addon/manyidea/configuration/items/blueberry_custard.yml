@@ -1,0 +1,23 @@
+items:
+  manyidea:blueberry_custard:
+    material: cooked_beef
+    texture: minecraft:item/custom/blueberry_custard
+    data:
+      item_name: <!i><gold>蓝莓蛋奶沙司</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 3.6
+
+recipes:
+  manyidea:blueberry_custard:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:blueberry
+      - minecraft:milk_bucket
+      - minecraft:sugar
+      - minecraft:egg
+    result:
+      id: manyidea:blueberry_custard
+      count: 1

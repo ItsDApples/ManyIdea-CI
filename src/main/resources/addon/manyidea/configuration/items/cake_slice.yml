@@ -1,0 +1,10 @@
+items:
+  manyidea:cake_slice:
+    material: cookie
+    texture: minecraft:item/custom/cake_slice
+    data:
+      item_name: <!i><gold>蛋糕片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.0

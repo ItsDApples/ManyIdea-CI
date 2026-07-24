@@ -1,0 +1,23 @@
+items:
+  manyidea:golden_knife:
+    material: golden_sword
+    texture: minecraft:item/custom/golden_knife
+    data:
+      item_name: <!i><yellow>金刀</yellow>
+      lore:
+        - <!i><gray>用于在砧板上加工食材</gray>
+      max_damage: 32
+
+recipes:
+  manyidea:golden_knife:
+    type: shaped
+    category: EQUIPMENT
+    pattern:
+      - '  A'
+      - ' B '
+    ingredients:
+      A: minecraft:gold_ingot
+      B: minecraft:stick
+    result:
+      id: manyidea:golden_knife
+      count: 1

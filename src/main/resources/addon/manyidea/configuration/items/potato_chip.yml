@@ -1,0 +1,21 @@
+items:
+  manyidea:potato_chip:
+    material: cookie
+    texture: minecraft:item/custom/potato_chip
+    data:
+      item_name: <!i><gold>薯片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 1.0
+
+recipes:
+  manyidea:potato_chip:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:potato_slice
+      - minecraft:coal
+    result:
+      id: manyidea:potato_chip
+      count: 1

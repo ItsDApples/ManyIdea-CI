@@ -1,0 +1,10 @@
+items:
+  manyidea:kiwi:
+    material: apple
+    texture: minecraft:item/custom/kiwi
+    data:
+      item_name: <!i><green>猕猴桃</green>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

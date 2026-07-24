@@ -1,0 +1,48 @@
+blocks:
+  manyidea:bamboo_basket:
+    state:
+      auto_state: note_block
+      model:
+        path: "minecraft:block/custom/bamboo_basket"
+        generation:
+          parent: "minecraft:block/cube_bottom_top"
+          textures:
+            side: "minecraft:block/custom/bamboo_basket_side"
+            bottom: "minecraft:block/custom/bamboo_basket_bottom"
+            top: "minecraft:block/custom/bamboo_basket_top"
+    settings:
+      hardness: 1.5
+      resistance: 1.5
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.bamboo_wood.break
+        fall: minecraft:block.bamboo_wood.fall
+        hit: minecraft:block.bamboo_wood.hit
+        place: minecraft:block.bamboo_wood.place
+        step: minecraft:block.bamboo_wood.step
+      tags:
+        - minecraft:mineable/axe
+
+  manyidea:wooden_basket:
+    state:
+      auto_state: note_block
+      model:
+        path: "minecraft:block/custom/wooden_basket"
+        generation:
+          parent: "minecraft:block/cube_bottom_top"
+          textures:
+            side: "minecraft:block/custom/wooden_basket_side"
+            bottom: "minecraft:block/custom/wooden_basket_bottom"
+            top: "minecraft:block/custom/wooden_basket_top"
+    settings:
+      hardness: 1.5
+      resistance: 1.5
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.wood.break
+        fall: minecraft:block.wood.fall
+        hit: minecraft:block.wood.hit
+        place: minecraft:block.wood.place
+        step: minecraft:block.wood.step
+      tags:
+        - minecraft:mineable/axe

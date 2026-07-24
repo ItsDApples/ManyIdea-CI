@@ -1,0 +1,27 @@
+items:
+  manyidea:cooking_pot:
+    material: cauldron
+    texture: minecraft:item/custom/cooking_pot
+    data:
+      item_name: <!i><gray>烹饪锅</gray>
+      lore:
+        - <!i><gray>右键放入食材</gray>
+        - <!i><gray>等待烹饪完成后空手取出</gray>
+    behavior:
+      type: block_item
+      block: manyidea:cooking_pot
+
+recipes:
+  manyidea:cooking_pot:
+    type: shaped
+    category: MISC
+    pattern:
+      - 'AAA'
+      - 'B B'
+      - 'BBB'
+    ingredients:
+      A: minecraft:iron_ingot
+      B: minecraft:brick
+    result:
+      id: manyidea:cooking_pot
+      count: 1

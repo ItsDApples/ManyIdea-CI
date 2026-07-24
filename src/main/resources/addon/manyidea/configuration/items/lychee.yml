@@ -1,0 +1,10 @@
+items:
+  manyidea:lychee:
+    material: apple
+    texture: minecraft:item/custom/lychee
+    data:
+      item_name: <!i><light_purple>荔枝</light_purple>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

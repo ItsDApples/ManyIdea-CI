@@ -1,0 +1,22 @@
+items:
+  manyidea:hamimelon_popsicle:
+    material: honey_bottle
+    texture: minecraft:item/custom/hamimelon_popsicle
+    data:
+      item_name: <!i><yellow>哈密瓜冰棒</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:hamimelon_popsicle:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:hamimelon_slice
+      - minecraft:ice
+      - minecraft:stick
+    result:
+      id: manyidea:hamimelon_popsicle
+      count: 1

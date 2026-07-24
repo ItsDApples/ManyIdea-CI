@@ -1,0 +1,21 @@
+items:
+  manyidea:fried_chicken_chip:
+    material: cookie
+    texture: minecraft:item/custom/fried_chicken_chip
+    data:
+      item_name: <!i><gold>炸鸡块</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 0.8
+
+recipes:
+  manyidea:fried_chicken_chip:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:chicken
+      - minecraft:coal
+    result:
+      id: manyidea:fried_chicken_chip
+      count: 1

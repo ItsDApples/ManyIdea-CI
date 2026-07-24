@@ -1,0 +1,21 @@
+items:
+  manyidea:spring_roll:
+    material: cooked_beef
+    texture: minecraft:item/custom/spring_roll
+    data:
+      item_name: <!i><gold>春卷</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 6
+          saturation: 0.8
+
+recipes:
+  manyidea:spring_roll:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_spring_roll
+      - minecraft:coal
+    result:
+      id: manyidea:spring_roll
+      count: 1

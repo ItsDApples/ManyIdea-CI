@@ -1,0 +1,21 @@
+items:
+  manyidea:smoked_ham:
+    material: cooked_porkchop
+    texture: minecraft:item/custom/smoked_ham
+    data:
+      item_name: <!i><gold>烟熏火腿</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 10
+          saturation: 6.0
+
+recipes:
+  manyidea:smoked_ham:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:ham
+      - minecraft:coal
+    result:
+      id: manyidea:smoked_ham
+      count: 1

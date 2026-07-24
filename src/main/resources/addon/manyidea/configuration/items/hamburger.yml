@@ -1,0 +1,31 @@
+# 汉堡包 - 手持食物
+items:
+  manyidea:hamburger:
+    material: cooked_beef
+    texture: minecraft:item/custom/hamburger
+    data:
+      item_name: <!i><gold>汉堡包</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 11
+          saturation: 8.8
+
+recipes:
+  manyidea:hamburger:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:bread
+      - minecraft:cooked_beef
+      - minecraft:carrot
+    result:
+      id: manyidea:hamburger
+      count: 1
+
+events:
+  - on: consume
+    functions:
+      - type: toast
+        toast: "美味汉堡！"
+        icon: manyidea:hamburger
+        advancement_type: task

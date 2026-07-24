@@ -1,0 +1,21 @@
+items:
+  manyidea:hawberry_sheet:
+    material: cooked_beef
+    texture: minecraft:item/custom/hawberry_sheet
+    data:
+      item_name: <!i><red>果丹皮</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:hawberry_sheet:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:hawberry
+      - minecraft:sugar
+    result:
+      id: manyidea:hawberry_sheet
+      count: 1

@@ -1,0 +1,12 @@
+items:
+  manyidea:bobo_chicken_block:
+    material: bread
+    texture: minecraft:item/custom/bobo_chicken
+    data:
+      item_name: <!i><gold>钵钵鸡宴席</gold>
+      lore:
+        - <!i><gray>右键取走一份</gray>
+        - <!i><gray>共 4 份</gray>
+    behavior:
+      type: block_item
+      block: manyidea:bobo_chicken_block

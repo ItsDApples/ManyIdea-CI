@@ -1,0 +1,21 @@
+items:
+  manyidea:sweet_berry_cookie:
+    material: cookie
+    texture: minecraft:item/custom/sweet_berry_cookie
+    data:
+      item_name: <!i><gold>甜浆果曲奇</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2
+
+recipes:
+  manyidea:sweet_berry_cookie:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:sweet_berries
+      - manyidea:wheat_dough
+    result:
+      id: manyidea:sweet_berry_cookie
+      count: 1

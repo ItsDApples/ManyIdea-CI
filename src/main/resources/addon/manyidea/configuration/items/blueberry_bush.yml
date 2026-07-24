@@ -1,0 +1,8 @@
+items:
+  manyidea:blueberry_bush:
+    material: wheat_seeds
+    data:
+      item_name: <!i><green>蓝莓丛</green>
+    behavior:
+      type: block_item
+      block: manyidea:blueberry_bush

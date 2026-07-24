@@ -1,0 +1,21 @@
+{
+  "parent": "block/thin_block",
+  "textures": {
+    "particle": "#main"
+  },
+  "elements": [
+    {
+      "name": "plate",
+      "from": [1, 0, 1],
+      "to": [15, 2, 15],
+      "faces": {
+        "north": {"uv": [1, 14, 15, 16], "texture": "#main"},
+        "east":  {"uv": [1, 14, 15, 16], "texture": "#main"},
+        "south": {"uv": [1, 14, 15, 16], "texture": "#main"},
+        "west":  {"uv": [1, 14, 15, 16], "texture": "#main"},
+        "up":    {"uv": [1, 1, 15, 15], "texture": "#main"},
+        "down":  {"uv": [1, 1, 15, 15], "texture": "#main", "cullface": "down"}
+      }
+    }
+  ]
+}

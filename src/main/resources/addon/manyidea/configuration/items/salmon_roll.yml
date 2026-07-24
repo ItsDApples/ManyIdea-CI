@@ -1,0 +1,21 @@
+items:
+  manyidea:salmon_roll:
+    material: cooked_beef
+    texture: minecraft:item/custom/salmon_roll
+    data:
+      item_name: <!i><gold>鲑鱼卷</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:salmon_roll:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:salmon_slice
+      - manyidea:cooked_rice
+    result:
+      id: manyidea:salmon_roll
+      count: 1

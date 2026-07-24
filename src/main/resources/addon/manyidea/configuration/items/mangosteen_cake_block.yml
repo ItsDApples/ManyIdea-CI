@@ -1,0 +1,9 @@
+items:
+  manyidea:mangosteen_cake_block:
+    material: cake
+    model: minecraft:block/custom/mangosteen_cake_block
+    data:
+      item_name: "<!i><gold>山竹蛋糕</gold>"
+    behavior:
+      type: block_item
+      block: manyidea:mangosteen_cake_block

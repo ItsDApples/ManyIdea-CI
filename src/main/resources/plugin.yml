@@ -1,0 +1,13 @@
+name: ManyIdea
+version: '${version}'
+
+main: org.coffeepop.manyIdea.ManyIdea
+api-version: '26.1.2'
+load: POSTWORLD
+
+authors: [ Neamyoo ]
+
+depend:
+  - UltimateAdvancementAPI
+softdepend:
+  - CraftEngine

@@ -1,0 +1,20 @@
+items:
+  manyidea:fig_jello:
+    material: honey_bottle
+    texture: minecraft:item/custom/fig_jello
+    data:
+      item_name: <!i><gold>无花果果冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+recipes:
+  manyidea:fig_jello:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:fig_jam
+      - minecraft:sugar
+    result:
+      id: manyidea:fig_jello
+      count: 1

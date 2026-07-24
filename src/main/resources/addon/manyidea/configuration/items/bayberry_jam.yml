@@ -1,0 +1,21 @@
+items:
+  manyidea:bayberry_jam:
+    material: honey_bottle
+    texture: minecraft:item/custom/bayberry_jam
+    data:
+      item_name: <!i><gold>杨梅果酱</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+recipes:
+  manyidea:bayberry_jam:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:bayberry
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:bayberry_jam
+      count: 1

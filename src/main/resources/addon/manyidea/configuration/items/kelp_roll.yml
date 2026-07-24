@@ -1,0 +1,21 @@
+items:
+  manyidea:kelp_roll:
+    material: cooked_beef
+    texture: minecraft:item/custom/kelp_roll
+    data:
+      item_name: <!i><green>海带卷</green>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:kelp_roll:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:dried_kelp
+      - manyidea:cooked_rice
+    result:
+      id: manyidea:kelp_roll
+      count: 1

@@ -1,0 +1,21 @@
+items:
+  manyidea:hawberry_stick:
+    material: cooked_beef
+    texture: minecraft:item/custom/hawberry_stick
+    data:
+      item_name: <!i><red>山楂串</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2
+
+recipes:
+  manyidea:hawberry_stick:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:hawberry
+      - minecraft:stick
+    result:
+      id: manyidea:hawberry_stick
+      count: 4

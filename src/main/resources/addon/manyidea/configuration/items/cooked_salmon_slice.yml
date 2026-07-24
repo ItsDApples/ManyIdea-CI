@@ -1,0 +1,10 @@
+items:
+  manyidea:cooked_salmon_slice:
+    material: cooked_salmon
+    texture: minecraft:item/custom/cooked_salmon_slice
+    data:
+      item_name: <!i><gold>熟鲑鱼片</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 4.8

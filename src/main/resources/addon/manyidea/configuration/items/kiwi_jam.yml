@@ -1,0 +1,21 @@
+items:
+  manyidea:kiwi_jam:
+    material: honey_bottle
+    texture: minecraft:item/custom/kiwi_jam
+    data:
+      item_name: <!i><gold>猕猴桃果酱</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+recipes:
+  manyidea:kiwi_jam:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:kiwi
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:kiwi_jam
+      count: 1

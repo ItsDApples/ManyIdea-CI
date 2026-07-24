@@ -1,0 +1,21 @@
+items:
+  manyidea:roast_gluten:
+    material: cooked_beef
+    texture: minecraft:item/custom/roast_gluten
+    data:
+      item_name: <!i><gold>烤面筋</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 1.0
+
+recipes:
+  manyidea:roast_gluten:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:gluten
+      - minecraft:coal
+    result:
+      id: manyidea:roast_gluten
+      count: 1

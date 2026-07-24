@@ -1,0 +1,10 @@
+items:
+  manyidea:fish_and_chips:
+    material: rabbit_stew
+    texture: minecraft:item/custom/fish_and_chips
+    data:
+      item_name: <!i><gold>炸鱼薯条</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 14
+          saturation: 0.5

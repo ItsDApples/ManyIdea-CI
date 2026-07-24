@@ -1,0 +1,202 @@
+blueprint:
+  items:
+    "manyidea:${fruit}_jelly_block":
+      material: slime_block
+      model:
+        path: "minecraft:block/custom/jelly_block"
+        tints:
+          - type: minecraft:constant
+            value: "${color_str}"
+      data:
+        item_name: "<!i><gold>${zh}果酱块</gold>"
+      behavior:
+        type: block_item
+        block: manyidea:${fruit}_jelly_block
+
+    "manyidea:${fruit}_jello_block":
+      material: honey_block
+      model:
+        path: "minecraft:block/custom/jello_block"
+        tints:
+          - type: minecraft:constant
+            value: "${color_str}"
+      data:
+        item_name: "<!i><gold>${zh}果冻块</gold>"
+      behavior:
+        type: block_item
+        block: manyidea:${fruit}_jello_block
+
+  blocks:
+    "manyidea:${fruit}_jelly_block":
+      state:
+        auto_state: note_block
+        model:
+          path: "minecraft:block/custom/jelly_block"
+      settings:
+        hardness: 0.5
+        resistance: 0.5
+        push_reaction: DESTROY
+        sounds:
+          break: minecraft:block.slime_block.break
+          step: minecraft:block.slime_block.step
+          place: minecraft:block.slime_block.place
+          hit: minecraft:block.slime_block.hit
+          fall: minecraft:block.slime_block.fall
+        tags:
+          - minecraft:mineable/sword
+
+    "manyidea:${fruit}_jello_block":
+      state:
+        auto_state: note_block
+        model:
+          path: "minecraft:block/custom/jello_block"
+      settings:
+        hardness: 0.3
+        resistance: 0.3
+        push_reaction: DESTROY
+        sounds:
+          break: minecraft:block.honey_block.break
+          step: minecraft:block.honey_block.step
+          place: minecraft:block.honey_block.place
+          hit: minecraft:block.honey_block.hit
+          fall: minecraft:block.honey_block.fall
+        tags:
+          - minecraft:mineable/sword
+
+instances:
+  - {fruit: apple,       zh: 苹果,     en: Apple,       color_str: "255,80,80"}
+  - {fruit: hawberry,    zh: 山楂,     en: Hawberry,    color_str: "200,50,50"}
+  - {fruit: lychee,      zh: 荔枝,     en: Lychee,      color_str: "255,220,200"}
+  - {fruit: mango,       zh: 芒果,     en: Mango,       color_str: "255,180,50"}
+  - {fruit: pear,        zh: 梨子,     en: Pear,        color_str: "200,220,100"}
+  - {fruit: persimmon,   zh: 柿子,     en: Persimmon,   color_str: "255,140,50"}
+  - {fruit: peach,       zh: 水蜜桃,    en: Peach,      color_str: "255,180,150"}
+  - {fruit: orange,      zh: 橘子,     en: Orange,      color_str: "255,165,0"}
+  - {fruit: blueberry,   zh: 蓝莓,     en: Blueberry,   color_str: "50,50,180"}
+  - {fruit: glowberry,   zh: 发光浆果,  en: Glowberry,  color_str: "255,200,50"}
+  - {fruit: hamimelon,   zh: 哈密瓜,    en: Hami Melon, color_str: "255,180,100"}
+  - {fruit: sweetberry,  zh: 浆果,     en: Sweetberry,  color_str: "180,50,50"}
+  - {fruit: pineapple,   zh: 菠萝,     en: Pineapple,   color_str: "255,220,50"}
+  - {fruit: lemon,       zh: 柠檬,     en: Lemon,       color_str: "255,240,50"}
+  - {fruit: melon,       zh: 西瓜,     en: Melon,       color_str: "255,100,100"}
+  - {fruit: mangosteen,  zh: 山竹,     en: Mangosteen,  color_str: "150,50,150"}
+  - {fruit: cranberry,   zh: 蔓越莓,    en: Cranberry,  color_str: "180,50,80"}
+  - {fruit: chorus,      zh: 紫颂果,    en: Chorus,     color_str: "200,150,220"}
+  - {fruit: fig,         zh: 无花果,    en: Fig,        color_str: "120,60,100"}
+  - {fruit: kiwi,        zh: 猕猴桃,    en: Kiwi,       color_str: "100,180,50"}
+  - {fruit: bayberry,    zh: 杨梅,     en: Bayberry,    color_str: "150,30,60"}
+  - {fruit: durian,      zh: 榴莲,     en: Durian,      color_str: "200,180,100"}
+
+config_factory#fruit_trees:
+  blueprint:
+    items:
+      "manyidea:${fruit}_sapling":
+        material: oak_sapling
+        texture: "minecraft:item/custom/${fruit}_sapling"
+        data:
+          item_name: "<!i><green>${zh}树苗</green>"
+        behavior:
+          type: block_item
+          block: manyidea:${fruit}_sapling
+
+      "manyidea:${fruit}_leaves":
+        material: oak_leaves
+        texture: "minecraft:item/custom/${fruit}_leaves"
+        data:
+          item_name: "<!i><green>${zh}树叶</green>"
+        behavior:
+          type: block_item
+          block: manyidea:${fruit}_leaves
+
+    blocks:
+      "manyidea:${fruit}_sapling":
+        state:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/${fruit}_sapling"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/${fruit}_sapling"
+        settings:
+          hardness: 0
+          resistance: 0
+          push_reaction: DESTROY
+          sounds:
+            break: minecraft:block.grass.break
+          tags:
+            - minecraft:mineable/axe
+
+      "manyidea:${fruit}_leaves":
+        state:
+          auto_state: note_block
+          model:
+            texture: "minecraft:block/custom/${fruit}_leaves"
+        settings:
+          hardness: 0.2
+          resistance: 0.2
+          push_reaction: DESTROY
+          sounds:
+            break: minecraft:block.grass.break
+          tags:
+            - minecraft:mineable/hoe
+
+  instances:
+    - {fruit: pear,        zh: 梨树,   en: Pear}
+    - {fruit: hawberry,    zh: 山楂树, en: Hawberry}
+    - {fruit: lychee,      zh: 荔枝树, en: Lychee}
+    - {fruit: mango,       zh: 芒果树, en: Mango}
+    - {fruit: persimmon,   zh: 柿子树, en: Persimmon}
+    - {fruit: peach,       zh: 桃树,   en: Peach}
+    - {fruit: orange,      zh: 橙树,   en: Orange}
+    - {fruit: apple,       zh: 苹果树, en: Apple}
+    - {fruit: mangosteen,  zh: 山竹树, en: Mangosteen}
+    - {fruit: bayberry,    zh: 杨梅树, en: Bayberry}
+    - {fruit: kiwi,        zh: 猕猴桃树, en: Kiwi}
+    - {fruit: fig,         zh: 无花果树, en: Fig}
+    - {fruit: durian,      zh: 榴莲树,  en: Durian}
+
+config_factory#crates:
+  blueprint:
+    items:
+      "manyidea:${crop}_crate":
+        material: oak_planks
+        model: "minecraft:block/custom/${crop}_crate"
+        data:
+          item_name: "<!i><gold>${zh}箱</gold>"
+        behavior:
+          type: block_item
+          block: manyidea:${crop}_crate
+
+    blocks:
+      "manyidea:${crop}_crate":
+        state:
+          auto_state: note_block
+          model:
+            path: "minecraft:block/custom/${crop}_crate"
+            generation:
+              parent: "minecraft:block/cube_bottom_top"
+              textures:
+                side: "minecraft:block/custom/${crop}_crate_side"
+                bottom: "minecraft:block/custom/crate_bottom"
+                top: "minecraft:block/custom/${crop}_crate_top"
+        settings:
+          hardness: 2
+          resistance: 3
+          push_reaction: DESTROY
+          sounds:
+            break: minecraft:block.wood.break
+            step: minecraft:block.wood.step
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+            fall: minecraft:block.wood.fall
+          tags:
+            - minecraft:mineable/axe
+
+  instances:
+    - {crop: carrot,   zh: 胡萝卜}
+    - {crop: potato,   zh: 土豆}
+    - {crop: beetroot, zh: 甜菜根}
+    - {crop: cabbage,  zh: 卷心菜}
+    - {crop: tomato,   zh: 番茄}
+    - {crop: onion,    zh: 洋葱}

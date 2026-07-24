@@ -1,0 +1,6 @@
+items:
+  manyidea:tree_bark:
+    material: paper
+    texture: minecraft:item/custom/tree_bark
+    data:
+      item_name: <!i><gray>树皮</gray>

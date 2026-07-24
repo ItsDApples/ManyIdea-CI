@@ -1,0 +1,6 @@
+items:
+  manyidea:raw_salmon_skewer:
+    material: salmon
+    texture: minecraft:item/custom/raw_salmon_skewer
+    data:
+      item_name: <!i><white>生鲑鱼肉串</white>

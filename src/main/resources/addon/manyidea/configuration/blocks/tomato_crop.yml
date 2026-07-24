@@ -1,0 +1,66 @@
+blocks:
+  manyidea:tomato_crop:
+    states:
+      properties:
+        age:
+          type: int
+          range: 0~4
+          default: 0
+      appearances:
+        stage0:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/tomato_crop_0"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/tomatoes_stage0"
+        stage1:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/tomato_crop_1"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/tomatoes_stage1"
+        stage2:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/tomato_crop_2"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/tomatoes_stage2"
+        stage3:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/tomato_crop_3"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/tomatoes_stage3"
+      variants:
+        "age=0":
+          appearance: stage0
+        "age=1":
+          appearance: stage0
+        "age=2":
+          appearance: stage1
+        "age=3":
+          appearance: stage2
+        "age=4":
+          appearance: stage3
+    settings:
+      hardness: 0
+      resistance: 0
+      push_reaction: DESTROY
+      map_color: 13
+      sounds:
+        break: minecraft:block.crop.break
+        place: minecraft:item.crop.plant
+      tags:
+        - minecraft:mineable/axe
+    behavior:
+      type: crop_block
+      age: 4
+      grow_speed: 0.25

@@ -1,0 +1,22 @@
+items:
+  manyidea:cranberry_muffin:
+    material: cooked_beef
+    texture: minecraft:item/custom/cranberry_muffin
+    data:
+      item_name: <!i><red>蔓越莓玛芬</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:cranberry_muffin:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:cranberry
+      - minecraft:wheat
+      - minecraft:sugar
+    result:
+      id: manyidea:cranberry_muffin
+      count: 1

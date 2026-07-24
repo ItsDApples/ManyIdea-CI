@@ -1,0 +1,22 @@
+items:
+  manyidea:pineapple_pie:
+    material: cooked_beef
+    texture: minecraft:item/custom/pineapple_pie
+    data:
+      item_name: <!i><gold>菠萝派</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 4.8
+
+recipes:
+  manyidea:pineapple_pie:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:pineapple_slice
+      - minecraft:sugar
+      - minecraft:egg
+    result:
+      id: manyidea:pineapple_pie
+      count: 1

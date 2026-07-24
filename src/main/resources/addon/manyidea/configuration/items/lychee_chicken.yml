@@ -1,0 +1,22 @@
+items:
+  manyidea:lychee_chicken:
+    material: cooked_chicken
+    texture: minecraft:item/custom/lychee_chicken
+    data:
+      item_name: <!i><gold>荔枝鸡球</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 10
+          saturation: 6.0
+
+recipes:
+  manyidea:lychee_chicken:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:cooked_chicken
+      - manyidea:lychee
+      - minecraft:bowl
+    result:
+      id: manyidea:lychee_chicken
+      count: 1

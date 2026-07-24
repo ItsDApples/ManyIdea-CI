@@ -1,0 +1,22 @@
+items:
+  manyidea:bacon_sandwich:
+    material: cooked_beef
+    texture: minecraft:item/custom/bacon_sandwich
+    data:
+      item_name: <!i><gold>培根三明治</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 7
+          saturation: 5.6
+
+recipes:
+  manyidea:bacon_sandwich:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:bread
+      - manyidea:bacon
+      - manyidea:cabbage_leaf
+    result:
+      id: manyidea:bacon_sandwich
+      count: 1

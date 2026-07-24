@@ -1,0 +1,16 @@
+items:
+  manyidea:straw:
+    material: wheat
+    texture: minecraft:item/custom/straw
+    data:
+      item_name: <!i><yellow>稻草</yellow>
+
+recipes:
+  manyidea:straw:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:wheat
+    result:
+      id: manyidea:straw
+      count: 4

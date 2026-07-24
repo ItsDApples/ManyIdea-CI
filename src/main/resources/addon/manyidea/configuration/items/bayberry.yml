@@ -1,0 +1,10 @@
+items:
+  manyidea:bayberry:
+    material: apple
+    texture: minecraft:item/custom/bayberry
+    data:
+      item_name: <!i><red>杨梅</red>
+      $$>=1.20.5:
+        food:
+          nutrition: 2
+          saturation: 1.2

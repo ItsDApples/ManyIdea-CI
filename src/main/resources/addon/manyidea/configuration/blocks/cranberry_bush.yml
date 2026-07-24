@@ -1,0 +1,70 @@
+blocks:
+  manyidea:cranberry_bush:
+    states:
+      properties:
+        age:
+          type: int
+          range: 0~4
+          default: 0
+      appearances:
+        stage0:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/cranberry_bush_0"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/cranberry_bush_0"
+        stage1:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/cranberry_bush_1"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/cranberry_bush_1"
+        stage2:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/cranberry_bush_2"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/cranberry_bush_2"
+        stage3:
+          auto_state: lower_tripwire
+          model:
+            path: "minecraft:block/custom/cranberry_bush_3"
+            generation:
+              parent: "minecraft:block/cross"
+              textures:
+                cross: "minecraft:block/custom/cranberry_bush_3"
+      variants:
+        "age=0":
+          appearance: stage0
+        "age=1":
+          appearance: stage1
+        "age=2":
+          appearance: stage2
+        "age=3":
+          appearance: stage3
+        "age=4":
+          appearance: stage3
+    settings:
+      hardness: 0
+      resistance: 0
+      push_reaction: DESTROY
+      sounds:
+        break: minecraft:block.crop.break
+        place: minecraft:item.crop.plant
+      tags:
+        - minecraft:mineable/axe
+    behaviors:
+      - type: bush_block
+        blacklist: false
+        bottom_block_tags:
+          - minecraft:dirt
+          - minecraft:farmland
+      - type: crop_block
+        age: 4
+        grow_speed: 0.2

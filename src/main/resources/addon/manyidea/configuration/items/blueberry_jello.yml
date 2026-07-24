@@ -1,0 +1,20 @@
+items:
+  manyidea:blueberry_jello:
+    material: honey_bottle
+    texture: minecraft:item/custom/blueberry_jello
+    data:
+      item_name: <!i><gold>蓝莓果冻</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 3
+          saturation: 1.8
+recipes:
+  manyidea:blueberry_jello:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:blueberry_jam
+      - minecraft:sugar
+    result:
+      id: manyidea:blueberry_jello
+      count: 1

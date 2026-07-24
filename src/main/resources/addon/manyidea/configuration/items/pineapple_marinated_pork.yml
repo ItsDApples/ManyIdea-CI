@@ -1,0 +1,21 @@
+items:
+  manyidea:pineapple_marinated_pork:
+    material: cooked_porkchop
+    texture: minecraft:item/custom/pineapple_marinated_pork
+    data:
+      item_name: <!i><gold>菠萝咕唠肉</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 4.8
+
+recipes:
+  manyidea:pineapple_marinated_pork:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:cooked_porkchop
+      - manyidea:pineapple_slice
+    result:
+      id: manyidea:pineapple_marinated_pork
+      count: 1

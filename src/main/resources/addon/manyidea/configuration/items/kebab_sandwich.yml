@@ -1,0 +1,10 @@
+items:
+  manyidea:kebab_sandwich:
+    material: cooked_beef
+    texture: minecraft:item/custom/kebab_sandwich
+    data:
+      item_name: <!i><gold>烧烤三明治</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 14
+          saturation: 9.8

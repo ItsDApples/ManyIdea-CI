@@ -1,0 +1,18 @@
+items:
+  manyidea:rope:
+    material: string
+    texture: minecraft:item/custom/rope
+    data:
+      item_name: <!i><gold>绳子</gold>
+
+recipes:
+  manyidea:rope:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:straw
+      - manyidea:straw
+      - manyidea:straw
+    result:
+      id: manyidea:rope
+      count: 1

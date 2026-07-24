@@ -1,0 +1,21 @@
+items:
+  manyidea:grilled_chicken_skewer:
+    material: cooked_beef
+    texture: minecraft:item/custom/grilled_chicken_skewer
+    data:
+      item_name: <!i><gold>烤鸡肉串</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 7
+          saturation: 4.9
+
+recipes:
+  manyidea:grilled_chicken_skewer:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_chicken_skewer
+      - minecraft:coal
+    result:
+      id: manyidea:grilled_chicken_skewer
+      count: 1

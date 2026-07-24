@@ -1,0 +1,21 @@
+items:
+  manyidea:cooked_rice:
+    material: cooked_beef
+    texture: minecraft:item/custom/cooked_rice
+    data:
+      item_name: <!i><white>米饭</white>
+      $$>=1.20.5:
+        food:
+          nutrition: 5
+          saturation: 3.0
+
+recipes:
+  manyidea:cooked_rice:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:rice
+      - minecraft:bowl
+    result:
+      id: manyidea:cooked_rice
+      count: 1

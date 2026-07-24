@@ -1,0 +1,21 @@
+items:
+  manyidea:pasta_with_mutton_chop:
+    material: cooked_mutton
+    texture: minecraft:item/custom/pasta_with_mutton_chop
+    data:
+      item_name: <!i><gold>羊肉意面</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 10
+          saturation: 6.0
+
+recipes:
+  manyidea:pasta_with_mutton_chop:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_pasta
+      - manyidea:cooked_mutton_chops
+    result:
+      id: manyidea:pasta_with_mutton_chop
+      count: 1

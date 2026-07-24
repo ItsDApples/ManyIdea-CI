@@ -1,0 +1,22 @@
+items:
+  manyidea:mutton_wrap:
+    material: cooked_mutton
+    texture: minecraft:item/custom/mutton_wrap
+    data:
+      item_name: <!i><gold>羊肉卷</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 8
+          saturation: 6.4
+
+recipes:
+  manyidea:mutton_wrap:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - minecraft:bread
+      - manyidea:cooked_mutton_chops
+      - manyidea:tomato
+    result:
+      id: manyidea:mutton_wrap
+      count: 1

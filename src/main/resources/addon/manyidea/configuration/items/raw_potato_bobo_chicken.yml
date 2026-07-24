@@ -1,0 +1,6 @@
+items:
+  manyidea:raw_potato_bobo_chicken:
+    material: potato
+    texture: minecraft:item/custom/raw_potato_bobo_chicken
+    data:
+      item_name: <!i><white>生钵钵土豆</white>

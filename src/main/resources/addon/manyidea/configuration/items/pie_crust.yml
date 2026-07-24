@@ -1,0 +1,17 @@
+items:
+  manyidea:pie_crust:
+    material: sugar
+    texture: minecraft:item/custom/pie_crust
+    data:
+      item_name: <!i><gold>派皮</gold>
+
+recipes:
+  manyidea:pie_crust:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:wheat_dough
+      - minecraft:egg
+    result:
+      id: manyidea:pie_crust
+      count: 1

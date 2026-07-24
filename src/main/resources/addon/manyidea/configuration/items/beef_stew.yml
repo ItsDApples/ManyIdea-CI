@@ -1,0 +1,23 @@
+items:
+  manyidea:beef_stew:
+    material: rabbit_stew
+    texture: minecraft:item/custom/beef_stew
+    data:
+      item_name: <!i><gold>炖牛肉</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 10
+          saturation: 6.0
+
+recipes:
+  manyidea:beef_stew:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:minced_beef
+      - minecraft:carrot
+      - minecraft:potato
+      - minecraft:bowl
+    result:
+      id: manyidea:beef_stew
+      count: 1

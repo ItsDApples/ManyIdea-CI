@@ -1,0 +1,10 @@
+items:
+  manyidea:donkey_burger:
+    material: cooked_beef
+    texture: minecraft:item/custom/donkey_burger
+    data:
+      item_name: <!i><gold>驴肉火烧</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 14
+          saturation: 0.8

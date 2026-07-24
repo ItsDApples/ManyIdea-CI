@@ -1,0 +1,21 @@
+items:
+  manyidea:fried_dumpling:
+    material: cooked_beef
+    texture: minecraft:item/custom/fried_dumpling
+    data:
+      item_name: <!i><gold>大炸饺</gold>
+      $$>=1.20.5:
+        food:
+          nutrition: 16
+          saturation: 0.7
+
+recipes:
+  manyidea:fried_dumpling:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:raw_fried_dumpling
+      - minecraft:coal
+    result:
+      id: manyidea:fried_dumpling
+      count: 1

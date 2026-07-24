@@ -1,0 +1,22 @@
+items:
+  manyidea:hamimelon_juice:
+    material: potion
+    texture: minecraft:item/custom/hamimelon_juice
+    data:
+      item_name: <!i><yellow>哈密瓜汁</yellow>
+      $$>=1.20.5:
+        food:
+          nutrition: 4
+          saturation: 2.4
+
+recipes:
+  manyidea:hamimelon_juice:
+    type: shapeless
+    category: MISC
+    ingredients:
+      - manyidea:hamimelon_slice
+      - minecraft:sugar
+      - minecraft:glass_bottle
+    result:
+      id: manyidea:hamimelon_juice
+      count: 1
