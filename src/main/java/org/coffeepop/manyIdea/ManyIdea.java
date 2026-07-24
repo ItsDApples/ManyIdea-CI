@@ -120,6 +120,8 @@ public final class ManyIdea extends JavaPlugin {
     /**
      * 首次安装或版本更新时，自动将 jar 内置的 CE addon 配置解压到
      * plugins/CraftEngine/resources/ 下，并触发 CE 重新加载资源包。
+     * <p>
+     * 版本匹配时会校验文件完整性，缺失或大小不匹配的会自动补全。
      */
     private void installAddonResourceIfNeeded() {
         Plugin cePlugin = Bukkit.getPluginManager().getPlugin("CraftEngine");
@@ -133,22 +135,29 @@ public final class ManyIdea extends JavaPlugin {
         File versionFile = new File(targetDir, "manyidea/.version");
 
         String currentVersion = getDescription().getVersion();
+        boolean versionMatch = false;
         if (versionFile.exists()) {
             try {
                 String installedVersion = Files.readString(versionFile.toPath()).trim();
-                if (installedVersion.equals(currentVersion)) {
-                    return; // 已是最新，跳过
-                }
+                versionMatch = installedVersion.equals(currentVersion);
             } catch (IOException ignored) {}
         }
 
         try {
-            extractAddonFromJar(targetDir);
-            Files.writeString(versionFile.toPath(), currentVersion);
-            getLogger().info("CE addon resources extracted to " + targetDir.getAbsolutePath());
-
-            // 延迟调用 CE reload，确保 CE 已完全初始化
-            Bukkit.getScheduler().runTask(this, this::reloadCEPack);
+            if (versionMatch) {
+                // 版本匹配：仅校验 + 补全缺失/损坏的文件
+                int fixed = extractAddonFromJar(targetDir, true);
+                if (fixed > 0) {
+                    getLogger().info("CE addon: repaired " + fixed + " missing/corrupted file(s).");
+                    Bukkit.getScheduler().runTask(this, this::reloadCEPack);
+                }
+            } else {
+                // 版本更新或首次安装：全量覆盖
+                extractAddonFromJar(targetDir, false);
+                Files.writeString(versionFile.toPath(), currentVersion);
+                getLogger().info("CE addon resources extracted to " + targetDir.getAbsolutePath());
+                Bukkit.getScheduler().runTask(this, this::reloadCEPack);
+            }
         } catch (IOException e) {
             getLogger().severe("Failed to extract CE addon resources: " + e.getMessage());
             e.printStackTrace();
@@ -157,8 +166,11 @@ public final class ManyIdea extends JavaPlugin {
 
     /**
      * 从当前 jar 中提取 addon/ 目录下的所有文件到目标目录。
+     *
+     * @param missingOnly true 时只写入缺失或大小不匹配的文件，返回修复的文件数
+     * @return 当 missingOnly=true 时返回补充的文件数，否则返回 0
      */
-    private void extractAddonFromJar(File targetDir) throws IOException {
+    private int extractAddonFromJar(File targetDir, boolean missingOnly) throws IOException {
         File jarFile;
         try {
             jarFile = new File(getClass().getProtectionDomain().getCodeSource().getLocation().toURI());
@@ -166,6 +178,7 @@ public final class ManyIdea extends JavaPlugin {
             throw new IOException("Cannot locate plugin jar", e);
         }
 
+        int repaired = 0;
         try (JarFile jar = new JarFile(jarFile)) {
             Enumeration<JarEntry> entries = jar.entries();
             while (entries.hasMoreElements()) {
@@ -173,17 +186,25 @@ public final class ManyIdea extends JavaPlugin {
                 String name = entry.getName();
                 if (!name.startsWith("addon/") || entry.isDirectory()) continue;
 
-                // 去掉 "addon/" 前缀，写入目标目录
                 String relativePath = name.substring("addon/".length());
                 File outFile = new File(targetDir, relativePath);
-                outFile.getParentFile().mkdirs();
 
+                if (missingOnly) {
+                    // 校验：文件存在且大小匹配则跳过
+                    if (outFile.isFile() && outFile.length() == entry.getSize()) {
+                        continue;
+                    }
+                    repaired++;
+                }
+
+                outFile.getParentFile().mkdirs();
                 try (InputStream in = jar.getInputStream(entry);
                      FileOutputStream out = new FileOutputStream(outFile)) {
                     in.transferTo(out);
                 }
             }
         }
+        return repaired;
     }
 
     /**
