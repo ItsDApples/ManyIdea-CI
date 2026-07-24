@@ -1,6 +1,5 @@
 package org.coffeepop.manyIdea;
 
-import net.momirealms.craftengine.core.plugin.CraftEngine;
 import net.momirealms.craftengine.core.util.Key;
 
 import org.bukkit.Bukkit;
@@ -134,7 +133,7 @@ public final class ManyIdea extends JavaPlugin {
         File targetDir = new File(ceDataFolder, "resources");
         File versionFile = new File(targetDir, "manyidea/.version");
 
-        String currentVersion = getDescription().getVersion();
+        String currentVersion = getPluginMeta().getVersion();
         boolean versionMatch = false;
         if (versionFile.exists()) {
             try {
@@ -158,7 +157,6 @@ public final class ManyIdea extends JavaPlugin {
             }
         } catch (IOException e) {
             getLogger().severe("Failed to extract CE addon resources: " + e.getMessage());
-            e.printStackTrace();
         }
     }
 
@@ -212,16 +210,16 @@ public final class ManyIdea extends JavaPlugin {
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "fried_egg"), 0, List.of()));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "dumplings"), 0, List.of()));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "chicken_soup"), 180,
-            List.of(new PotionEffectData(PotionEffectType.ABSORPTION.getName(), 30, 0))));
+            List.of(new PotionEffectData(PotionEffectType.ABSORPTION.getKey().value(), 30, 0))));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "fruit_salad"), 60,
-            List.of(new PotionEffectData(PotionEffectType.REGENERATION.getName(), 5, 0))));
+            List.of(new PotionEffectData(PotionEffectType.REGENERATION.getKey().value(), 5, 0))));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "mixed_salad"), 60,
-            List.of(new PotionEffectData(PotionEffectType.REGENERATION.getName(), 5, 0))));
+            List.of(new PotionEffectData(PotionEffectType.REGENERATION.getKey().value(), 5, 0))));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "magic_apple"), 0,
             List.of(
-                new PotionEffectData(PotionEffectType.REGENERATION.getName(), 10, 1),
-                new PotionEffectData(PotionEffectType.ABSORPTION.getName(), 120, 1),
-                new PotionEffectData(PotionEffectType.SPEED.getName(), 30, 0))));
+                new PotionEffectData(PotionEffectType.REGENERATION.getKey().value(), 10, 1),
+                new PotionEffectData(PotionEffectType.ABSORPTION.getKey().value(), 120, 1),
+                new PotionEffectData(PotionEffectType.SPEED.getKey().value(), 30, 0))));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "tomato"), 0, List.of()));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "tomato_sauce"), 0, List.of()));
         FoodRegistry.register(new CustomFood(Key.of("manyidea", "minced_beef"), 0, List.of()));
