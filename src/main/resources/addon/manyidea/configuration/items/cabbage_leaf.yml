@@ -1,7 +1,7 @@
 items:
   manyidea:cabbage_leaf:
     material: apple
-    texture: minecraft:item/custom/cabbage_leaf
+    texture: manyidea:item/cabbage_leaf
     data:
       item_name: <!i><green>卷心菜叶</green>
       $$>=1.20.5:

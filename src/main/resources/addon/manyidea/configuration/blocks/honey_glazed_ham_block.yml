@@ -6,7 +6,7 @@ items:
       lore:
         - <!i><gray>右键取走一份火腿</gray>
         - <!i><gray>共 4 份</gray>
-    model: minecraft:block/custom/honey_glazed_ham_block
+    model: manyidea:block/honey_glazed_ham_block
     behavior:
       type: block_item
       block:
@@ -35,4 +35,4 @@ items:
         state:
           auto_state: lower_tripwire
           model:
-            path: minecraft:block/custom/honey_glazed_ham_block
+            path: manyidea:block/honey_glazed_ham_block

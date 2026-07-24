@@ -3,7 +3,7 @@ blocks:
     state:
       auto_state: cactus
       model:
-        path: "minecraft:block/custom/cooking_pot"
+        path: "manyidea:block/cooking_pot"
     settings:
       hardness: 3.5
       resistance: 6

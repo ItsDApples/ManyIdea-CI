@@ -1,7 +1,7 @@
 items:
   manyidea:mushroom_rice:
     material: cooked_beef
-    texture: minecraft:item/custom/mushroom_rice
+    texture: manyidea:item/mushroom_rice
     data:
       item_name: <!i><gold>蘑菇饭</gold>
       $$>=1.20.5:

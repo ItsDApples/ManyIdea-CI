@@ -2,13 +2,13 @@
   "format_version": "1.9.0",
   "parent": "block/block",
   "textures": {
-    "tray": "minecraft:block/custom/tray",
-    "tray_bottom": "minecraft:block/custom/tray_bottom",
-    "particle": "minecraft:block/custom/shepherds_pie_top",
-    "pie_top": "minecraft:block/custom/shepherds_pie_top",
-    "pie_side": "minecraft:block/custom/shepherds_pie_side",
-    "pie_inner": "minecraft:block/custom/shepherds_pie_inner",
-    "leftovers": "minecraft:block/custom/shepherds_pie_leftovers"
+    "tray": "manyidea:block/tray",
+    "tray_bottom": "manyidea:block/tray_bottom",
+    "particle": "manyidea:block/shepherds_pie_top",
+    "pie_top": "manyidea:block/shepherds_pie_top",
+    "pie_side": "manyidea:block/shepherds_pie_side",
+    "pie_inner": "manyidea:block/shepherds_pie_inner",
+    "leftovers": "manyidea:block/shepherds_pie_leftovers"
   },
   "elements": [
     {

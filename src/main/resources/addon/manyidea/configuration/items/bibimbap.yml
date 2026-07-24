@@ -1,7 +1,7 @@
 items:
   manyidea:bibimbap:
     material: rabbit_stew
-    texture: minecraft:item/custom/bibimbap
+    texture: manyidea:item/bibimbap
     data:
       item_name: <!i><gold>烤肉盖饭</gold>
       $$>=1.20.5:

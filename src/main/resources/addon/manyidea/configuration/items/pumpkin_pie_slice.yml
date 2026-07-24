@@ -1,7 +1,7 @@
 items:
   manyidea:pumpkin_pie_slice:
     material: cookie
-    texture: minecraft:item/custom/pumpkin_pie_slice
+    texture: manyidea:item/pumpkin_pie_slice
     data:
       item_name: <!i><gold>南瓜派切片</gold>
       $$>=1.20.5:

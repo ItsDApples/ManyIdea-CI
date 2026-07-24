@@ -1,7 +1,7 @@
 items:
   manyidea:hawberry_tea:
     material: potion
-    texture: minecraft:item/custom/hawberry_tea
+    texture: manyidea:item/hawberry_tea
     data:
       item_name: <!i><red>山楂茶</red>
       $$>=1.20.5:

@@ -1,7 +1,7 @@
 items:
   manyidea:hamimelon_shaved_ice:
     material: honey_bottle
-    texture: minecraft:item/custom/hamimelon_shaved_ice
+    texture: manyidea:item/hamimelon_shaved_ice
     data:
       item_name: <!i><yellow>蜜瓜冰沙</yellow>
       $$>=1.20.5:

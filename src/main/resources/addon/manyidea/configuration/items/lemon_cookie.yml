@@ -1,7 +1,7 @@
 items:
   manyidea:lemon_cookie:
     material: cookie
-    texture: minecraft:item/custom/lemon_cookie
+    texture: manyidea:item/lemon_cookie
     data:
       item_name: <!i><gold>柠檬饼干</gold>
       $$>=1.20.5:

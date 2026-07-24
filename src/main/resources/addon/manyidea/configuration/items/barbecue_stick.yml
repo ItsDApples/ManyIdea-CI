@@ -2,7 +2,7 @@
 items:
   manyidea:barbecue_stick:
     material: cooked_chicken
-    texture: minecraft:item/custom/barbecue_stick
+    texture: manyidea:item/barbecue_stick
     data:
       item_name: <!i><gold>烧烤串</gold>
       $$>=1.20.5:

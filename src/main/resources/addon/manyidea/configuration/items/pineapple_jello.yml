@@ -1,7 +1,7 @@
 items:
   manyidea:pineapple_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/pineapple_jello
+    texture: manyidea:item/pineapple_jello
     data:
       item_name: <!i><gold>菠萝果冻</gold>
       $$>=1.20.5:

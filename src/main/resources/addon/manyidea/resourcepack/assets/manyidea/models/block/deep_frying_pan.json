@@ -4,8 +4,8 @@
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "minecraft:block/custom/deep_frying_pan",
-		"particle": "minecraft:block/custom/cooking_pot"
+		"0": "manyidea:block/deep_frying_pan",
+		"particle": "manyidea:block/cooking_pot"
 	},
 	"elements": [
 		{

@@ -1,7 +1,7 @@
 items:
   manyidea:rope:
     material: string
-    texture: minecraft:item/custom/rope
+    texture: manyidea:item/rope
     data:
       item_name: <!i><gold>绳子</gold>
 

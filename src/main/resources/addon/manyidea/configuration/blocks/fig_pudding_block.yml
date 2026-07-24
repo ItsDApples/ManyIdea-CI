@@ -3,7 +3,7 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/fig_pudding_block"
+        path: "manyidea:block/fig_pudding_block"
     settings:
       hardness: 1.5
       resistance: 1.5

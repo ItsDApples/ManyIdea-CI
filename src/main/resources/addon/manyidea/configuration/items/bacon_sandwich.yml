@@ -1,7 +1,7 @@
 items:
   manyidea:bacon_sandwich:
     material: cooked_beef
-    texture: minecraft:item/custom/bacon_sandwich
+    texture: manyidea:item/bacon_sandwich
     data:
       item_name: <!i><gold>培根三明治</gold>
       $$>=1.20.5:

@@ -1,7 +1,7 @@
 items:
   manyidea:peach_jam:
     material: honey_bottle
-    texture: minecraft:item/custom/peach_jam
+    texture: manyidea:item/peach_jam
     data:
       item_name: <!i><gold>桃子果酱</gold>
       $$>=1.20.5:

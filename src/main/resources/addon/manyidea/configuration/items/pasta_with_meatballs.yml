@@ -1,7 +1,7 @@
 items:
   manyidea:pasta_with_meatballs:
     material: cooked_beef
-    texture: minecraft:item/custom/pasta_with_meatballs
+    texture: manyidea:item/pasta_with_meatballs
     data:
       item_name: <!i><gold>肉丸意面</gold>
       $$>=1.20.5:

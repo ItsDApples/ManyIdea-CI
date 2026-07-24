@@ -2,7 +2,7 @@
 items:
   manyidea:iron_knife:
     material: iron_sword
-    texture: minecraft:item/custom/iron_knife
+    texture: manyidea:item/iron_knife
     data:
       item_name: <!i><white>铁刀</white>
       lore:

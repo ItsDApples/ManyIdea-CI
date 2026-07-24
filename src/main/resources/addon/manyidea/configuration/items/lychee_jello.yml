@@ -1,7 +1,7 @@
 items:
   manyidea:lychee_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/lychee_jello
+    texture: manyidea:item/lychee_jello
     data:
       item_name: <!i><gold>荔枝果冻</gold>
       $$>=1.20.5:

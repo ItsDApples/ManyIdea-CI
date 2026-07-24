@@ -1,7 +1,7 @@
 items:
   manyidea:tonkatsu:
     material: cooked_porkchop
-    texture: minecraft:item/custom/tonkatsu
+    texture: manyidea:item/tonkatsu
     data:
       item_name: <!i><gold>炸猪排</gold>
       $$>=1.20.5:

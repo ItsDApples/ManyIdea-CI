@@ -1,7 +1,7 @@
 items:
   manyidea:blueberry_muffin:
     material: cooked_beef
-    texture: minecraft:item/custom/blueberry_muffin
+    texture: manyidea:item/blueberry_muffin
     data:
       item_name: <!i><gold>蓝莓玛芬</gold>
       $$>=1.20.5:

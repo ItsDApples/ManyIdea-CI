@@ -1,7 +1,7 @@
 items:
   manyidea:kiwi_juice:
     material: potion
-    texture: minecraft:item/custom/kiwi_juice
+    texture: manyidea:item/kiwi_juice
     data:
       item_name: <!i><green>猕猴桃饮</green>
       $$>=1.20.5:

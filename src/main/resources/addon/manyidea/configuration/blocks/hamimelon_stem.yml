@@ -3,12 +3,12 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/hamimelon_stem"
+        path: "manyidea:block/hamimelon_stem"
         generation:
           parent: "minecraft:block/stem_fruit"
           textures:
-            stem: "minecraft:block/custom/hamimelon_stem"
-            upperstem: "minecraft:block/custom/attached_hamimelon_stem"
+            stem: "manyidea:block/hamimelon_stem"
+            upperstem: "manyidea:block/attached_hamimelon_stem"
     settings:
       hardness: 0
       resistance: 0
@@ -20,12 +20,12 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/attached_hamimelon_stem"
+        path: "manyidea:block/attached_hamimelon_stem"
         generation:
           parent: "minecraft:block/stem_fruit"
           textures:
-            stem: "minecraft:block/custom/hamimelon_stem"
-            upperstem: "minecraft:block/custom/attached_hamimelon_stem"
+            stem: "manyidea:block/hamimelon_stem"
+            upperstem: "manyidea:block/attached_hamimelon_stem"
     settings:
       hardness: 0
       resistance: 0

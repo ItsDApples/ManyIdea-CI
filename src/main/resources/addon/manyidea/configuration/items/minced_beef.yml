@@ -2,7 +2,7 @@
 items:
   manyidea:minced_beef:
     material: cooked_porkchop
-    texture: minecraft:item/custom/minced_beef
+    texture: manyidea:item/minced_beef
     data:
       item_name: <!i><red>牛肉馅</red>
       lore:

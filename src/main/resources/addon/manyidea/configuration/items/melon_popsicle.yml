@@ -1,7 +1,7 @@
 items:
   manyidea:melon_popsicle:
     material: honey_bottle
-    texture: minecraft:item/custom/melon_popsicle
+    texture: manyidea:item/melon_popsicle
     data:
       item_name: <!i><gold>西瓜冰棍</gold>
       $$>=1.20.5:

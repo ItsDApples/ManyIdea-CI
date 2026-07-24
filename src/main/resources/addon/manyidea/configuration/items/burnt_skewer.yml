@@ -1,7 +1,7 @@
 items:
   manyidea:burnt_skewer:
     material: charcoal
-    texture: minecraft:item/custom/burnt_skewer
+    texture: manyidea:item/burnt_skewer
     data:
       item_name: <!i><gold>烧焦的烤串</gold>
       $$>=1.20.5:

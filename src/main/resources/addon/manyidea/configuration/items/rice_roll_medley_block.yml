@@ -1,7 +1,7 @@
 items:
   manyidea:rice_roll_medley_block:
     material: cake
-    model: minecraft:block/custom/rice_roll_medley_block
+    model: manyidea:block/rice_roll_medley_block
     data:
       item_name: "<!i><gold>寿司拼盘宴席</gold>"
       lore:

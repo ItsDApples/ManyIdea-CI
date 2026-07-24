@@ -1,7 +1,7 @@
 items:
   manyidea:fish_stew:
     material: rabbit_stew
-    texture: minecraft:item/custom/fish_stew
+    texture: manyidea:item/fish_stew
     data:
       item_name: <!i><gold>炖鱼</gold>
       $$>=1.20.5:

@@ -1,7 +1,7 @@
 items:
   manyidea:grill:
     material: iron_block
-    model: minecraft:block/custom/grill
+    model: manyidea:block/grill
     data:
       item_name: <!i><gray>烧烤架</gray>
     behavior:

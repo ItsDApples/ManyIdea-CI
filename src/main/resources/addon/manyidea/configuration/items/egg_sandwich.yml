@@ -1,7 +1,7 @@
 items:
   manyidea:egg_sandwich:
     material: cooked_beef
-    texture: minecraft:item/custom/egg_sandwich
+    texture: manyidea:item/egg_sandwich
     data:
       item_name: <!i><gold>鸡蛋三明治</gold>
       $$>=1.20.5:

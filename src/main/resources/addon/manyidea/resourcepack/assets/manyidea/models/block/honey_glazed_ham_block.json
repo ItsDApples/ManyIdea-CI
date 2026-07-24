@@ -3,13 +3,13 @@
   "parent": "block/block",
   "render_type": "minecraft:cutout",
   "textures": {
-    "tray": "minecraft:block/custom/tray",
-    "tray_bottom": "minecraft:block/custom/tray_bottom",
-    "particle": "minecraft:block/custom/honey_glazed_ham",
-    "ham": "minecraft:block/custom/honey_glazed_ham",
-    "details": "minecraft:block/custom/honey_glazed_ham_details",
-    "side_dish": "minecraft:block/custom/honey_glazed_ham_side_dish",
-    "leftovers": "minecraft:block/custom/honey_glazed_ham_leftovers"
+    "tray": "manyidea:block/tray",
+    "tray_bottom": "manyidea:block/tray_bottom",
+    "particle": "manyidea:block/honey_glazed_ham",
+    "ham": "manyidea:block/honey_glazed_ham",
+    "details": "manyidea:block/honey_glazed_ham_details",
+    "side_dish": "manyidea:block/honey_glazed_ham_side_dish",
+    "leftovers": "manyidea:block/honey_glazed_ham_leftovers"
   },
   "elements": [
     {

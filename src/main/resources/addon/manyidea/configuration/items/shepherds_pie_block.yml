@@ -1,7 +1,7 @@
 items:
   manyidea:shepherds_pie_block:
     material: cake
-    model: minecraft:block/custom/shepherds_pie_block
+    model: manyidea:block/shepherds_pie_block
     data:
       item_name: "<!i><gold>牧羊人派宴席</gold>"
       lore:

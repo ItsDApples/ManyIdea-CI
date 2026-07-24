@@ -1,7 +1,7 @@
 items:
   manyidea:mango_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/mango_jello
+    texture: manyidea:item/mango_jello
     data:
       item_name: <!i><gold>芒果果冻</gold>
       $$>=1.20.5:

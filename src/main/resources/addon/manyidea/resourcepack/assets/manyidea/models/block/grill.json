@@ -1,9 +1,9 @@
 {
 	"parent": "block/block",
 	"textures": {
-		"0": "minecraft:block/custom/grill_side",
-		"1": "minecraft:block/custom/grill_top",
-		"particle": "minecraft:block/custom/grill_side"
+		"0": "manyidea:block/grill_side",
+		"1": "manyidea:block/grill_top",
+		"particle": "manyidea:block/grill_side"
 	},
 	"elements": [
 		{

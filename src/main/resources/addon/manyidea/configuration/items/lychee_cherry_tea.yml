@@ -1,7 +1,7 @@
 items:
   manyidea:lychee_cherry_tea:
     material: potion
-    texture: minecraft:item/custom/lychee_cherry_tea
+    texture: manyidea:item/lychee_cherry_tea
     data:
       item_name: <!i><light_purple>荔枝樱花饮</light_purple>
       $$>=1.20.5:

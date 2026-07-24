@@ -1,7 +1,7 @@
 items:
   manyidea:orange_marinated_pork:
     material: cooked_porkchop
-    texture: minecraft:item/custom/orange_marinated_pork
+    texture: manyidea:item/orange_marinated_pork
     data:
       item_name: <!i><gold>橘子酿肉</gold>
       $$>=1.20.5:

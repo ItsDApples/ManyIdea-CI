@@ -3,7 +3,7 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/cheese_wheel_block"
+        path: "manyidea:block/cheese_wheel_block"
     settings:
       hardness: 2
       resistance: 2

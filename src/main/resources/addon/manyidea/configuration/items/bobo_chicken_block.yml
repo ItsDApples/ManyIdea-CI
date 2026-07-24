@@ -1,7 +1,7 @@
 items:
   manyidea:bobo_chicken_block:
     material: bread
-    texture: minecraft:item/custom/bobo_chicken
+    texture: manyidea:item/bobo_chicken
     data:
       item_name: <!i><gold>钵钵鸡宴席</gold>
       lore:

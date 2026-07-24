@@ -4,7 +4,7 @@
   "textures": {
 	"1": "#cake",
 	"2": "#base",
-	"tray_bottom": "minecraft:block/custom/tray_bottom",
+	"tray_bottom": "manyidea:block/tray_bottom",
 	"particle": "#cake"
   },
   "elements": [

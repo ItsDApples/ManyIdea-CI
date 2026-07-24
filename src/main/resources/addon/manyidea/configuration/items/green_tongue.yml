@@ -1,7 +1,7 @@
 items:
   manyidea:green_tongue:
     material: honey_bottle
-    texture: minecraft:item/custom/green_tongue
+    texture: manyidea:item/green_tongue
     data:
       item_name: <!i><gold>绿舌头雪糕</gold>
       $$>=1.20.5:

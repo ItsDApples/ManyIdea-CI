@@ -1,6 +1,6 @@
 items:
   manyidea:raw_potato_skewer:
     material: potato
-    texture: minecraft:item/custom/raw_potato_skewer
+    texture: manyidea:item/raw_potato_skewer
     data:
       item_name: <!i><white>土豆串</white>

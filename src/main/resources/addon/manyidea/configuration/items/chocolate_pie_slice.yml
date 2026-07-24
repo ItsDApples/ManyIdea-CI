@@ -1,7 +1,7 @@
 items:
   manyidea:chocolate_pie_slice:
     material: cookie
-    texture: minecraft:item/custom/chocolate_pie_slice
+    texture: manyidea:item/chocolate_pie_slice
     data:
       item_name: <!i><gold>巧克力派切片</gold>
       $$>=1.20.5:

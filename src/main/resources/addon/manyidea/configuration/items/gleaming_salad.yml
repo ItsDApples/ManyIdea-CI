@@ -1,7 +1,7 @@
 items:
   manyidea:gleaming_salad:
     material: cooked_beef
-    texture: minecraft:item/custom/gleaming_salad
+    texture: manyidea:item/gleaming_salad
     data:
       item_name: <!i><gold>闪光沙拉</gold>
       $$>=1.20.5:

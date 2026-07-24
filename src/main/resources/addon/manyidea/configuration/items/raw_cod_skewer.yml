@@ -1,6 +1,6 @@
 items:
   manyidea:raw_cod_skewer:
     material: cod
-    texture: minecraft:item/custom/raw_cod_skewer
+    texture: manyidea:item/raw_cod_skewer
     data:
       item_name: <!i><white>生鳕鱼肉串</white>

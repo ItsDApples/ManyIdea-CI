@@ -1,7 +1,7 @@
 items:
   manyidea:potato_bobo_chicken:
     material: cooked_beef
-    texture: minecraft:item/custom/potato_bobo_chicken
+    texture: manyidea:item/potato_bobo_chicken
     data:
       item_name: <!i><gold>钵钵土豆</gold>
       $$>=1.20.5:

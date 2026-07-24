@@ -1,7 +1,7 @@
 items:
   manyidea:fried_chicken_chip:
     material: cookie
-    texture: minecraft:item/custom/fried_chicken_chip
+    texture: manyidea:item/fried_chicken_chip
     data:
       item_name: <!i><gold>炸鸡块</gold>
       $$>=1.20.5:

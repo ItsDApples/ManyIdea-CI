@@ -1,7 +1,7 @@
 items:
   manyidea:milk_bottle:
     material: potion
-    texture: minecraft:item/custom/milk_bottle
+    texture: manyidea:item/milk_bottle
     data:
       item_name: <!i><white>瓶装牛奶</white>
 

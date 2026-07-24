@@ -1,6 +1,6 @@
 items:
   manyidea:pineapple_sapling:
     material: wheat_seeds
-    texture: minecraft:item/custom/pineapple_sapling
+    texture: manyidea:item/pineapple_sapling
     data:
       item_name: <!i><green>菠萝苗</green>

@@ -3,7 +3,7 @@ blocks:
     state:
       auto_state: cactus
       model:
-        path: "minecraft:block/custom/grill"
+        path: "manyidea:block/grill"
     settings:
       hardness: 0.5
       resistance: 6

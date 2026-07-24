@@ -1,7 +1,7 @@
 items:
   manyidea:grilled_potato_skewer:
     material: cooked_beef
-    texture: minecraft:item/custom/grilled_potato_skewer
+    texture: manyidea:item/grilled_potato_skewer
     data:
       item_name: <!i><gold>烤土豆串</gold>
       $$>=1.20.5:

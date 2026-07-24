@@ -1,7 +1,7 @@
 items:
   manyidea:glowberry_jam:
     material: honey_bottle
-    texture: minecraft:item/custom/glowberry_jam
+    texture: manyidea:item/glowberry_jam
     data:
       item_name: <!i><gold>发光莓果酱</gold>
       $$>=1.20.5:

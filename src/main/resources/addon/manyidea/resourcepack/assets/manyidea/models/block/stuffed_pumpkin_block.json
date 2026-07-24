@@ -3,11 +3,11 @@
   "parent": "block/block",
   "render_type": "minecraft:cutout",
   "textures": {
-    "top": "minecraft:block/custom/stuffed_pumpkin_top",
-    "side": "minecraft:block/custom/stuffed_pumpkin_side",
-    "particle": "minecraft:block/custom/stuffed_pumpkin_bottom",
-    "bottom": "minecraft:block/custom/stuffed_pumpkin_bottom",
-    "details": "minecraft:block/custom/stuffed_pumpkin_details"
+    "top": "manyidea:block/stuffed_pumpkin_top",
+    "side": "manyidea:block/stuffed_pumpkin_side",
+    "particle": "manyidea:block/stuffed_pumpkin_bottom",
+    "bottom": "manyidea:block/stuffed_pumpkin_bottom",
+    "details": "manyidea:block/stuffed_pumpkin_details"
   },
   "elements": [
     {

@@ -1,7 +1,7 @@
 items:
   manyidea:kebab_wrap:
     material: cooked_beef
-    texture: minecraft:item/custom/kebab_wrap
+    texture: manyidea:item/kebab_wrap
     data:
       item_name: <!i><gold>烧烤卷饼</gold>
       $$>=1.20.5:

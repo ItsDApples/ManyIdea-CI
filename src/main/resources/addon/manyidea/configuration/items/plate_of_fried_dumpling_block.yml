@@ -1,7 +1,7 @@
 items:
   manyidea:plate_of_fried_dumpling_block:
     material: bread
-    texture: minecraft:item/custom/plate_of_fried_dumpling
+    texture: manyidea:item/plate_of_fried_dumpling
     data:
       item_name: <!i><gold>盘装炸饺</gold>
       lore:

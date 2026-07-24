@@ -1,6 +1,6 @@
 items:
   manyidea:rice:
     material: wheat_seeds
-    texture: minecraft:item/custom/rice
+    texture: manyidea:item/rice
     data:
       item_name: <!i><white>大米</white>

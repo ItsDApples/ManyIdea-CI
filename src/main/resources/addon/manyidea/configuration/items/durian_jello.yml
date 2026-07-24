@@ -1,7 +1,7 @@
 items:
   manyidea:durian_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/durian_jello
+    texture: manyidea:item/durian_jello
     data:
       item_name: <!i><gold>榴莲果冻</gold>
       $$>=1.20.5:

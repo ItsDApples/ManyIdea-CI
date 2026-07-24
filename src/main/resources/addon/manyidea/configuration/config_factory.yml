@@ -3,7 +3,7 @@ blueprint:
     "manyidea:${fruit}_jelly_block":
       material: slime_block
       model:
-        path: "minecraft:block/custom/jelly_block"
+        path: "manyidea:block/jelly_block"
         tints:
           - type: minecraft:constant
             value: "${color_str}"
@@ -16,7 +16,7 @@ blueprint:
     "manyidea:${fruit}_jello_block":
       material: honey_block
       model:
-        path: "minecraft:block/custom/jello_block"
+        path: "manyidea:block/jello_block"
         tints:
           - type: minecraft:constant
             value: "${color_str}"
@@ -31,7 +31,7 @@ blueprint:
       state:
         auto_state: note_block
         model:
-          path: "minecraft:block/custom/jelly_block"
+          path: "manyidea:block/jelly_block"
       settings:
         hardness: 0.5
         resistance: 0.5
@@ -49,7 +49,7 @@ blueprint:
       state:
         auto_state: note_block
         model:
-          path: "minecraft:block/custom/jello_block"
+          path: "manyidea:block/jello_block"
       settings:
         hardness: 0.3
         resistance: 0.3
@@ -92,7 +92,7 @@ config_factory#fruit_trees:
     items:
       "manyidea:${fruit}_sapling":
         material: oak_sapling
-        texture: "minecraft:item/custom/${fruit}_sapling"
+        texture: "manyidea:item/${fruit}_sapling"
         data:
           item_name: "<!i><green>${zh}树苗</green>"
         behavior:
@@ -101,7 +101,7 @@ config_factory#fruit_trees:
 
       "manyidea:${fruit}_leaves":
         material: oak_leaves
-        texture: "minecraft:item/custom/${fruit}_leaves"
+        texture: "manyidea:item/${fruit}_leaves"
         data:
           item_name: "<!i><green>${zh}树叶</green>"
         behavior:
@@ -113,11 +113,11 @@ config_factory#fruit_trees:
         state:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/${fruit}_sapling"
+            path: "manyidea:block/${fruit}_sapling"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/${fruit}_sapling"
+                cross: "manyidea:block/${fruit}_sapling"
         settings:
           hardness: 0
           resistance: 0
@@ -131,7 +131,7 @@ config_factory#fruit_trees:
         state:
           auto_state: note_block
           model:
-            texture: "minecraft:block/custom/${fruit}_leaves"
+            texture: "manyidea:block/${fruit}_leaves"
         settings:
           hardness: 0.2
           resistance: 0.2
@@ -161,7 +161,7 @@ config_factory#crates:
     items:
       "manyidea:${crop}_crate":
         material: oak_planks
-        model: "minecraft:block/custom/${crop}_crate"
+        model: "manyidea:block/${crop}_crate"
         data:
           item_name: "<!i><gold>${zh}箱</gold>"
         behavior:
@@ -173,13 +173,13 @@ config_factory#crates:
         state:
           auto_state: note_block
           model:
-            path: "minecraft:block/custom/${crop}_crate"
+            path: "manyidea:block/${crop}_crate"
             generation:
               parent: "minecraft:block/cube_bottom_top"
               textures:
-                side: "minecraft:block/custom/${crop}_crate_side"
-                bottom: "minecraft:block/custom/crate_bottom"
-                top: "minecraft:block/custom/${crop}_crate_top"
+                side: "manyidea:block/${crop}_crate_side"
+                bottom: "manyidea:block/crate_bottom"
+                top: "manyidea:block/${crop}_crate_top"
         settings:
           hardness: 2
           resistance: 3

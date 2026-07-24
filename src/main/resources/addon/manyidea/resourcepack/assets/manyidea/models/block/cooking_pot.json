@@ -1,11 +1,11 @@
 {
   "parent": "block/block",
   "textures": {
-    "top": "minecraft:block/custom/cooking_pot_top",
-    "particle": "minecraft:block/custom/cooking_pot_side",
-    "side": "minecraft:block/custom/cooking_pot_side",
-    "parts": "minecraft:block/custom/cooking_pot_parts",
-    "bottom": "minecraft:block/custom/cooking_pot_bottom"
+    "top": "manyidea:block/cooking_pot_top",
+    "particle": "manyidea:block/cooking_pot_side",
+    "side": "manyidea:block/cooking_pot_side",
+    "parts": "manyidea:block/cooking_pot_parts",
+    "bottom": "manyidea:block/cooking_pot_bottom"
   },
   "elements": [
     {

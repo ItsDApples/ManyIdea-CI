@@ -1,7 +1,7 @@
 items:
   manyidea:orange_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/orange_jello
+    texture: manyidea:item/orange_jello
     data:
       item_name: <!i><gold>橘子果冻</gold>
       $$>=1.20.5:

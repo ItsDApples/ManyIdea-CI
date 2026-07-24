@@ -1,6 +1,6 @@
 items:
   manyidea:buffalo_sauce:
     material: honey_bottle
-    texture: minecraft:item/custom/buffalo_sauce
+    texture: manyidea:item/buffalo_sauce
     data:
       item_name: <!i><gold>布法罗酱</gold>

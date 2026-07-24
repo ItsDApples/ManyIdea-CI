@@ -3,7 +3,7 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/spring_roll_medley_block"
+        path: "manyidea:block/spring_roll_medley_block"
     settings:
       hardness: 2
       resistance: 2

@@ -1,7 +1,7 @@
 items:
   manyidea:bayberry_soup:
     material: potion
-    texture: minecraft:item/custom/bayberry_soup
+    texture: manyidea:item/bayberry_soup
     data:
       item_name: <!i><red>杨梅汁</red>
       $$>=1.20.5:

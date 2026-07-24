@@ -3,13 +3,13 @@ blocks:
     state:
       auto_state: note_block
       model:
-        path: "minecraft:block/custom/bamboo_basket"
+        path: "manyidea:block/bamboo_basket"
         generation:
           parent: "minecraft:block/cube_bottom_top"
           textures:
-            side: "minecraft:block/custom/bamboo_basket_side"
-            bottom: "minecraft:block/custom/bamboo_basket_bottom"
-            top: "minecraft:block/custom/bamboo_basket_top"
+            side: "manyidea:block/bamboo_basket_side"
+            bottom: "manyidea:block/bamboo_basket_bottom"
+            top: "manyidea:block/bamboo_basket_top"
     settings:
       hardness: 1.5
       resistance: 1.5
@@ -27,13 +27,13 @@ blocks:
     state:
       auto_state: note_block
       model:
-        path: "minecraft:block/custom/wooden_basket"
+        path: "manyidea:block/wooden_basket"
         generation:
           parent: "minecraft:block/cube_bottom_top"
           textures:
-            side: "minecraft:block/custom/wooden_basket_side"
-            bottom: "minecraft:block/custom/wooden_basket_bottom"
-            top: "minecraft:block/custom/wooden_basket_top"
+            side: "manyidea:block/wooden_basket_side"
+            bottom: "manyidea:block/wooden_basket_bottom"
+            top: "manyidea:block/wooden_basket_top"
     settings:
       hardness: 1.5
       resistance: 1.5

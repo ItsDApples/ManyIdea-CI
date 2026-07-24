@@ -1,7 +1,7 @@
 items:
   manyidea:golden_knife:
     material: golden_sword
-    texture: minecraft:item/custom/golden_knife
+    texture: manyidea:item/golden_knife
     data:
       item_name: <!i><yellow>金刀</yellow>
       lore:

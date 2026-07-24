@@ -1,7 +1,7 @@
 items:
   manyidea:persimmon:
     material: apple
-    texture: minecraft:item/custom/persimmon
+    texture: manyidea:item/persimmon
     data:
       item_name: <!i><#FFA500>柿子</#FFA500>
       $$>=1.20.5:

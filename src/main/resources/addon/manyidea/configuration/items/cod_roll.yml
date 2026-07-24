@@ -1,7 +1,7 @@
 items:
   manyidea:cod_roll:
     material: cooked_beef
-    texture: minecraft:item/custom/cod_roll
+    texture: manyidea:item/cod_roll
     data:
       item_name: <!i><gold>鳕鱼卷</gold>
       $$>=1.20.5:

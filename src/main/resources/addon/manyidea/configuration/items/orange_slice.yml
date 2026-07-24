@@ -1,7 +1,7 @@
 items:
   manyidea:orange_slice:
     material: cookie
-    texture: minecraft:item/custom/orange_slice
+    texture: manyidea:item/orange_slice
     data:
       item_name: <!i><#FFA500>橘子片</#FFA500>
       $$>=1.20.5:

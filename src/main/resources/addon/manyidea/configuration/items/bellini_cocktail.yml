@@ -1,7 +1,7 @@
 items:
   manyidea:bellini_cocktail:
     material: potion
-    texture: minecraft:item/custom/bellini_cocktail
+    texture: manyidea:item/bellini_cocktail
     data:
       item_name: <!i><light_purple>贝里尼鸡尾酒</light_purple>
       $$>=1.20.5:

@@ -2,7 +2,7 @@ items:
   manyidea:durian_helmet:
     material: leather_helmet
     client_bound_material: paper
-    model: minecraft:item/custom/durian_helmet
+    model: manyidea:item/durian_helmet
     data:
       item_name: <!i><yellow>榴莲壳头盔</yellow>
       max_damage: 220

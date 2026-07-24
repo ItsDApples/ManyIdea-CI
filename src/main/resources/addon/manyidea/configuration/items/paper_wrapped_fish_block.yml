@@ -1,7 +1,7 @@
 items:
   manyidea:paper_wrapped_fish_block:
     material: bread
-    texture: minecraft:item/custom/paper_wrapped_fish
+    texture: manyidea:item/paper_wrapped_fish
     data:
       item_name: <!i><gold>纸包鱼</gold>
       lore:

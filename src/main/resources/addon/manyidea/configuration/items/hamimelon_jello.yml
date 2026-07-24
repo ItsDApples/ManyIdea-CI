@@ -1,7 +1,7 @@
 items:
   manyidea:hamimelon_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/hamimelon_jello
+    texture: manyidea:item/hamimelon_jello
     data:
       item_name: <!i><gold>哈密瓜果冻</gold>
       $$>=1.20.5:

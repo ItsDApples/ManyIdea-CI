@@ -1,6 +1,6 @@
 items:
   manyidea:gluten_skewer:
     material: stick
-    texture: minecraft:item/custom/gluten_skewer
+    texture: manyidea:item/gluten_skewer
     data:
       item_name: <!i><white>面筋串</white>

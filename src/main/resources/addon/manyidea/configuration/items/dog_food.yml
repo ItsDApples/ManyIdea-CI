@@ -1,6 +1,6 @@
 items:
   manyidea:dog_food:
     material: bowl
-    texture: minecraft:item/custom/dog_food
+    texture: manyidea:item/dog_food
     data:
       item_name: "<!i><#8B4513>狗粮</#8B4513>"

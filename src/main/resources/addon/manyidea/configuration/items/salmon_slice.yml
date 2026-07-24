@@ -1,7 +1,7 @@
 items:
   manyidea:salmon_slice:
     material: salmon
-    texture: minecraft:item/custom/salmon_slice
+    texture: manyidea:item/salmon_slice
     data:
       item_name: <!i><gold>生鲑鱼片</gold>
       $$>=1.20.5:

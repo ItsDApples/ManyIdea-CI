@@ -1,7 +1,7 @@
 items:
   manyidea:vegetable_soup:
     material: rabbit_stew
-    texture: minecraft:item/custom/vegetable_soup
+    texture: manyidea:item/vegetable_soup
     data:
       item_name: <!i><gold>蔬菜汤</gold>
       $$>=1.20.5:

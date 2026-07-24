@@ -1,7 +1,7 @@
 items:
   manyidea:bone_broth:
     material: rabbit_stew
-    texture: minecraft:item/custom/bone_broth
+    texture: manyidea:item/bone_broth
     data:
       item_name: <!i><gold>骨汤</gold>
       $$>=1.20.5:

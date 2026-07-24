@@ -1,7 +1,7 @@
 items:
   manyidea:bayberry_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/bayberry_jello
+    texture: manyidea:item/bayberry_jello
     data:
       item_name: <!i><gold>杨梅果冻</gold>
       $$>=1.20.5:

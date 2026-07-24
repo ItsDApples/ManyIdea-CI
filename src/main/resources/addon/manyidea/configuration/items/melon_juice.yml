@@ -1,7 +1,7 @@
 items:
   manyidea:melon_juice:
     material: potion
-    texture: minecraft:item/custom/melon_juice
+    texture: manyidea:item/melon_juice
     data:
       item_name: <!i><gold>西瓜汁</gold>
       $$>=1.20.5:

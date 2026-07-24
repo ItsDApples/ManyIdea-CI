@@ -1,7 +1,7 @@
 items:
   manyidea:ham:
     material: cooked_porkchop
-    texture: minecraft:item/custom/ham
+    texture: manyidea:item/ham
     data:
       item_name: <!i><gold>火腿</gold>
       $$>=1.20.5:

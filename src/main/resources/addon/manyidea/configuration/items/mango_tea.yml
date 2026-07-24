@@ -1,7 +1,7 @@
 items:
   manyidea:mango_tea:
     material: potion
-    texture: minecraft:item/custom/mango_tea
+    texture: manyidea:item/mango_tea
     data:
       item_name: <!i><yellow>芒果茶</yellow>
       $$>=1.20.5:

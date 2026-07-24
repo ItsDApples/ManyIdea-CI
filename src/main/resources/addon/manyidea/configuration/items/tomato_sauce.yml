@@ -2,7 +2,7 @@
 items:
   manyidea:tomato_sauce:
     material: cooked_beef
-    texture: minecraft:item/custom/tomato_sauce
+    texture: manyidea:item/tomato_sauce
     data:
       item_name: <!i><dark_red>番茄酱</dark_red>
       lore:

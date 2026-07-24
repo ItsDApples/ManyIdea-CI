@@ -1,7 +1,7 @@
 items:
   manyidea:onion_seeds:
     material: wheat_seeds
-    texture: minecraft:item/custom/onion_seeds
+    texture: manyidea:item/onion_seeds
     data:
       item_name: <!i><gold>洋葱种子</gold>
 

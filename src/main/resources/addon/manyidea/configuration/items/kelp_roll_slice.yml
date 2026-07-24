@@ -1,7 +1,7 @@
 items:
   manyidea:kelp_roll_slice:
     material: cookie
-    texture: minecraft:item/custom/kelp_roll_slice
+    texture: manyidea:item/kelp_roll_slice
     data:
       item_name: <!i><green>海带卷切片</green>
       $$>=1.20.5:

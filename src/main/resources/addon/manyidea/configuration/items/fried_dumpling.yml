@@ -1,7 +1,7 @@
 items:
   manyidea:fried_dumpling:
     material: cooked_beef
-    texture: minecraft:item/custom/fried_dumpling
+    texture: manyidea:item/fried_dumpling
     data:
       item_name: <!i><gold>大炸饺</gold>
       $$>=1.20.5:

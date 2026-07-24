@@ -1,7 +1,7 @@
 items:
   manyidea:peach_tea:
     material: potion
-    texture: minecraft:item/custom/peach_tea
+    texture: manyidea:item/peach_tea
     data:
       item_name: <!i><light_purple>白桃乌龙茶</light_purple>
       $$>=1.20.5:

@@ -1,7 +1,7 @@
 items:
   manyidea:stuffed_potato:
     material: baked_potato
-    texture: minecraft:item/custom/stuffed_potato
+    texture: manyidea:item/stuffed_potato
     data:
       item_name: <!i><gold>酿土豆</gold>
       $$>=1.20.5:

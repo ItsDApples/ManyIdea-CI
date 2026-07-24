@@ -3,12 +3,12 @@ blocks:
     state:
       auto_state: note_block
       model:
-        texture: "minecraft:block/custom/hamimelon_side"
+        texture: "manyidea:block/hamimelon_side"
         generation:
           parent: "minecraft:block/cube_column"
           textures:
-            end: "minecraft:block/custom/hamimelon_top"
-            side: "minecraft:block/custom/hamimelon_side"
+            end: "manyidea:block/hamimelon_top"
+            side: "manyidea:block/hamimelon_side"
     settings:
       hardness: 1
       resistance: 1

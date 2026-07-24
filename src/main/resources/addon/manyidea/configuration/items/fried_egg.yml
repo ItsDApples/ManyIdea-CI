@@ -2,7 +2,7 @@
 items:
   manyidea:fried_egg:
     material: cooked_beef
-    texture: minecraft:item/custom/fried_egg
+    texture: manyidea:item/fried_egg
     data:
       item_name: <!i><yellow>煎蛋</yellow>
       $$>=1.20.5:

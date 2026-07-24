@@ -10,43 +10,43 @@ blocks:
         stage0:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/pineapple_stage_0"
+            path: "manyidea:block/pineapple_stage_0"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/pineapple_stage_0"
+                cross: "manyidea:block/pineapple_stage_0"
         stage1:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/pineapple_stage_1"
+            path: "manyidea:block/pineapple_stage_1"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/pineapple_stage_1"
+                cross: "manyidea:block/pineapple_stage_1"
         stage2:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/pineapple_stage_2"
+            path: "manyidea:block/pineapple_stage_2"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/pineapple_stage_2"
+                cross: "manyidea:block/pineapple_stage_2"
         stage3:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/pineapple_stage_3"
+            path: "manyidea:block/pineapple_stage_3"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/pineapple_stage_3"
+                cross: "manyidea:block/pineapple_stage_3"
         stage4:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/pineapple_stage_4"
+            path: "manyidea:block/pineapple_stage_4"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/pineapple_stage_4"
+                cross: "manyidea:block/pineapple_stage_4"
       variants:
         "age=0":
           appearance: stage0

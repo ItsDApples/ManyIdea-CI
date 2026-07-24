@@ -1,7 +1,7 @@
 items:
   manyidea:grilled_salmon:
     material: cooked_salmon
-    texture: minecraft:item/custom/grilled_salmon
+    texture: manyidea:item/grilled_salmon
     data:
       item_name: <!i><gold>烤鲑鱼</gold>
       $$>=1.20.5:

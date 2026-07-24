@@ -1,7 +1,7 @@
 items:
   manyidea:lychee_chicken:
     material: cooked_chicken
-    texture: minecraft:item/custom/lychee_chicken
+    texture: manyidea:item/lychee_chicken
     data:
       item_name: <!i><gold>荔枝鸡球</gold>
       $$>=1.20.5:

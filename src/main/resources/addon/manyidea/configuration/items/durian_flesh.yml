@@ -1,7 +1,7 @@
 items:
   manyidea:durian_flesh:
     material: cookie
-    texture: minecraft:item/custom/durian_flesh
+    texture: manyidea:item/durian_flesh
     data:
       item_name: <!i><yellow>榴莲肉</yellow>
       $$>=1.20.5:

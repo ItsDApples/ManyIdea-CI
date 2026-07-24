@@ -1,7 +1,7 @@
 items:
   manyidea:pumpkin_soup:
     material: rabbit_stew
-    texture: minecraft:item/custom/pumpkin_soup
+    texture: manyidea:item/pumpkin_soup
     data:
       item_name: <!i><gold>南瓜汤</gold>
       $$>=1.20.5:

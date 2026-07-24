@@ -1,6 +1,6 @@
 items:
   manyidea:raw_mushroom_skewer:
     material: brown_mushroom
-    texture: minecraft:item/custom/raw_mushroom_skewer
+    texture: manyidea:item/raw_mushroom_skewer
     data:
       item_name: <!i><white>生蘑菇串</white>

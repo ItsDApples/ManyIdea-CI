@@ -1,7 +1,7 @@
 items:
   manyidea:cabbage_seeds:
     material: wheat_seeds
-    texture: minecraft:item/custom/cabbage_seeds
+    texture: manyidea:item/cabbage_seeds
     data:
       item_name: <!i><green>卷心菜种子</green>
 

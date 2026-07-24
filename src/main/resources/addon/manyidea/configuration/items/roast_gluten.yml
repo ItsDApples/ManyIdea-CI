@@ -1,7 +1,7 @@
 items:
   manyidea:roast_gluten:
     material: cooked_beef
-    texture: minecraft:item/custom/roast_gluten
+    texture: manyidea:item/roast_gluten
     data:
       item_name: <!i><gold>烤面筋</gold>
       $$>=1.20.5:

@@ -1,7 +1,7 @@
 items:
   manyidea:stove:
     material: furnace
-    model: minecraft:block/custom/stove
+    model: manyidea:block/stove
     data:
       item_name: "<!i><gray>炉灶</gray>"
     behavior:

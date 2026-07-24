@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "minecraft:item/custom/durian_helmet_inner",
-    "1": "minecraft:item/custom/durian_helmet",
-    "2": "minecraft:item/custom/durian_helmet_side",
-    "particle": "minecraft:item/custom/durian_helmet_inner"
+    "0": "manyidea:item/durian_helmet_inner",
+    "1": "manyidea:item/durian_helmet",
+    "2": "manyidea:item/durian_helmet_side",
+    "particle": "manyidea:item/durian_helmet_inner"
   },
   "elements": [
     {

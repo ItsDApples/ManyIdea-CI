@@ -2,7 +2,7 @@
 items:
   manyidea:chicken_cuts:
     material: cooked_chicken
-    texture: minecraft:item/custom/chicken_cuts
+    texture: manyidea:item/chicken_cuts
     data:
       item_name: <!i><yellow>鸡肉丁</yellow>
       lore:

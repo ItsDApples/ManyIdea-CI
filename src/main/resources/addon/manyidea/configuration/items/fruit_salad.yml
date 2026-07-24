@@ -2,7 +2,7 @@
 items:
   manyidea:fruit_salad:
     material: mushroom_stew
-    texture: minecraft:item/custom/fruit_salad
+    texture: manyidea:item/fruit_salad
     data:
       item_name: <!i><light_purple>水果沙拉</light_purple>
       lore:

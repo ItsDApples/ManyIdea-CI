@@ -2,7 +2,7 @@
 items:
   manyidea:cooked_chicken_cuts:
     material: cooked_chicken
-    texture: minecraft:item/custom/cooked_chicken_cuts
+    texture: manyidea:item/cooked_chicken_cuts
     data:
       item_name: <!i><yellow>熟鸡肉丁</yellow>
       $$>=1.20.5:

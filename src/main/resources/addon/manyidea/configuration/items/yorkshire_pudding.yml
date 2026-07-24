@@ -1,7 +1,7 @@
 items:
   manyidea:yorkshire_pudding:
     material: bread
-    texture: minecraft:item/custom/yorkshire_pudding
+    texture: manyidea:item/yorkshire_pudding
     data:
       item_name: <!i><gold>约克郡布丁</gold>
       $$>=1.20.5:

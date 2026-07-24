@@ -1,7 +1,7 @@
 items:
   manyidea:mango:
     material: apple
-    texture: minecraft:item/custom/mango
+    texture: manyidea:item/mango
     data:
       item_name: <!i><yellow>芒果</yellow>
       $$>=1.20.5:

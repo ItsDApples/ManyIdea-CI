@@ -1,7 +1,7 @@
 items:
   manyidea:orange_chicken:
     material: cooked_chicken
-    texture: minecraft:item/custom/orange_chicken
+    texture: manyidea:item/orange_chicken
     data:
       item_name: <!i><gold>橘子鸡</gold>
       $$>=1.20.5:

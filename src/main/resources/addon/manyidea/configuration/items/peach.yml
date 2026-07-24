@@ -1,7 +1,7 @@
 items:
   manyidea:peach:
     material: apple
-    texture: minecraft:item/custom/peach
+    texture: manyidea:item/peach
     data:
       item_name: <!i><light_purple>水蜜桃</light_purple>
       $$>=1.20.5:

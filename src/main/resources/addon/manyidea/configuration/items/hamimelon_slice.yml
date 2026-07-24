@@ -1,7 +1,7 @@
 items:
   manyidea:hamimelon_slice:
     material: cookie
-    texture: minecraft:item/custom/hamimelon_slice
+    texture: manyidea:item/hamimelon_slice
     data:
       item_name: <!i><yellow>哈密瓜片</yellow>
       $$>=1.20.5:

@@ -1,7 +1,7 @@
 items:
   manyidea:bacon:
     material: cooked_porkchop
-    texture: minecraft:item/custom/bacon
+    texture: manyidea:item/bacon
     data:
       item_name: <!i><gold>培根</gold>
       $$>=1.20.5:

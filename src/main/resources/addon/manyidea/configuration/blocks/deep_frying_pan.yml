@@ -4,7 +4,7 @@ blocks:
     state:
       auto_state: note_block
       model:
-        path: "minecraft:block/custom/deep_frying_pan"
+        path: "manyidea:block/deep_frying_pan"
     settings:
       hardness: 2
       resistance: 2

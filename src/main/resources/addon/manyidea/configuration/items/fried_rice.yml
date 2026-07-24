@@ -1,7 +1,7 @@
 items:
   manyidea:fried_rice:
     material: cooked_beef
-    texture: minecraft:item/custom/fried_rice
+    texture: manyidea:item/fried_rice
     data:
       item_name: <!i><gold>炒饭</gold>
       $$>=1.20.5:

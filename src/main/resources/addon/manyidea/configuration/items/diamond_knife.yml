@@ -1,7 +1,7 @@
 items:
   manyidea:diamond_knife:
     material: diamond_sword
-    texture: minecraft:item/custom/diamond_knife
+    texture: manyidea:item/diamond_knife
     data:
       item_name: <!i><aqua>钻石刀</aqua>
       lore:

@@ -1,7 +1,7 @@
 items:
   manyidea:pumpkin_slice:
     material: melon_slice
-    texture: minecraft:item/custom/pumpkin_slice
+    texture: manyidea:item/pumpkin_slice
     data:
       item_name: <!i><gold>南瓜片</gold>
       $$>=1.20.5:

@@ -1,6 +1,6 @@
 items:
   manyidea:chili_powder:
     material: sugar
-    texture: minecraft:item/custom/chili_powder
+    texture: manyidea:item/chili_powder
     data:
       item_name: <!i><gold>辣椒粉</gold>

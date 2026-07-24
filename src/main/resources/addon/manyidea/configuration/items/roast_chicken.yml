@@ -1,7 +1,7 @@
 items:
   manyidea:roast_chicken:
     material: cooked_chicken
-    texture: minecraft:item/custom/roast_chicken
+    texture: manyidea:item/roast_chicken
     data:
       item_name: <!i><gold>烤鸡</gold>
       $$>=1.20.5:

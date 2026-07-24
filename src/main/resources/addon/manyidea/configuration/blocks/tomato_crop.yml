@@ -10,35 +10,35 @@ blocks:
         stage0:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/tomato_crop_0"
+            path: "manyidea:block/tomato_crop_0"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/tomatoes_stage0"
+                cross: "manyidea:block/tomatoes_stage0"
         stage1:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/tomato_crop_1"
+            path: "manyidea:block/tomato_crop_1"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/tomatoes_stage1"
+                cross: "manyidea:block/tomatoes_stage1"
         stage2:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/tomato_crop_2"
+            path: "manyidea:block/tomato_crop_2"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/tomatoes_stage2"
+                cross: "manyidea:block/tomatoes_stage2"
         stage3:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/tomato_crop_3"
+            path: "manyidea:block/tomato_crop_3"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/tomatoes_stage3"
+                cross: "manyidea:block/tomatoes_stage3"
       variants:
         "age=0":
           appearance: stage0

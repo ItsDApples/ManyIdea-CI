@@ -1,7 +1,7 @@
 items:
   manyidea:pie_crust:
     material: sugar
-    texture: minecraft:item/custom/pie_crust
+    texture: manyidea:item/pie_crust
     data:
       item_name: <!i><gold>派皮</gold>
 

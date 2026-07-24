@@ -1,6 +1,6 @@
 items:
   manyidea:raw_vegetable_skewer:
     material: carrot
-    texture: minecraft:item/custom/raw_vegetable_skewer
+    texture: manyidea:item/raw_vegetable_skewer
     data:
       item_name: <!i><white>生果蔬串</white>

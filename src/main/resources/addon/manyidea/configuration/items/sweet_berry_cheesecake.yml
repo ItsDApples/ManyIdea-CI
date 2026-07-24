@@ -1,7 +1,7 @@
 items:
   manyidea:sweet_berry_cheesecake:
     material: pumpkin_pie
-    texture: minecraft:item/custom/sweet_berry_cheesecake
+    texture: manyidea:item/sweet_berry_cheesecake
     data:
       item_name: <!i><gold>甜浆果芝士蛋糕</gold>
       $$>=1.20.5:

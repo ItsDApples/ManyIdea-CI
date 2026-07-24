@@ -1,7 +1,7 @@
 items:
   manyidea:cooked_rice:
     material: cooked_beef
-    texture: minecraft:item/custom/cooked_rice
+    texture: manyidea:item/cooked_rice
     data:
       item_name: <!i><white>米饭</white>
       $$>=1.20.5:

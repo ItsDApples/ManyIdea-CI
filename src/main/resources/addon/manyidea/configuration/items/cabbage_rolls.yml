@@ -1,7 +1,7 @@
 items:
   manyidea:cabbage_rolls:
     material: cooked_beef
-    texture: minecraft:item/custom/cabbage_rolls
+    texture: manyidea:item/cabbage_rolls
     data:
       item_name: <!i><gold>卷心菜卷</gold>
       $$>=1.20.5:

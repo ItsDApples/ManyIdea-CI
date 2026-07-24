@@ -1,11 +1,11 @@
 {
   "parent": "block/block",
   "textures": {
-    "front": "minecraft:block/custom/stove_front",
-    "side": "minecraft:block/custom/stove_side",
-    "top": "minecraft:block/custom/stove_top",
-    "bottom": "minecraft:block/custom/stove_bottom",
-    "particle": "minecraft:block/custom/stove_side"
+    "front": "manyidea:block/stove_front",
+    "side": "manyidea:block/stove_side",
+    "top": "manyidea:block/stove_top",
+    "bottom": "manyidea:block/stove_bottom",
+    "particle": "manyidea:block/stove_side"
   },
   "elements": [
     {

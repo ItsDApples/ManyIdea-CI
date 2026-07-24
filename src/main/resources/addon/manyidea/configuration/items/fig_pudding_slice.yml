@@ -1,7 +1,7 @@
 items:
   manyidea:fig_pudding_slice:
     material: cookie
-    texture: minecraft:item/custom/fig_pudding_slice
+    texture: manyidea:item/fig_pudding_slice
     data:
       item_name: <!i><gold>无花果布丁切片</gold>
       $$>=1.20.5:

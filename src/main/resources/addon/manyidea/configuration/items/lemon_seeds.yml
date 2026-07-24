@@ -1,6 +1,6 @@
 items:
   manyidea:lemon_seeds:
     material: wheat_seeds
-    texture: minecraft:item/custom/lemon_seeds
+    texture: manyidea:item/lemon_seeds
     data:
       item_name: <!i><green>柠檬种子</green>

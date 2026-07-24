@@ -1,7 +1,7 @@
 items:
   manyidea:mutton_wrap:
     material: cooked_mutton
-    texture: minecraft:item/custom/mutton_wrap
+    texture: manyidea:item/mutton_wrap
     data:
       item_name: <!i><gold>羊肉卷</gold>
       $$>=1.20.5:

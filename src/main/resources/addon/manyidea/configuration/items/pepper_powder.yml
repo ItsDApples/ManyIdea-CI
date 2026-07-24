@@ -1,6 +1,6 @@
 items:
   manyidea:pepper_powder:
     material: sugar
-    texture: minecraft:item/custom/pepper_powder
+    texture: manyidea:item/pepper_powder
     data:
       item_name: <!i><gold>胡椒粉</gold>

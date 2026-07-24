@@ -1,6 +1,6 @@
 items:
   manyidea:beef_patty:
     material: cooked_beef
-    texture: minecraft:item/custom/beef_patty
+    texture: manyidea:item/beef_patty
     data:
       item_name: "<!i><#A0522D>牛肉饼</#A0522D>"

@@ -1,7 +1,7 @@
 items:
   manyidea:hot_cocoa:
     material: potion
-    texture: minecraft:item/custom/hot_cocoa
+    texture: manyidea:item/hot_cocoa
     data:
       item_name: <!i><gold>热可可</gold>
       $$>=1.20.5:

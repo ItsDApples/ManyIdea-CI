@@ -1,7 +1,7 @@
 items:
   manyidea:hawberry_sheet:
     material: cooked_beef
-    texture: minecraft:item/custom/hawberry_sheet
+    texture: manyidea:item/hawberry_sheet
     data:
       item_name: <!i><red>果丹皮</red>
       $$>=1.20.5:

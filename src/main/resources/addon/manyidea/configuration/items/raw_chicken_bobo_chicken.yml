@@ -1,6 +1,6 @@
 items:
   manyidea:raw_chicken_bobo_chicken:
     material: chicken
-    texture: minecraft:item/custom/raw_chicken_bobo_chicken
+    texture: manyidea:item/raw_chicken_bobo_chicken
     data:
       item_name: <!i><white>生钵钵鸡肉</white>

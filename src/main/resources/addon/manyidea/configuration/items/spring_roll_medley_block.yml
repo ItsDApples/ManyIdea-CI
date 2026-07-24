@@ -1,7 +1,7 @@
 items:
   manyidea:spring_roll_medley_block:
     material: bread
-    texture: minecraft:item/custom/spring_roll_medley
+    texture: manyidea:item/spring_roll_medley
     data:
       item_name: <!i><gold>春卷拼盘</gold>
       lore:

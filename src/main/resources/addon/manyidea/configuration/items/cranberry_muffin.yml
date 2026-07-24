@@ -1,7 +1,7 @@
 items:
   manyidea:cranberry_muffin:
     material: cooked_beef
-    texture: minecraft:item/custom/cranberry_muffin
+    texture: manyidea:item/cranberry_muffin
     data:
       item_name: <!i><red>蔓越莓玛芬</red>
       $$>=1.20.5:

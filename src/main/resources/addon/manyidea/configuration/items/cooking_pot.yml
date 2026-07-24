@@ -1,7 +1,7 @@
 items:
   manyidea:cooking_pot:
     material: cauldron
-    texture: minecraft:item/custom/cooking_pot
+    texture: manyidea:item/cooking_pot
     data:
       item_name: <!i><gray>烹饪锅</gray>
       lore:

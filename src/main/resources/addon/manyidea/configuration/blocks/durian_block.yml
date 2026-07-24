@@ -3,7 +3,7 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/durian_block"
+        path: "manyidea:block/durian_block"
     settings:
       hardness: 1.5
       resistance: 1.5

@@ -1,7 +1,7 @@
 items:
   manyidea:flint_knife:
     material: stone_sword
-    texture: minecraft:item/custom/flint_knife
+    texture: manyidea:item/flint_knife
     data:
       item_name: <!i><gray>燧石刀</gray>
       lore:

@@ -1,7 +1,7 @@
 items:
   manyidea:pear_with_rock_sugar:
     material: honey_bottle
-    texture: minecraft:item/custom/pear_with_rock_sugar
+    texture: manyidea:item/pear_with_rock_sugar
     data:
       item_name: <!i><gold>冰糖雪梨</gold>
       $$>=1.20.5:

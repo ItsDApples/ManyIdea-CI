@@ -1,7 +1,7 @@
 items:
   manyidea:wheat_dough:
     material: sugar
-    texture: minecraft:item/custom/wheat_dough
+    texture: manyidea:item/wheat_dough
     data:
       item_name: <!i><gold>面团</gold>
 

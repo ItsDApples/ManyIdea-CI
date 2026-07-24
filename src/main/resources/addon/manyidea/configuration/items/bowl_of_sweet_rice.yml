@@ -1,7 +1,7 @@
 items:
   manyidea:bowl_of_sweet_rice:
     material: rabbit_stew
-    texture: minecraft:item/custom/bowl_of_sweet_rice
+    texture: manyidea:item/bowl_of_sweet_rice
     data:
       item_name: <!i><gold>碗装八宝饭</gold>
       $$>=1.20.5:

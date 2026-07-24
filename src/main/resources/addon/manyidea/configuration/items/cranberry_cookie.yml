@@ -1,7 +1,7 @@
 items:
   manyidea:cranberry_cookie:
     material: cookie
-    texture: minecraft:item/custom/cranberry_cookie
+    texture: manyidea:item/cranberry_cookie
     data:
       item_name: <!i><red>蔓越莓饼干</red>
       $$>=1.20.5:

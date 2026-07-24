@@ -1,7 +1,7 @@
 items:
   manyidea:cutting_board:
     material: crafting_table
-    model: minecraft:block/custom/cutting_board
+    model: manyidea:block/cutting_board
     data:
       item_name: <!i><gray>砧板</gray>
       lore:

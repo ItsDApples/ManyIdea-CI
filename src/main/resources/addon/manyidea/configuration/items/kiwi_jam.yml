@@ -1,7 +1,7 @@
 items:
   manyidea:kiwi_jam:
     material: honey_bottle
-    texture: minecraft:item/custom/kiwi_jam
+    texture: manyidea:item/kiwi_jam
     data:
       item_name: <!i><gold>猕猴桃果酱</gold>
       $$>=1.20.5:

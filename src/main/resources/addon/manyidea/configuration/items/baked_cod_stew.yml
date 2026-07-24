@@ -1,7 +1,7 @@
 items:
   manyidea:baked_cod_stew:
     material: rabbit_stew
-    texture: minecraft:item/custom/baked_cod_stew
+    texture: manyidea:item/baked_cod_stew
     data:
       item_name: <!i><gold>烤鳕鱼炖菜</gold>
       $$>=1.20.5:

@@ -3,7 +3,7 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/rice_roll_medley_block"
+        path: "manyidea:block/rice_roll_medley_block"
     settings:
       hardness: 1
       resistance: 1

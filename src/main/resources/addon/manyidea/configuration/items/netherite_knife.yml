@@ -1,7 +1,7 @@
 items:
   manyidea:netherite_knife:
     material: netherite_sword
-    texture: minecraft:item/custom/netherite_knife
+    texture: manyidea:item/netherite_knife
     data:
       item_name: <!i><dark_purple>下界合金刀</dark_purple>
       lore:

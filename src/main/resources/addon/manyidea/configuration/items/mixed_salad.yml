@@ -2,7 +2,7 @@
 items:
   manyidea:mixed_salad:
     material: beetroot_soup
-    texture: minecraft:item/custom/mixed_salad
+    texture: manyidea:item/mixed_salad
     data:
       item_name: <!i><green>混合沙拉</green>
       lore:

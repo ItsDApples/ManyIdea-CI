@@ -1,7 +1,7 @@
 items:
   manyidea:apple_jam:
     material: honey_bottle
-    texture: minecraft:item/custom/apple_jam
+    texture: manyidea:item/apple_jam
     data:
       item_name: <!i><gold>苹果果酱</gold>
       $$>=1.20.5:

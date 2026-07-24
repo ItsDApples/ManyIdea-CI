@@ -1,7 +1,7 @@
 items:
   manyidea:dried_persimmon:
     material: cooked_beef
-    texture: minecraft:item/custom/dried_persimmon
+    texture: manyidea:item/dried_persimmon
     data:
       item_name: <!i><#FFA500>柿饼</#FFA500>
       $$>=1.20.5:

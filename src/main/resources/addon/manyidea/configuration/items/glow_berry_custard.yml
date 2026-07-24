@@ -1,7 +1,7 @@
 items:
   manyidea:glow_berry_custard:
     material: honey_bottle
-    texture: minecraft:item/custom/glow_berry_custard
+    texture: manyidea:item/glow_berry_custard
     data:
       item_name: <!i><gold>发光浆果奶冻</gold>
       $$>=1.20.5:

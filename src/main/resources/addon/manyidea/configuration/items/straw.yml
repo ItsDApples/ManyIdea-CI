@@ -1,7 +1,7 @@
 items:
   manyidea:straw:
     material: wheat
-    texture: minecraft:item/custom/straw
+    texture: manyidea:item/straw
     data:
       item_name: <!i><yellow>稻草</yellow>
 

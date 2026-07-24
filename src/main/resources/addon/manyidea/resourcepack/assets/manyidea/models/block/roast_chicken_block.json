@@ -2,13 +2,13 @@
   "format_version": "1.9.0",
   "parent": "block/block",
   "textures": {
-    "tray": "minecraft:block/custom/tray",
-    "tray_bottom": "minecraft:block/custom/tray_bottom",
-    "leftovers": "minecraft:block/custom/roast_chicken_leftovers",
-    "particle": "minecraft:block/custom/roast_chicken",
-    "chicken": "minecraft:block/custom/roast_chicken",
-    "details": "minecraft:block/custom/roast_chicken_details",
-    "side_dish": "minecraft:block/custom/roast_chicken_side_dish"
+    "tray": "manyidea:block/tray",
+    "tray_bottom": "manyidea:block/tray_bottom",
+    "leftovers": "manyidea:block/roast_chicken_leftovers",
+    "particle": "manyidea:block/roast_chicken",
+    "chicken": "manyidea:block/roast_chicken",
+    "details": "manyidea:block/roast_chicken_details",
+    "side_dish": "manyidea:block/roast_chicken_side_dish"
   },
   "elements": [
     {

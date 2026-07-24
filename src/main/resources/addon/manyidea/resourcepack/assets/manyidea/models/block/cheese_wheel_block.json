@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"particle": "minecraft:block/custom/cheese_wheel",
-		"Cheese": "minecraft:block/custom/cheese_wheel"
+		"particle": "manyidea:block/cheese_wheel",
+		"Cheese": "manyidea:block/cheese_wheel"
 	},
 	"elements": [
 		{

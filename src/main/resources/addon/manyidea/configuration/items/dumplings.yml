@@ -2,7 +2,7 @@
 items:
   manyidea:dumplings:
     material: cooked_porkchop
-    texture: minecraft:item/custom/dumplings
+    texture: manyidea:item/dumplings
     data:
       item_name: <!i><white>饺子</white>
       $$>=1.20.5:

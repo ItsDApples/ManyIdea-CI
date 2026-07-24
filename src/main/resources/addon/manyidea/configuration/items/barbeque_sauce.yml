@@ -1,6 +1,6 @@
 items:
   manyidea:barbeque_sauce:
     material: honey_bottle
-    texture: minecraft:item/custom/barbeque_sauce
+    texture: manyidea:item/barbeque_sauce
     data:
       item_name: <!i><gold>烤肉酱</gold>

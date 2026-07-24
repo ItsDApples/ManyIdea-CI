@@ -1,7 +1,7 @@
 items:
   manyidea:hawberry_jam:
     material: honey_bottle
-    texture: minecraft:item/custom/hawberry_jam
+    texture: manyidea:item/hawberry_jam
     data:
       item_name: <!i><gold>山楂果酱</gold>
       $$>=1.20.5:

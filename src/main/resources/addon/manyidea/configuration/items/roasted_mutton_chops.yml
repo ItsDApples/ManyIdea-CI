@@ -1,7 +1,7 @@
 items:
   manyidea:roasted_mutton_chops:
     material: cooked_mutton
-    texture: minecraft:item/custom/roasted_mutton_chops
+    texture: manyidea:item/roasted_mutton_chops
     data:
       item_name: <!i><gold>烤羊排</gold>
       $$>=1.20.5:

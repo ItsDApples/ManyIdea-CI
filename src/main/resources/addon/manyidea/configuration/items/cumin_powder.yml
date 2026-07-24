@@ -1,6 +1,6 @@
 items:
   manyidea:cumin_powder:
     material: sugar
-    texture: minecraft:item/custom/cumin_powder
+    texture: manyidea:item/cumin_powder
     data:
       item_name: <!i><gold>孜然粉</gold>

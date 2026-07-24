@@ -1,7 +1,7 @@
 items:
   manyidea:raw_pasta:
     material: sugar
-    texture: minecraft:item/custom/raw_pasta
+    texture: manyidea:item/raw_pasta
     data:
       item_name: <!i><gold>生意面</gold>
 

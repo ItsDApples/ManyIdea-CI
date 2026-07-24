@@ -1,7 +1,7 @@
 items:
   manyidea:steak_and_potatoes:
     material: cooked_beef
-    texture: minecraft:item/custom/steak_and_potatoes
+    texture: manyidea:item/steak_and_potatoes
     data:
       item_name: <!i><gold>牛排配土豆</gold>
       $$>=1.20.5:

@@ -1,7 +1,7 @@
 items:
   manyidea:mangosteen_tea:
     material: potion
-    texture: minecraft:item/custom/mangosteen_tea
+    texture: manyidea:item/mangosteen_tea
     data:
       item_name: <!i><dark_purple>山竹清茶</dark_purple>
       $$>=1.20.5:

@@ -10,35 +10,35 @@ blocks:
         stage0:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/cranberry_bush_0"
+            path: "manyidea:block/cranberry_bush_0"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/cranberry_bush_0"
+                cross: "manyidea:block/cranberry_bush_0"
         stage1:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/cranberry_bush_1"
+            path: "manyidea:block/cranberry_bush_1"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/cranberry_bush_1"
+                cross: "manyidea:block/cranberry_bush_1"
         stage2:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/cranberry_bush_2"
+            path: "manyidea:block/cranberry_bush_2"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/cranberry_bush_2"
+                cross: "manyidea:block/cranberry_bush_2"
         stage3:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/cranberry_bush_3"
+            path: "manyidea:block/cranberry_bush_3"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/cranberry_bush_3"
+                cross: "manyidea:block/cranberry_bush_3"
       variants:
         "age=0":
           appearance: stage0

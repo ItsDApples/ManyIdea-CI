@@ -10,19 +10,19 @@ blocks:
         stage0:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/blueberry_bush_0"
+            path: "manyidea:block/blueberry_bush_0"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/blueberry_bush_cross"
+                cross: "manyidea:block/blueberry_bush_cross"
         stage1:
           auto_state: lower_tripwire
           model:
-            path: "minecraft:block/custom/blueberry_bush_1"
+            path: "manyidea:block/blueberry_bush_1"
             generation:
               parent: "minecraft:block/cross"
               textures:
-                cross: "minecraft:block/custom/blueberry_bush_fruits_cross"
+                cross: "manyidea:block/blueberry_bush_fruits_cross"
       variants:
         "age=0":
           appearance: stage0

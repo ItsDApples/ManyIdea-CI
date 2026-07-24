@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "minecraft:block/custom/bobo_chicken",
-		"particle": "minecraft:block/custom/bobo_chicken"
+		"1": "manyidea:block/bobo_chicken",
+		"particle": "manyidea:block/bobo_chicken"
 	},
 	"elements": [
 		{

@@ -1,7 +1,7 @@
 items:
   manyidea:blueberry:
     material: apple
-    texture: minecraft:item/custom/blueberry
+    texture: manyidea:item/blueberry
     data:
       item_name: <!i><blue>蓝莓</blue>
       $$>=1.20.5:

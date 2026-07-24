@@ -1,7 +1,7 @@
 items:
   manyidea:apple_pie:
     material: pumpkin_pie
-    texture: minecraft:item/custom/apple_pie
+    texture: manyidea:item/apple_pie
     data:
       item_name: <!i><gold>苹果派</gold>
       $$>=1.20.5:

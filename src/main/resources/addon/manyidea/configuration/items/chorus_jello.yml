@@ -1,7 +1,7 @@
 items:
   manyidea:chorus_jello:
     material: honey_bottle
-    texture: minecraft:item/custom/chorus_jello
+    texture: manyidea:item/chorus_jello
     data:
       item_name: <!i><gold>紫颂果果冻</gold>
       $$>=1.20.5:

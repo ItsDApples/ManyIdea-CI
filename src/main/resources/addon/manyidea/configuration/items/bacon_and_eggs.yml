@@ -1,7 +1,7 @@
 items:
   manyidea:bacon_and_eggs:
     material: cooked_beef
-    texture: minecraft:item/custom/bacon_and_eggs
+    texture: manyidea:item/bacon_and_eggs
     data:
       item_name: <!i><gold>培根煎蛋</gold>
       $$>=1.20.5:

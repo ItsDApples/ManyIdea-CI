@@ -1,7 +1,7 @@
 items:
   manyidea:baked_durian:
     material: cooked_beef
-    texture: minecraft:item/custom/baked_durian
+    texture: manyidea:item/baked_durian
     data:
       item_name: <!i><gold>烤榴莲</gold>
       $$>=1.20.5:

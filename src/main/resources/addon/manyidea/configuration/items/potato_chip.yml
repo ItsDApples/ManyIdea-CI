@@ -1,7 +1,7 @@
 items:
   manyidea:potato_chip:
     material: cookie
-    texture: minecraft:item/custom/potato_chip
+    texture: manyidea:item/potato_chip
     data:
       item_name: <!i><gold>薯片</gold>
       $$>=1.20.5:

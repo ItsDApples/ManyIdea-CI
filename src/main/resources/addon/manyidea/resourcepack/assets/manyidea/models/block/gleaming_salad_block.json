@@ -3,12 +3,12 @@
   "parent": "block/block",
   "render_type": "minecraft:cutout",
   "textures": {
-    "bowl": "minecraft:block/custom/bowl",
-    "tray_bottom": "minecraft:block/custom/tray_bottom",
-    "particle": "minecraft:block/custom/gleaming_salad",
-    "salad": "minecraft:block/custom/gleaming_salad",
-    "details": "minecraft:block/custom/gleaming_salad_details",
-    "leftovers": "minecraft:block/custom/gleaming_salad_leftovers"
+    "bowl": "manyidea:block/bowl",
+    "tray_bottom": "manyidea:block/tray_bottom",
+    "particle": "manyidea:block/gleaming_salad",
+    "salad": "manyidea:block/gleaming_salad",
+    "details": "manyidea:block/gleaming_salad_details",
+    "leftovers": "manyidea:block/gleaming_salad_leftovers"
   },
   "elements": [
     {

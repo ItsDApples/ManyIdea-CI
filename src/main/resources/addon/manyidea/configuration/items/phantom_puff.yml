@@ -1,7 +1,7 @@
 items:
   manyidea:phantom_puff:
     material: cookie
-    texture: minecraft:item/custom/phantom_puff
+    texture: manyidea:item/phantom_puff
     data:
       item_name: <!i><gold>幻翼泡芙</gold>
       $$>=1.20.5:

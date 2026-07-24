@@ -3,11 +3,11 @@ blocks:
     state:
       auto_state: lower_tripwire
       model:
-        path: "minecraft:block/custom/tray"
+        path: "manyidea:block/tray"
         generation:
           parent: "minecraft:block/carpet"
           textures:
-            wool: "minecraft:block/custom/crate_bottom"
+            wool: "manyidea:block/crate_bottom"
     settings:
       hardness: 1.5
       resistance: 1.5

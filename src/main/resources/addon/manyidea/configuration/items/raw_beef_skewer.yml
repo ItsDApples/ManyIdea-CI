@@ -1,6 +1,6 @@
 items:
   manyidea:raw_beef_skewer:
     material: beef
-    texture: minecraft:item/custom/raw_beef_skewer
+    texture: manyidea:item/raw_beef_skewer
     data:
       item_name: <!i><white>生牛肉串</white>

@@ -1,7 +1,7 @@
 items:
   manyidea:phantom_dumplings:
     material: cooked_beef
-    texture: minecraft:item/custom/phantom_dumplings
+    texture: manyidea:item/phantom_dumplings
     data:
       item_name: <!i><gold>幻翼饺子</gold>
       $$>=1.20.5:

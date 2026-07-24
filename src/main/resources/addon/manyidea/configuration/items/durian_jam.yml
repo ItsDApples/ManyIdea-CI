@@ -1,7 +1,7 @@
 items:
   manyidea:durian_jam:
     material: honey_bottle
-    texture: minecraft:item/custom/durian_jam
+    texture: manyidea:item/durian_jam
     data:
       item_name: <!i><gold>榴莲果酱</gold>
       $$>=1.20.5:

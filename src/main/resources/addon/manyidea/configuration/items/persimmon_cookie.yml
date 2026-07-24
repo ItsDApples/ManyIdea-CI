@@ -1,7 +1,7 @@
 items:
   manyidea:persimmon_cookie:
     material: cookie
-    texture: minecraft:item/custom/persimmon_cookie
+    texture: manyidea:item/persimmon_cookie
     data:
       item_name: <!i><gold>柿饼干</gold>
       $$>=1.20.5:

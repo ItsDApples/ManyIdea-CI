@@ -1,7 +1,7 @@
 items:
   manyidea:onion:
     material: potato
-    texture: minecraft:item/custom/onion
+    texture: manyidea:item/onion
     data:
       item_name: <!i><gold>洋葱</gold>
       $$>=1.20.5:

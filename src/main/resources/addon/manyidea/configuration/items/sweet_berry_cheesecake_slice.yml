@@ -1,7 +1,7 @@
 items:
   manyidea:sweet_berry_cheesecake_slice:
     material: cookie
-    texture: minecraft:item/custom/sweet_berry_cheesecake_slice
+    texture: manyidea:item/sweet_berry_cheesecake_slice
     data:
       item_name: <!i><gold>芝士蛋糕切片</gold>
       $$>=1.20.5:

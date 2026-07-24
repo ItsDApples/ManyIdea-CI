@@ -1,7 +1,7 @@
 items:
   manyidea:vegetable_noodles:
     material: cooked_beef
-    texture: minecraft:item/custom/vegetable_noodles
+    texture: manyidea:item/vegetable_noodles
     data:
       item_name: <!i><gold>蔬菜面</gold>
       $$>=1.20.5:

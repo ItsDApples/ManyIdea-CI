@@ -1,7 +1,7 @@
 items:
   manyidea:raw_cheese_wheel_block:
     material: bread
-    texture: minecraft:item/custom/raw_cheese_wheel
+    texture: manyidea:item/raw_cheese_wheel
     data:
       item_name: <!i><gold>生芝士轮</gold>
       lore:

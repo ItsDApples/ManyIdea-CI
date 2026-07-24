@@ -1,7 +1,7 @@
 items:
   manyidea:hamimelon_juice:
     material: potion
-    texture: minecraft:item/custom/hamimelon_juice
+    texture: manyidea:item/hamimelon_juice
     data:
       item_name: <!i><yellow>哈密瓜汁</yellow>
       $$>=1.20.5:

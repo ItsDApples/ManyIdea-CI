@@ -1,7 +1,7 @@
 items:
   manyidea:pineapple_slice:
     material: cookie
-    texture: minecraft:item/custom/pineapple_slice
+    texture: manyidea:item/pineapple_slice
     data:
       item_name: <!i><yellow>菠萝切片</yellow>
       $$>=1.20.5:

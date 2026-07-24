@@ -1,6 +1,6 @@
 items:
   manyidea:horse_feed:
     material: wheat
-    texture: minecraft:item/custom/horse_feed
+    texture: manyidea:item/horse_feed
     data:
       item_name: "<!i><gold>马饲料</gold>"

@@ -2,9 +2,9 @@
   "format_version": "1.9.0",
   "parent": "block/block",
   "textures": {
-    "rolls": "minecraft:block/custom/rice_roll_medley",
-    "particle": "minecraft:block/custom/platter",
-    "platter": "minecraft:block/custom/platter"
+    "rolls": "manyidea:block/rice_roll_medley",
+    "particle": "manyidea:block/platter",
+    "platter": "manyidea:block/platter"
   },
   "elements": [
     {

@@ -1,7 +1,7 @@
 items:
   manyidea:onion_soup:
     material: rabbit_stew
-    texture: minecraft:item/custom/onion_soup
+    texture: manyidea:item/onion_soup
     data:
       item_name: <!i><gold>洋葱汤</gold>
       $$>=1.20.5:

@@ -1,6 +1,6 @@
 items:
   manyidea:honey_mustard_sauce:
     material: honey_bottle
-    texture: minecraft:item/custom/honey_mustard_sauce
+    texture: manyidea:item/honey_mustard_sauce
     data:
       item_name: <!i><gold>蜂蜜芥末酱</gold>

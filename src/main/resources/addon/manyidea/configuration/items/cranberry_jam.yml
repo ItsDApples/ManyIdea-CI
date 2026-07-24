@@ -1,7 +1,7 @@
 items:
   manyidea:cranberry_jam:
     material: honey_bottle
-    texture: minecraft:item/custom/cranberry_jam
+    texture: manyidea:item/cranberry_jam
     data:
       item_name: <!i><gold>蔓越莓果酱</gold>
       $$>=1.20.5:

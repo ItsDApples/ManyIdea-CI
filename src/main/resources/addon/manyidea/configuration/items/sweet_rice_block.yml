@@ -1,7 +1,7 @@
 items:
   manyidea:sweet_rice_block:
     material: bread
-    texture: minecraft:item/custom/sweet_rice
+    texture: manyidea:item/sweet_rice
     data:
       item_name: <!i><gold>八宝饭</gold>
       lore:

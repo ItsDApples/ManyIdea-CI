@@ -1,6 +1,6 @@
 items:
   manyidea:durian_shell:
     material: leather
-    texture: minecraft:item/custom/durian_shell
+    texture: manyidea:item/durian_shell
     data:
       item_name: <!i><yellow>榴莲壳</yellow>
