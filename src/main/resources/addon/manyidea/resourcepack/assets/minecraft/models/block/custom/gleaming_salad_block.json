@@ -7,7 +7,8 @@
     "tray_bottom": "minecraft:block/custom/tray_bottom",
     "particle": "minecraft:block/custom/gleaming_salad",
     "salad": "minecraft:block/custom/gleaming_salad",
-    "details": "minecraft:block/custom/gleaming_salad_details"
+    "details": "minecraft:block/custom/gleaming_salad_details",
+    "leftovers": "minecraft:block/custom/gleaming_salad_leftovers"
   },
   "elements": [
     {

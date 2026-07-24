@@ -1,3 +1,12 @@
+items:
+  manyidea:cutting_board:
+    material: crafting_table
+    model: minecraft:block/custom/cutting_board
+    data:
+      item_name: <!i><gray>砧板</gray>
+      lore:
+        - <!i><gray>右键打开砧板</gray>
+
 recipes:
   manyidea:cutting_board:
     type: shaped

@@ -1,6 +1,57 @@
 {
-  "parent": "item/generated",
+  "format_version": "1.9.0",
+  "parent": "block/block",
   "textures": {
-    "layer0": "minecraft:item/custom/paper_wrapped_fish"
-  }
+    "tray": "minecraft:block/custom/tray",
+    "tray_bottom": "minecraft:block/custom/tray_bottom",
+    "particle": "minecraft:block/custom/paper_wrapped_fish",
+    "fish": "minecraft:block/custom/paper_wrapped_fish"
+  },
+  "elements": [
+    {
+      "name": "tray_base",
+      "from": [1, 0, 1],
+      "to": [15, 2, 15],
+      "faces": {
+        "north": {"uv": [1, 14, 15, 16], "texture": "#tray"},
+        "east": {"uv": [1, 14, 15, 16], "texture": "#tray"},
+        "south": {"uv": [1, 14, 15, 16], "texture": "#tray"},
+        "west": {"uv": [1, 14, 15, 16], "texture": "#tray"},
+        "up": {"uv": [1, 1, 15, 15], "texture": "#tray"},
+        "down": {"uv": [1, 1, 15, 15], "texture": "#tray_bottom", "cullface": "down"}
+      }
+    },
+    {
+      "name": "fish_body",
+      "from": [4, 2, 4],
+      "to": [12, 7, 12],
+      "faces": {
+        "north": {"uv": [4, 9, 12, 14], "texture": "#fish"},
+        "east": {"uv": [4, 9, 12, 14], "texture": "#fish"},
+        "south": {"uv": [4, 9, 12, 14], "texture": "#fish"},
+        "west": {"uv": [4, 9, 12, 14], "texture": "#fish"},
+        "up": {"uv": [4, 4, 12, 12], "texture": "#fish"}
+      }
+    },
+    {
+      "name": "fish_tail",
+      "from": [5, 2, 12],
+      "to": [11, 5, 15],
+      "faces": {
+        "north": {"uv": [5, 11, 11, 14], "texture": "#fish"},
+        "east": {"uv": [12, 11, 15, 14], "texture": "#fish"},
+        "south": {"uv": [5, 11, 11, 14], "texture": "#fish"},
+        "west": {"uv": [1, 11, 4, 14], "texture": "#fish"},
+        "up": {"uv": [5, 1, 11, 4], "texture": "#fish"}
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "stage0",
+      "origin": [8, 8, 8],
+      "color": 0,
+      "children": [0, 1, 2]
+    }
+  ]
 }

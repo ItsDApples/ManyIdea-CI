@@ -8,7 +8,8 @@
     "particle": "minecraft:block/custom/honey_glazed_ham",
     "ham": "minecraft:block/custom/honey_glazed_ham",
     "details": "minecraft:block/custom/honey_glazed_ham_details",
-    "side_dish": "minecraft:block/custom/honey_glazed_ham_side_dish"
+    "side_dish": "minecraft:block/custom/honey_glazed_ham_side_dish",
+    "leftovers": "minecraft:block/custom/honey_glazed_ham_leftovers"
   },
   "elements": [
     {
