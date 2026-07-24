@@ -1,6 +1,6 @@
 # ManyIdea
 
-基于 CraftEngine 的 Minecraft Paper 食物工艺插件，为游戏添加丰富的烹饪系统、自定义作物、切割板与盛宴机制。
+基于 CraftEngine 的 Paper 农夫乐事插件，为游戏添加丰富的烹饪系统、自定义作物、切割板与盛宴机制。
 
 ## 特性
 
