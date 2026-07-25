@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-	"0": "#top",
-	"3": "#bottom",
-	"particle": "#top"
+    "0": "manyidea:block/fig_pudding_top",
+    "3": "manyidea:block/fig_pudding_bottom",
+    "particle": "manyidea:block/fig_pudding_top"
   },
   "elements": [
 	{

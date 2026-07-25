@@ -88,6 +88,29 @@ def iter_files(path: Path, suffix: str) -> list[Path]:
 
 
 # ==============================
+# 素材数量统计
+# ==============================
+print("=" * 60)
+print("  源 mod 素材统计")
+print("=" * 60)
+
+ce_tex = len(iter_files(CE_BLOCK_TEX, ".png")) + len(iter_files(CE_ITEM_TEX, ".png"))
+ce_mdl = len(iter_files(CE_BLOCK_MODELS, ".json")) + len(iter_files(CE_ITEM_MODELS, ".json"))
+print(f"  CE (manyidea)         纹理 {ce_tex:>4}  模型 {ce_mdl:>3}")
+
+for src_name, dirs in SOURCES.items():
+    tex_count = 0
+    mdl_count = 0
+    for key, d in dirs.items():
+        if key.startswith("tex/"):
+            tex_count += len(iter_files(d, ".png"))
+        elif key.startswith("mdl/"):
+            mdl_count += len(iter_files(d, ".json"))
+    print(f"  {src_name:<22} 纹理 {tex_count:>4}  模型 {mdl_count:>3}")
+
+print()
+
+# ==============================
 # 纹理比对
 # ==============================
 print("=" * 60)
@@ -158,6 +181,9 @@ print("=" * 60)
 print("  模型 JSON 比对")
 print("=" * 60)
 
+# CE 专用模型：无源 mod 对应，不报"无源"
+CE_ONLY_MODELS = {"thin_block.json", "feast_plate.json", "stove.json"}
+
 for category, ce_dir in [("block", CE_BLOCK_MODELS), ("item", CE_ITEM_MODELS)]:
     if not ce_dir.exists():
         continue
@@ -166,10 +192,35 @@ for category, ce_dir in [("block", CE_BLOCK_MODELS), ("item", CE_ITEM_MODELS)]:
         found += 1
         src = find_model(ce_file.name)
         if src is None:
-            alt = ce_file.name.replace("_block.json", ".json")
-            src = find_model(alt)
+            # 多模式 fallback：匹配源 mod 的阶段命名
+            base = ce_file.stem
+            for pattern in [
+                base.replace("_block", ""),           # xxx_block → xxx
+                base.replace("_block", "_base"),      # xxx_block → xxx_base (durian)
+                base.replace("_block", "_stage0"),    # xxx_block → xxx_stage0
+                base.replace("_block", "_base_0"),    # xxx_block → xxx_base_0
+                base.replace("_block", "_0"),         # xxx_block → xxx_0
+                base + "_stage0",                     # xxx_block → xxx_block_stage0
+                base + "_base_0",                     # xxx_block → xxx_block_base_0
+                base + "_0",                          # xxx_block → xxx_block_0
+            ]:
+                src = find_model(pattern + ".json")
+                if src:
+                    break
+            # 特殊映射
+            if src is None:
+                SPECIAL_MAP = {
+                    "jello_block.json": "tinted.json",
+                    "jelly_block.json": "tinted.json",
+                    "durian_helmet.json": "durian_helmet_base.json",
+                }
+                if ce_file.name in SPECIAL_MAP:
+                    src = find_model(SPECIAL_MAP[ce_file.name])
         if src is None:
-            print(f"  ❌ 无源 ({category}): {ce_file.name}")
+            if ce_file.name in CE_ONLY_MODELS:
+                print(f"  ℹ️ ({category}) {ce_file.name}  (CE 专用，无源)")
+            else:
+                print(f"  ❌ 无源 ({category}): {ce_file.name}")
             continue
 
         src_name, src_file, src_ns = src
@@ -186,6 +237,7 @@ for category, ce_dir in [("block", CE_BLOCK_MODELS), ("item", CE_ITEM_MODELS)]:
         ce_json = ce_json.replace("minecraft:item/custom/",  f"{src_ns}:item/")
         ce_json = ce_json.replace("minecraft:item/food/",    f"{src_ns}:item/")
         ce_json = ce_json.replace("minecraft:item/material/",f"{src_ns}:item/")
+        ce_json = ce_json.replace("minecraft:block/",        f"{src_ns}:block/")
         ce_json = ce_json.replace("manyidea:block/",         f"{src_ns}:block/")
         ce_json = ce_json.replace("manyidea:item/",          f"{src_ns}:item/")
 

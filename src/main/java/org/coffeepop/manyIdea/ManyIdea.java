@@ -32,8 +32,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.Enumeration;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
@@ -162,6 +164,7 @@ public final class ManyIdea extends JavaPlugin {
 
     /**
      * 从当前 jar 中提取 addon/ 目录下的所有文件到目标目录。
+     * 提取完成后会删除目标目录中 jar 内不存在的多余文件（防止旧版本残留）。
      *
      * @param missingOnly true 时只写入缺失或大小不匹配的文件，返回修复的文件数
      * @return 当 missingOnly=true 时返回补充的文件数，否则返回 0
@@ -175,6 +178,7 @@ public final class ManyIdea extends JavaPlugin {
         }
 
         int repaired = 0;
+        Set<String> jarEntries = new HashSet<>();
         try (JarFile jar = new JarFile(jarFile)) {
             Enumeration<JarEntry> entries = jar.entries();
             while (entries.hasMoreElements()) {
@@ -183,6 +187,7 @@ public final class ManyIdea extends JavaPlugin {
                 if (!name.startsWith("addon/") || entry.isDirectory()) continue;
 
                 String relativePath = name.substring("addon/".length());
+                jarEntries.add(relativePath);
                 File outFile = new File(targetDir, relativePath);
 
                 if (missingOnly) {
@@ -200,7 +205,46 @@ public final class ManyIdea extends JavaPlugin {
                 }
             }
         }
+
+        // 清理目标目录中 jar 里不存在的多余文件
+        File addonDir = new File(targetDir, "manyidea");
+        if (addonDir.isDirectory()) {
+            int removed = removeOrphanFiles(addonDir, targetDir, jarEntries);
+            if (removed > 0) {
+                getLogger().info("CE addon: removed " + removed + " orphan file(s).");
+            }
+        }
+
         return repaired;
+    }
+
+    /**
+     * 递归删除 dir 下所有文件（相对于 baseDir 不在 jarEntries 中的）。
+     * 删除完毕后清理空目录。
+     */
+    private int removeOrphanFiles(File dir, File baseDir, Set<String> jarEntries) {
+        int count = 0;
+        File[] children = dir.listFiles();
+        if (children == null) return 0;
+
+        for (File child : children) {
+            if (child.isDirectory()) {
+                count += removeOrphanFiles(child, baseDir, jarEntries);
+            } else {
+                String relPath = baseDir.toPath().relativize(child.toPath()).toString().replace('\\', '/');
+                if (!jarEntries.contains(relPath)) {
+                    if (child.delete()) {
+                        count++;
+                    }
+                }
+            }
+        }
+
+        // 清理空目录（子目录清理后自身可能变为空）
+        if (dir.listFiles() != null && dir.listFiles().length == 0) {
+            dir.delete();
+        }
+        return count;
     }
 
     private void registerFoods() {

@@ -2,10 +2,10 @@
   "credit": "Made with Blockbench",
   "parent": "block/block",
   "textures": {
-	"1": "#cake",
-	"2": "#base",
-	"tray_bottom": "manyidea:block/tray_bottom",
-	"particle": "#cake"
+    "1": "manyidea:block/mangosteen_cake_cake",
+    "2": "manyidea:block/mangosteen_cake_base",
+    "tray_bottom": "manyidea:block/tray_bottom",
+    "particle": "manyidea:block/mangosteen_cake_cake"
   },
   "elements": [
 	{
