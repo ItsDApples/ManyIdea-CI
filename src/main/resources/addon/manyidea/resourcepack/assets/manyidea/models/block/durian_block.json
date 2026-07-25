@@ -2,9 +2,9 @@
   "credit": "Made with Blockbench",
   "parent": "block/block",
   "textures": {
-	"0": "#top",
-	"1": "#side",
-	"particle": "#top"
+	"0": "manyidea:block/durian_top",
+	"1": "manyidea:block/durian_side",
+	"particle": "manyidea:block/durian_top"
   },
   "elements": [
 	{
