@@ -52,6 +52,13 @@ public final class CookingPersistenceManager {
     public Map<Location, CookingPotListener.PotData> loadPots(CookingPotListener potListener) {
         YamlConfiguration yaml = loadYaml();
         Map<Location, CookingPotListener.PotData> result = new LinkedHashMap<>();
+
+        int version = yaml.getInt("version", 1);
+        if (version < 2) {
+            plugin.getLogger().warning("cooking_state.yml version < 2, skipping pot data restore.");
+            return result;
+        }
+
         ConfigurationSection sec = yaml.getConfigurationSection("pots");
         if (sec == null) return result;
 
